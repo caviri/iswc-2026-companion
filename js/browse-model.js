@@ -86,8 +86,9 @@ export function groupItems(program, items, dim) {
  * (sessionless papers under "Not scheduled"); unknown ids are ignored.
  * `has` { code, data }: keep only items with code (GitHub / Hugging Face) and / or data (datasets or a
  * knowledge graph they use); like a term filter, papers are listed in every grouping.
+ * `day` ("2026-10-27"): keep only sessions on that day and papers whose session is on it (unscheduled papers drop out).
  */
-export function runBrowse(program, text, dim, term = null, has = {}) {
+export function runBrowse(program, text, dim, term = null, has = {}, day = null) {
   const d = DIMS.includes(dim) ? dim : "day";
   const q = String(text ?? "").trim();
   const t = term && program.glossary?.[term] ? term : null;
@@ -98,19 +99,27 @@ export function runBrowse(program, text, dim, term = null, has = {}) {
   if (t) items = items.filter((x) => x.terms?.includes(t));
   if (has?.code) items = items.filter(hasCode);
   if (has?.data) items = items.filter(hasData);
+  if (day) items = items.filter((x) => sessionOf(program, x)?.day === day);
   const nSessions = items.filter(isSession).length;
   let groups = groupItems(program, items, d);
   if (t && d === "tech") groups = groups.filter((g) => g.key === t);
   return { groups, total: items.length, nSessions, nPapers: items.length - nSessions };
 }
 
-/** Untrusted sessionStorage payload -> {q, dim, scroll, has: {code, data}}. */
+const isDay = (v) => typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v);
+
+/** A day route param or stored value -> "YYYY-MM-DD" when it's one of the programme's days, else null. */
+export function dayFromParam(program, v) {
+  return isDay(v) && (program.days ?? []).some((d) => d.date === v) ? v : null;
+}
+
+/** Untrusted sessionStorage payload -> {q, dim, scroll, has: {code, data}, day: "YYYY-MM-DD" | null}. */
 export function normalizeState(raw) {
   const o = raw && typeof raw === "object" ? raw : {};
   const scroll = Number.isFinite(o.scroll) && o.scroll > 0 ? Math.round(o.scroll) : 0;
   const has = o.has && typeof o.has === "object" ? o.has : {};
   return { q: typeof o.q === "string" ? o.q : "", dim: DIMS.includes(o.dim) ? o.dim : "day", scroll,
-    has: { code: has.code === true, data: has.data === true } };
+    has: { code: has.code === true, data: has.data === true }, day: isDay(o.day) ? o.day : null };
 }
 
 /** `has` route param ("code", "data", "code,data") -> { code, data }, or null when it names neither. */
@@ -119,10 +128,11 @@ export function hasFromParam(v) {
   return parts.includes("code") || parts.includes("data") ? { code: parts.includes("code"), data: parts.includes("data") } : null;
 }
 
-/** The browse route for a term filter and has flags, so Back and reload keep them. */
-export function browseRoute(term, has = {}) {
+/** The browse route for a term filter, has flags and a day, so Back and reload keep them. */
+export function browseRoute(term, has = {}, day = null) {
   const q = [];
   if (term) q.push(`term=${encodeURIComponent(term)}`);
+  if (isDay(day)) q.push(`day=${day}`);
   const hs = ["code", "data"].filter((k) => has[k]);
   if (hs.length) q.push(`has=${hs.join(",")}`);
   return "#/browse" + (q.length ? "?" + q.join("&") : "");

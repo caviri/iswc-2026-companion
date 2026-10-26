@@ -1,7 +1,7 @@
 // Service worker: cache-first for everything the app needs, so it runs offline after the first visit.
 // BUILD is rewritten by `make stamp` (part of `make data`) to a hash of app/ contents, so every
 // deploy with changed code or data gets a fresh cache and the old one is deleted on activate.
-const BUILD = "40825cf12d0f";
+const BUILD = "7aad5d097c01";
 const CACHE = `iswc26-${BUILD}`;
 // Images (img/, ~0.7 MB) are NOT precached: they are cached when first shown (or all at once from the credits
 // page) in a cache of their own that outlives builds. Must equal IMG_CACHE in js/images-model.js.

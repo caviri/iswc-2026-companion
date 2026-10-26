@@ -1,7 +1,7 @@
 // Browse and search: sticky search box, grouping control, grouped rows with quick keep/skip.
 import { h, icon, sparqlEntry, tagPill } from "../ui.js";
 import { dayShort, timeRange, placeOf, itemTag, VERDICT_LABEL, whenOf } from "../model.js";
-import { DIMS, DIM_LABEL, runBrowse, normalizeState, hasFromParam, browseRoute } from "../browse-model.js";
+import { DIMS, DIM_LABEL, runBrowse, normalizeState, hasFromParam, browseRoute, dayFromParam } from "../browse-model.js";
 import { searchPeople, flag } from "../people-model.js";
 import { thumbSVG } from "../thumbs.js";
 import { imgEl } from "./images.js";
@@ -126,7 +126,9 @@ export function renderBrowse(root, program, store, params = {}) {
   const fromRoute = hasFromParam(params.has);
   if (fromRoute) st.has = fromRoute;
   st.has = { code: st.has.code && canHas.code, data: st.has.data && canHas.data };
-  const routeHash = () => browseRoute(term, st.has);
+  // The day filter, like the others, lives in the route ("#/browse?day=2026-10-27"); a route without one keeps this visit's last choice.
+  st.day = params.day !== undefined ? dayFromParam(program, params.day) : dayFromParam(program, st.day);
+  const routeHash = () => browseRoute(term, st.has, st.day);
   const syncs = new Map(); // id -> sync fns of every row showing that item (topic grouping lists items twice)
   const refresh = (id) => (syncs.get(id) ?? []).forEach((f) => f());
   let disposers = []; // the drawn rows' verdict listeners, dropped on every redraw and on leaving
@@ -154,7 +156,16 @@ export function renderBrowse(root, program, store, params = {}) {
     }, icon(ic, { size: 16 }), label)));
   }
 
-  const persist = () => saveState({ q: st.q, dim: st.dim, has: st.has, scroll: Math.round(window.scrollY) });
+  const persist = () => saveState({ q: st.q, dim: st.dim, has: st.has, day: st.day, scroll: Math.round(window.scrollY) });
+
+  const dayRow = h("div", { class: "chip-row browse-day-row", role: "group", "aria-label": "Day" });
+  function drawDays() {
+    const days = [...(program.days ?? [])].sort((a, b) => (a.date < b.date ? -1 : 1));
+    dayRow.replaceChildren(...[{ date: null, label: "All days" }, ...days.map((d) => ({ date: d.date, label: dayShort(d.date) }))].map((d) => h("button", {
+      type: "button", class: "chip", "aria-pressed": String(st.day === d.date),
+      onclick: () => { st.day = d.date; replaceRoute(routeHash()); drawDays(); draw(); window.scrollTo(0, 0); persist(); },
+    }, d.label)));
+  }
 
   function drawSeg() {
     seg.replaceChildren(...dims.map((d) => h("button", {
@@ -171,6 +182,7 @@ export function renderBrowse(root, program, store, params = {}) {
       onclick: () => { if (mode === m) return; mode = m; saveMode(m); drawMode(); drawSeg(); draw(); window.scrollTo(0, 0); },
     }, label)));
     segRow.hidden = mode === "people";
+    dayRow.hidden = mode === "people" || (program.days ?? []).length < 2;
     hasRow.hidden = mode === "people" || (!canHas.code && !canHas.data);
     filterBar.hidden = mode === "people" || !term;
   }
@@ -202,16 +214,16 @@ export function renderBrowse(root, program, store, params = {}) {
     drawMode();
     dropRows();
     if (mode === "people") { syncs.clear(); drawPeople(); return; }
-    const r = runBrowse(program, st.q, st.dim, term, st.has);
+    const r = runBrowse(program, st.q, st.dim, term, st.has, st.day);
     const hasText = [st.has.code ? "with code" : null, st.has.data ? "with data" : null].filter(Boolean).join(" and ");
     syncs.clear();
     const q = st.q.trim();
     const parts = [r.nSessions ? plural(r.nSessions, "session") : null, r.nPapers ? plural(r.nPapers, "paper") : null].filter(Boolean);
     summary.textContent = !r.total ? (q ? `No results for "${q}"` : "Nothing to show")
-      : `${parts.join(" and ")}${q ? ` matching "${q}"` : ""}${term ? ` mentioning ${program.glossary[term].term}` : ""}${hasText ? ` ${hasText}` : ""}, by ${DIM_LABEL[st.dim].toLowerCase()}${st.dim === "topic" ? ". An item can appear under several topics." : st.dim === "tech" ? ". An item can appear under several technologies." : ""}`;
+      : `${parts.join(" and ")}${q ? ` matching "${q}"` : ""}${term ? ` mentioning ${program.glossary[term].term}` : ""}${hasText ? ` ${hasText}` : ""}${st.day ? ` on ${dayShort(st.day)}` : ""}, by ${DIM_LABEL[st.dim].toLowerCase()}${st.dim === "topic" ? ". An item can appear under several topics." : st.dim === "tech" ? ". An item can appear under several technologies." : ""}`;
     if (!r.total) {
       list.replaceChildren(h("div", { class: "empty browse-empty" },
-        h("h2", {}, q || term || hasText ? "Nothing matches" : "The programme is empty"),
+        h("h2", {}, q || term || hasText || st.day ? "Nothing matches" : "The programme is empty"),
         q ? h("p", {}, "Every word has to match a title, author, speaker, room or topic. Try fewer or shorter words.") : null,
         q ? h("div", { class: "empty-actions" }, h("button", { type: "button", class: "pill-btn primary", onclick: () => setQuery("") }, "Clear search")) : null));
       return;
@@ -244,13 +256,13 @@ export function renderBrowse(root, program, store, params = {}) {
   const onScroll = () => { cancelAnimationFrame(scrollTick); scrollTick = requestAnimationFrame(persist); };
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  drawSeg(); drawFilter(); drawHas(); draw();
+  drawSeg(); drawDays(); drawFilter(); drawHas(); draw();
   root.replaceChildren(h("section", { class: "view browse-view" },
     h("div", { class: "view-head" }, h("h1", { class: "view-title" }, "Browse"), sparqlEntry("Query with SPARQL")),
     h("div", { class: "browse-bar" },
       h("div", { class: "search-box" }, icon("browse", { size: 20 }), input, clear),
       hasPeople ? h("div", { class: "chip-row browse-mode-row" }, modeSeg) : null,
-      segRow, hasRow),
+      dayRow, segRow, hasRow),
     filterBar, summary, list));
 
   // The router scrolls to the top right after render; put the reader back where they were.
@@ -262,6 +274,6 @@ export function renderBrowse(root, program, store, params = {}) {
     cancelAnimationFrame(scrollTick);
     window.removeEventListener("scroll", onScroll);
     if (timer && input.value !== st.q) st.q = input.value; // flush a pending debounce
-    saveState({ q: st.q, dim: st.dim, has: st.has, scroll: Math.round(window.scrollY) });
+    saveState({ q: st.q, dim: st.dim, has: st.has, day: st.day, scroll: Math.round(window.scrollY) });
   };
 }
