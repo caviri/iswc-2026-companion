@@ -1,0 +1,271 @@
+# The ISWC 2026 Companion ontology: the small vocabulary (prefix ic:) the companion's graph adds to schema.org,
+# SKOS, DCAT, VoID, Dublin Core, PROV-O, OWL and SHACL. Every ic: term the graph uses is defined here
+# (pipeline/tests/test_ontology.py checks it both ways).
+#
+# Domains and ranges are written with schema:domainIncludes / schema:rangeIncludes, as schema.org does: they say
+# where a term is used without making a reasoner infer new types. Datatype properties also give rdfs:range.
+# "Ordered" properties hold "|"-joined lists in source order (RDF has no cheap ordered list for a browser app).
+# The version and issue date below come from data/VERSION and data/CHANGELOG.md (pipeline/to_rdf.py fills them in).
+
+@prefix ic:      <https://w3id.org/iswc26-companion/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+
+# ---------------------------------------------------------------- the ontology
+<https://w3id.org/iswc26-companion/ontology>
+    a owl:Ontology ;
+    dcterms:title "ISWC 2026 Companion ontology"@en ;
+    dcterms:description "The terms the ISWC 2026 Companion's graph adds to schema.org and other well-known vocabularies: the programme's ids and order, workshop agendas, authorship order, links with their provenance, people's bios, the Bari city guide, and the export of a person's own picks and notes."@en ;
+    dcterms:creator "Carlos Vivar Ríos" ;
+    dcterms:issued "2026-10-26"^^xsd:date ;
+    owl:versionInfo "1.1.0" ;
+    owl:versionIRI <https://w3id.org/iswc26-companion/ontology/1.1.0> ;
+    vann:preferredNamespacePrefix "ic" ;
+    vann:preferredNamespaceUri "https://w3id.org/iswc26-companion/" ;
+    rdfs:seeAlso <https://github.com/caviri/rete> .
+
+# ---------------------------------------------------------------- classes
+ic:AgendaItem a owl:Class ;
+    rdfs:subClassOf schema:Event ;
+    rdfs:label "Agenda item"@en ;
+    rdfs:comment "One timed entry in a workshop's own programme: a talk, a keynote, a break, an opening or a discussion, as the workshop publishes it."@en .
+
+ic:Authorship a owl:Class ;
+    rdfs:label "Authorship"@en ;
+    rdfs:comment "One author of one paper at one position in the author list (a qualified schema:author, so the order survives)."@en .
+
+ic:Link a owl:Class ;
+    rdfs:label "Link"@en ;
+    rdfs:comment "An external link of a paper, session or person (DOI, PDF, code, profile, dataset), with where it came from and how it was found."@en .
+
+ic:Cluster a owl:Class ;
+    rdfs:subClassOf skos:Collection ;
+    rdfs:label "Cluster"@en ;
+    rdfs:comment "A group of sessions and papers on related subjects, found by clustering their topics and terms."@en .
+
+ic:Topic a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Topic"@en ;
+    rdfs:comment "One of the broad topics the programme is tagged with."@en .
+
+ic:Term a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Glossary term"@en ;
+    rdfs:comment "A technology or idea the programme mentions, explained in the app's glossary."@en .
+
+ic:Destination a owl:Class ;
+    rdfs:subClassOf schema:Place ;
+    rdfs:label "Destination"@en ;
+    rdfs:comment "The conference city, with its photos."@en .
+
+ic:PreferencesExport a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Preferences export"@en ;
+    rdfs:comment "A copy of one person's picks, notes and settings, downloaded from the app (Settings, Your data)."@en .
+
+ic:Verdict a owl:Class ;
+    rdfs:label "Verdict"@en ;
+    rdfs:comment "What a person decided about one item: keep, skip or maybe."@en .
+
+ic:Note a owl:Class ;
+    rdfs:label "Note"@en ;
+    rdfs:comment "A person's own note on one item."@en .
+
+ic:Setting a owl:Class ;
+    rdfs:label "Setting"@en ;
+    rdfs:comment "One of the app's settings, as a key and its stored value."@en .
+
+# ---------------------------------------------------------------- the programme: ids, time, place
+ic:stableId a owl:DatatypeProperty ; rdfs:label "stable id"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The app's id for a session, paper, room, person, topic, term or cluster. It never changes, so what people keep stays attached."@en .
+ic:kind a owl:ObjectProperty ; rdfs:label "kind"@en ; schema:domainIncludes schema:Event ; schema:rangeIncludes skos:Concept ;
+    rdfs:comment "The kind of session (keynote, parallel, workshop, tutorial, break and so on), as a concept with a label and a colour."@en .
+ic:day a owl:DatatypeProperty ; rdfs:label "day"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
+    rdfs:comment "The session's date, YYYY-MM-DD."@en .
+ic:isDay a owl:DatatypeProperty ; rdfs:label "is a day"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:boolean ;
+    rdfs:comment "True for the events that stand for a whole conference day."@en .
+ic:start a owl:DatatypeProperty ; rdfs:label "start"@en ; rdfs:range xsd:string ;
+    rdfs:comment "Local start time, hh:mm."@en .
+ic:end a owl:DatatypeProperty ; rdfs:label "end"@en ; rdfs:range xsd:string ;
+    rdfs:comment "Local end time, hh:mm, or the text the programme gives (\"Late\")."@en .
+ic:startISO a owl:DatatypeProperty ; rdfs:label "start (ISO)"@en ; rdfs:range xsd:string ;
+    rdfs:comment "Start as an ISO 8601 date-time with the Rome offset; schema:startDate holds the same instant as xsd:dateTime."@en .
+ic:endISO a owl:DatatypeProperty ; rdfs:label "end (ISO)"@en ; rdfs:range xsd:string ;
+    rdfs:comment "End as an ISO 8601 date-time with the Rome offset, when known."@en .
+ic:allRooms a owl:DatatypeProperty ; rdfs:label "in all rooms"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:boolean ;
+    rdfs:comment "True for sessions everyone attends (breaks, keynotes in the plenary)."@en .
+ic:slot a owl:DatatypeProperty ; rdfs:label "slot"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:integer ;
+    rdfs:comment "Which parallel-session slot of the day the session belongs to."@en .
+ic:floor a owl:DatatypeProperty ; rdfs:label "floor"@en ; schema:domainIncludes schema:Place ; rdfs:range xsd:integer ;
+    rdfs:comment "The room's floor in the venue (-1 is below ground)."@en .
+ic:floorPlan a owl:DatatypeProperty ; rdfs:label "floor plan"@en ; schema:domainIncludes schema:Place ; rdfs:range xsd:string ;
+    rdfs:comment "The floor plan image the room is drawn on, relative to the app."@en .
+ic:box a owl:DatatypeProperty ; rdfs:label "outline"@en ; schema:domainIncludes schema:Place ; rdfs:range xsd:string ;
+    rdfs:comment "The room's outline on its floor plan: \"x y width height\" as fractions of the image."@en .
+ic:color a owl:DatatypeProperty ; rdfs:label "colour"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The colour the app uses for a kind of session, as #rrggbb."@en .
+
+# ---------------------------------------------------------------- the programme: people and descriptions
+ic:chairs a owl:DatatypeProperty ; rdfs:label "chairs"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The session's chairs as the programme writes them."@en .
+ic:chairPerson a owl:ObjectProperty ; rdfs:label "chair"@en ; schema:domainIncludes schema:Event ; schema:rangeIncludes schema:Person ;
+    rdfs:comment "A person who chairs the session."@en .
+ic:chairIdsOrdered a owl:DatatypeProperty ; rdfs:label "chair ids, in order"@en ; rdfs:range xsd:string .
+ic:organizers a owl:DatatypeProperty ; rdfs:label "organisers"@en ; rdfs:range xsd:string ;
+    rdfs:comment "A workshop's or tutorial's organisers as the programme writes them (schema:organizer links the people)."@en .
+ic:organizerIdsOrdered a owl:DatatypeProperty ; rdfs:label "organiser ids, in order"@en ; rdfs:range xsd:string .
+ic:speaker a owl:DatatypeProperty ; rdfs:label "speaker"@en ; rdfs:range xsd:string ;
+    rdfs:comment "A keynote's speaker as the programme writes the name."@en .
+ic:speakerPerson a owl:ObjectProperty ; rdfs:label "speaker person"@en ; schema:rangeIncludes schema:Person ;
+    rdfs:comment "The person who gives the keynote or talk."@en .
+ic:affiliation a owl:DatatypeProperty ; rdfs:label "speaker's affiliation"@en ; rdfs:range xsd:string ;
+    rdfs:comment "A keynote speaker's affiliation as the programme writes it."@en .
+ic:talkTitle a owl:DatatypeProperty ; rdfs:label "talk title"@en ; rdfs:range xsd:string .
+ic:bio a owl:DatatypeProperty ; rdfs:label "speaker bio"@en ; rdfs:range xsd:string ;
+    rdfs:comment "A keynote speaker's biography as the programme publishes it."@en .
+ic:website a owl:DatatypeProperty ; rdfs:label "website"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The event's own website."@en .
+ic:link a owl:DatatypeProperty ; rdfs:label "programme link"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The link the conference programme gives for the session."@en .
+ic:description a owl:DatatypeProperty ; rdfs:label "description"@en ; rdfs:range xsd:string .
+ic:descriptionSource a owl:DatatypeProperty ; rdfs:label "description source"@en ; rdfs:range xsd:string ;
+    rdfs:comment "Where the description was quoted from, in words."@en .
+ic:descriptionUrl a owl:DatatypeProperty ; rdfs:label "description URL"@en ; rdfs:range xsd:string .
+
+# ---------------------------------------------------------------- the programme: papers
+ic:presentedIn a owl:ObjectProperty ; rdfs:label "presented in"@en ;
+    schema:domainIncludes schema:ScholarlyArticle ; schema:rangeIncludes schema:Event ;
+    rdfs:comment "The session in which the paper is presented."@en .
+ic:paperIdsOrdered a owl:DatatypeProperty ; rdfs:label "paper ids, in order"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The session's papers in programme order."@en .
+ic:track a owl:DatatypeProperty ; rdfs:label "track"@en ; schema:domainIncludes schema:ScholarlyArticle ; rdfs:range xsd:string .
+ic:list a owl:DatatypeProperty ; rdfs:label "accepted list"@en ; schema:domainIncludes schema:ScholarlyArticle ; rdfs:range xsd:string ;
+    rdfs:comment "Which list of accepted papers it appears in (research, resource, demos, posters...)."@en .
+ic:spotlight a owl:DatatypeProperty ; rdfs:label "spotlight"@en ; schema:domainIncludes schema:ScholarlyArticle ; rdfs:range xsd:boolean .
+ic:authorsOrdered a owl:DatatypeProperty ; rdfs:label "authors, in order"@en ; rdfs:range xsd:string .
+ic:authorIdsOrdered a owl:DatatypeProperty ; rdfs:label "author ids, in order"@en ; rdfs:range xsd:string .
+ic:abstractSource a owl:DatatypeProperty ; rdfs:label "abstract source"@en ; rdfs:range xsd:string ;
+    rdfs:comment "Where the open abstract (schema:abstract) came from: OpenAlex, arXiv, Crossref or a workshop's CC BY paper."@en .
+ic:paper a owl:ObjectProperty ; rdfs:label "paper"@en ; schema:domainIncludes ic:Authorship ; schema:rangeIncludes schema:ScholarlyArticle .
+ic:person a owl:ObjectProperty ; rdfs:label "person"@en ; schema:domainIncludes ic:Authorship ; schema:rangeIncludes schema:Person .
+ic:position a owl:DatatypeProperty ; rdfs:label "position"@en ; rdfs:range xsd:integer ;
+    rdfs:comment "Zero-based order: of an author in the author list, of a link, work or image in its list, of an agenda item in its programme."@en .
+
+# ---------------------------------------------------------------- workshop agendas
+ic:agendaItem a owl:ObjectProperty ; rdfs:label "agenda item"@en ; schema:domainIncludes schema:Event ; schema:rangeIncludes ic:AgendaItem .
+ic:agendaKind a owl:DatatypeProperty ; rdfs:label "agenda item kind"@en ; schema:domainIncludes ic:AgendaItem ; rdfs:range xsd:string ;
+    rdfs:comment "talk, keynote, break, opening, discussion or social."@en .
+ic:agendaSource a owl:DatatypeProperty ; rdfs:label "agenda source"@en ; rdfs:range xsd:string .
+ic:agendaUrl a owl:DatatypeProperty ; rdfs:label "agenda URL"@en ; rdfs:range xsd:string .
+ic:title a owl:DatatypeProperty ; rdfs:label "title"@en ; schema:domainIncludes ic:AgendaItem ; rdfs:range xsd:string .
+ic:block a owl:DatatypeProperty ; rdfs:label "block"@en ; schema:domainIncludes ic:AgendaItem ; rdfs:range xsd:string ;
+    rdfs:comment "The part of the day the item belongs to (\"Paper Session 1\")."@en .
+ic:note a owl:DatatypeProperty ; rdfs:label "note"@en ; rdfs:range xsd:string ;
+    rdfs:comment "A short remark the workshop adds (the talk's theme, \"self-paid\")."@en .
+ic:byline a owl:DatatypeProperty ; rdfs:label "byline"@en ; schema:domainIncludes ic:AgendaItem ; rdfs:range xsd:string ;
+    rdfs:comment "A talk's authors as the workshop publishes them."@en .
+ic:url a owl:DatatypeProperty ; rdfs:label "URL"@en ; schema:domainIncludes ic:AgendaItem ; rdfs:range xsd:string ;
+    rdfs:comment "Where the talk's paper can be read."@en .
+ic:abstract a owl:DatatypeProperty ; rdfs:label "abstract"@en ; schema:domainIncludes ic:AgendaItem ; rdfs:range xsd:string .
+ic:presents a owl:ObjectProperty ; rdfs:label "presents"@en ; schema:domainIncludes ic:AgendaItem ; schema:rangeIncludes schema:ScholarlyArticle ;
+    rdfs:comment "The programme paper the agenda item presents."@en .
+
+# ---------------------------------------------------------------- links and their provenance
+ic:externalLink a owl:ObjectProperty ; rdfs:label "external link"@en ; schema:rangeIncludes ic:Link .
+ic:linkKind a owl:DatatypeProperty ; rdfs:label "link kind"@en ; schema:domainIncludes ic:Link ; rdfs:range xsd:string ;
+    rdfs:comment "doi, pdf, arxiv, code, dataset, orcid, dblp, openalex, homepage, wikidata and so on."@en .
+ic:linkSource a owl:DatatypeProperty ; rdfs:label "link source"@en ; schema:domainIncludes ic:Link ; rdfs:range xsd:string ;
+    rdfs:comment "The service the link came from (OpenAlex, Crossref, Springer, ORCID...)."@en .
+ic:via a owl:DatatypeProperty ; rdfs:label "via"@en ; schema:domainIncludes ic:Link ; rdfs:range xsd:string ;
+    rdfs:comment "The evidence behind the link: the record, paper or page it was found through."@en .
+ic:stars a owl:DatatypeProperty ; rdfs:label "stars"@en ; schema:domainIncludes ic:Link ; rdfs:range xsd:integer ;
+    rdfs:comment "A code repository's stars at the last check."@en .
+ic:liveOk a owl:DatatypeProperty ; rdfs:label "answered"@en ; rdfs:range xsd:boolean ;
+    rdfs:comment "Whether a SPARQL endpoint answered at the last check."@en .
+ic:liveCors a owl:DatatypeProperty ; rdfs:label "answers browsers"@en ; rdfs:range xsd:boolean ;
+    rdfs:comment "Whether the endpoint allows queries from a web page (CORS)."@en .
+ic:endpoint a owl:ObjectProperty ; rdfs:label "endpoint"@en ; schema:domainIncludes <http://www.w3.org/ns/dcat#Dataset> ;
+    rdfs:comment "A SPARQL endpoint of a well-known graph, as a dcat:DataService."@en .
+ic:usesGraph a owl:ObjectProperty ; rdfs:label "uses graph"@en ; schema:rangeIncludes <http://www.w3.org/ns/dcat#Dataset> ;
+    rdfs:comment "A well-known knowledge graph the session or paper works with."@en .
+
+# ---------------------------------------------------------------- people
+ic:itemIdsOrdered a owl:DatatypeProperty ; rdfs:label "item ids"@en ; schema:domainIncludes schema:Person ; rdfs:range xsd:string ;
+    rdfs:comment "The papers and talks the person has at ISWC 2026."@en .
+ic:recentWork a owl:ObjectProperty ; rdfs:label "recent work"@en ; schema:domainIncludes schema:Person ; schema:rangeIncludes schema:ScholarlyArticle ;
+    rdfs:comment "One of the person's other recent publications (OpenAlex)."@en .
+ic:recentDataset a owl:ObjectProperty ; rdfs:label "recent dataset"@en ; schema:domainIncludes schema:Person ; schema:rangeIncludes <http://www.w3.org/ns/dcat#Dataset> .
+ic:year a owl:DatatypeProperty ; rdfs:label "year"@en ; rdfs:range xsd:integer .
+ic:citedBy a owl:DatatypeProperty ; rdfs:label "cited by"@en ; rdfs:range xsd:integer ;
+    rdfs:comment "How many works cite it, at the last check."@en .
+ic:venue a owl:DatatypeProperty ; rdfs:label "venue"@en ; rdfs:range xsd:string .
+ic:bioKind a owl:DatatypeProperty ; rdfs:label "bio kind"@en ; schema:domainIncludes schema:Person ; rdfs:range xsd:string ;
+    rdfs:comment "Where the bio (schema:description) comes from: wikipedia, written (for this app, from the pages listed) or orcid (the person's own words)."@en .
+ic:bioSource a owl:DatatypeProperty ; rdfs:label "bio source"@en ; rdfs:range xsd:string .
+ic:bioSourcesOrdered a owl:DatatypeProperty ; rdfs:label "bio sources"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The pages the bio is based on."@en .
+ic:bioUrl a owl:DatatypeProperty ; rdfs:label "bio URL"@en ; rdfs:range xsd:string .
+ic:bioLicense a owl:DatatypeProperty ; rdfs:label "bio licence"@en ; rdfs:range xsd:string .
+ic:bioLicenseUrl a owl:DatatypeProperty ; rdfs:label "bio licence URL"@en ; rdfs:range xsd:string .
+
+# ---------------------------------------------------------------- topics, glossary, clusters
+ic:inCluster a owl:ObjectProperty ; rdfs:label "in cluster"@en ; schema:rangeIncludes ic:Cluster .
+ic:size a owl:DatatypeProperty ; rdfs:label "size"@en ; schema:domainIncludes ic:Cluster ; rdfs:range xsd:integer .
+ic:topTermsOrdered a owl:DatatypeProperty ; rdfs:label "top terms"@en ; schema:domainIncludes ic:Cluster ; rdfs:range xsd:string .
+ic:termIdsOrdered a owl:DatatypeProperty ; rdfs:label "top term ids"@en ; schema:domainIncludes ic:Cluster ; rdfs:range xsd:string .
+ic:subOrdered a owl:DatatypeProperty ; rdfs:label "sub-terms"@en ; schema:domainIncludes ic:Topic ; rdfs:range xsd:string ;
+    rdfs:comment "The topic's glossary terms, most mentioned first."@en .
+ic:aliasesOrdered a owl:DatatypeProperty ; rdfs:label "aliases"@en ; schema:domainIncludes ic:Term ; rdfs:range xsd:string .
+ic:caseSensitive a owl:DatatypeProperty ; rdfs:label "case sensitive"@en ; schema:domainIncludes ic:Term ; rdfs:range xsd:boolean .
+ic:generic a owl:DatatypeProperty ; rdfs:label "generic"@en ; schema:domainIncludes ic:Term ; rdfs:range xsd:boolean ;
+    rdfs:comment "True for terms too broad to mark in the text."@en .
+
+# ---------------------------------------------------------------- images
+ic:file a owl:DatatypeProperty ; rdfs:label "file"@en ; schema:domainIncludes schema:ImageObject ; rdfs:range xsd:string ;
+    rdfs:comment "The image file inside the app."@en .
+ic:licenseName a owl:DatatypeProperty ; rdfs:label "licence name"@en ; schema:domainIncludes schema:ImageObject ; rdfs:range xsd:string .
+
+# ---------------------------------------------------------------- the Bari city guide
+ic:guideId a owl:DatatypeProperty ; rdfs:label "guide id"@en ; rdfs:range xsd:string .
+ic:guideCategory a owl:DatatypeProperty ; rdfs:label "guide category"@en ; rdfs:range xsd:string ;
+    rdfs:comment "concert, venue, comics, sight, food or daytrip."@en .
+ic:guideKind a owl:DatatypeProperty ; rdfs:label "guide kind"@en ; rdfs:range xsd:string .
+ic:guideGroup a owl:DatatypeProperty ; rdfs:label "food group"@en ; rdfs:range xsd:string .
+ic:guideTopic a owl:DatatypeProperty ; rdfs:label "practical topic"@en ; rdfs:range xsd:string .
+ic:area a owl:DatatypeProperty ; rdfs:label "area"@en ; rdfs:range xsd:string .
+ic:distanceKm a owl:DatatypeProperty ; rdfs:label "distance (km)"@en ; rdfs:range xsd:decimal ;
+    rdfs:comment "Straight-line distance from the conference venue."@en .
+ic:walkMinutes a owl:DatatypeProperty ; rdfs:label "walk (minutes)"@en ; rdfs:range xsd:integer .
+ic:price a owl:DatatypeProperty ; rdfs:label "price"@en ; rdfs:range xsd:string .
+ic:tickets a owl:ObjectProperty ; rdfs:label "tickets"@en ; schema:domainIncludes schema:MusicEvent ;
+    rdfs:comment "Where to buy tickets."@en .
+ic:iswcTip a owl:DatatypeProperty ; rdfs:label "organisers' tip"@en ; rdfs:range xsd:string .
+ic:point a owl:DatatypeProperty ; rdfs:label "point"@en ; rdfs:range xsd:string ;
+    rdfs:comment "One point of a practical note."@en .
+
+# ---------------------------------------------------------------- the dataset's example queries
+ic:exampleId a owl:DatatypeProperty ; rdfs:label "example id"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The id of an example query (a sh:SPARQLExecutable) in the app's gallery."@en .
+
+# ---------------------------------------------------------------- your data (Settings, Your data: a separate .rete)
+ic:inExport a owl:ObjectProperty ; rdfs:label "in export"@en ; schema:rangeIncludes ic:PreferencesExport .
+ic:itemId a owl:DatatypeProperty ; rdfs:label "item id"@en ; rdfs:range xsd:string ;
+    rdfs:comment "The app's id of the item a verdict or note is about (the same as its ic:stableId)."@en .
+ic:item a owl:ObjectProperty ; rdfs:label "item"@en ;
+    rdfs:comment "The session, paper or person in the programme's graph a verdict or note is about."@en .
+ic:verdict a owl:DatatypeProperty ; rdfs:label "verdict"@en ; schema:domainIncludes ic:Verdict ; rdfs:range xsd:string ;
+    rdfs:comment "keep, skip or maybe."@en .
+ic:ts a owl:DatatypeProperty ; rdfs:label "timestamp"@en ; rdfs:range xsd:integer ;
+    rdfs:comment "When it was last changed, in milliseconds since 1970 (dcterms:modified holds the same as a date-time)."@en .
+ic:key a owl:DatatypeProperty ; rdfs:label "key"@en ; schema:domainIncludes ic:Setting ; rdfs:range xsd:string .
+ic:format a owl:DatatypeProperty ; rdfs:label "format"@en ; schema:domainIncludes ic:PreferencesExport ; rdfs:range xsd:string .
+ic:formatVersion a owl:DatatypeProperty ; rdfs:label "format version"@en ; schema:domainIncludes ic:PreferencesExport ; rdfs:range xsd:integer .
+ic:appVersion a owl:DatatypeProperty ; rdfs:label "app version"@en ; schema:domainIncludes ic:PreferencesExport ; rdfs:range xsd:string .
+ic:dataVersion a owl:DatatypeProperty ; rdfs:label "data version"@en ; schema:domainIncludes ic:PreferencesExport ; rdfs:range xsd:string .

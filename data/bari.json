@@ -1,0 +1,2394 @@
+{
+ "venue": {
+  "address": "Via Cardinale Agostino Ciasca 27, 70124 Bari",
+  "checked": "2026-10-25",
+  "lat": 41.0991824,
+  "lon": 16.8548241,
+  "name": "The Nicolaus Hotel",
+  "sources": [
+   "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation",
+   "https://graphwise.ai/?p=254190",
+   "https://www.openstreetmap.org/relation/17349766"
+  ],
+  "url": "https://www.thenicolaushotel.com/"
+ },
+ "generated": "2026-10-24..2026-10-25",
+ "items": [
+  {
+   "address": "Corso Cavour 12, 70122 Bari",
+   "area": "Murat",
+   "artists": [
+    "Vincenzo Milletarì",
+    "Davide Livermore",
+    "Amartuvshin Enkhbat",
+    "Alessia Panza",
+    "Silvia Beltrami",
+    "Fabio Sartori"
+   ],
+   "category": "concert",
+   "checked": "2026-10-24",
+   "description": "Verdi's opera in a new staging by Davide Livermore, conducted by Vincenzo Milletarì (Turno C).",
+   "distanceKm": 3.12,
+   "id": "il-trovatore-2026-10-25",
+   "image": {
+    "file": "img/bari/il-trovatore-2026-10-25.webp",
+    "width": 960,
+    "height": 639,
+    "depicts": "interior",
+    "alt": "Inside Il trovatore (Verdi)",
+    "credit": {
+     "author": "Vob85 at Italian Wikipedia",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_Teatro_Petruzzelli_2008_Interno.jpg"
+    }
+   },
+   "kind": "opera",
+   "lat": 41.1235648,
+   "lon": 16.8731612,
+   "name": "Il trovatore (Verdi)",
+   "sources": [
+    "https://www.fondazionepetruzzelli.it/?post_type=eventi&p=32427"
+   ],
+   "startISO": "2026-10-25T18:00:00+01:00",
+   "tickets": "https://www.vivaticket.com/it/ticket/il-trovatore/290953",
+   "url": "https://www.fondazionepetruzzelli.it/?post_type=eventi&p=32427",
+   "venueId": "teatro-petruzzelli",
+   "walkMin": 42
+  },
+  {
+   "address": "Conservatorio Niccolò Piccinni, Via Cifarelli 26, 70124 Bari",
+   "area": "Picone",
+   "artists": [
+    "Ilumina Ensemble"
+   ],
+   "category": "concert",
+   "checked": "2026-10-24",
+   "description": "Ilumina Ensemble in the 85th season of the Camerata Musicale Barese.",
+   "distanceKm": 1.8,
+   "id": "classica-in-chiave-brasiliana-2026-10-26",
+   "image": {
+    "file": "img/bari/classica-in-chiave-brasiliana-2026-10-26.webp",
+    "width": 800,
+    "height": 600,
+    "depicts": "interior",
+    "alt": "Inside Classica in chiave brasiliana",
+    "credit": {
+     "author": "Vob85 at Italian Wikipedia",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_Auditorium_Nino_Rota_Interno.jpg"
+    }
+   },
+   "kind": "classical",
+   "lat": 41.1152991,
+   "lon": 16.8570536,
+   "name": "Classica in chiave brasiliana",
+   "note": "Price for this concert not listed; the season's single tickets are 15-44 EUR. Box office at Via Sparano 141.",
+   "sources": [
+    "https://cameratamusicalebarese.it/"
+   ],
+   "startISO": "2026-10-26T20:30:00+01:00",
+   "url": "https://cameratamusicalebarese.it/",
+   "venueId": "auditorium-nino-rota",
+   "walkMin": 25
+  },
+  {
+   "address": "Corso Cavour 12, 70122 Bari",
+   "area": "Murat",
+   "artists": [
+    "Vincenzo Milletarì",
+    "Davide Livermore",
+    "Amartuvshin Enkhbat",
+    "Alessia Panza",
+    "Silvia Beltrami",
+    "Fabio Sartori"
+   ],
+   "category": "concert",
+   "checked": "2026-10-24",
+   "description": "Last performance of the run of Verdi's opera staged by Davide Livermore (Turno D).",
+   "distanceKm": 3.12,
+   "id": "il-trovatore-2026-10-27",
+   "image": {
+    "file": "img/bari/il-trovatore-2026-10-27.webp",
+    "width": 960,
+    "height": 639,
+    "depicts": "interior",
+    "alt": "Inside Il trovatore (Verdi)",
+    "credit": {
+     "author": "Vob85 at Italian Wikipedia",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_Teatro_Petruzzelli_2008_Interno.jpg"
+    }
+   },
+   "kind": "opera",
+   "lat": 41.1235648,
+   "lon": 16.8731612,
+   "name": "Il trovatore (Verdi)",
+   "sources": [
+    "https://www.fondazionepetruzzelli.it/?post_type=eventi&p=32427"
+   ],
+   "startISO": "2026-10-27T18:00:00+01:00",
+   "tickets": "https://www.vivaticket.com/it/ticket/il-trovatore/290953",
+   "url": "https://www.fondazionepetruzzelli.it/?post_type=eventi&p=32427",
+   "venueId": "teatro-petruzzelli",
+   "walkMin": 42
+  },
+  {
+   "address": "Via Crispi 5, 70123 Bari",
+   "area": "Libertà",
+   "artists": [
+    "Danalogue",
+    "System Exclusive"
+   ],
+   "category": "concert",
+   "checked": "2026-10-24",
+   "description": "Time Zones festival night with Danalogue's live set \"Teleportations\" (21:00) and System Exclusive (22:00).",
+   "distanceKm": 2.93,
+   "id": "time-zones-danalogue-system-exclusive-2026-10-30",
+   "image": {
+    "file": "img/bari/time-zones-danalogue-system-exclusive-2026-10-30.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "building",
+    "alt": "Time Zones 2026: Danalogue + System Exclusive",
+    "credit": {
+     "author": "Pellegrino Prevete",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Officina_degli_esordi_-_Esterno_ingresso.jpg"
+    }
+   },
+   "kind": "electronic",
+   "lat": 41.1252592,
+   "lon": 16.8601813,
+   "name": "Time Zones 2026: Danalogue + System Exclusive",
+   "sources": [
+    "https://www.timezones.it/programma-41-edizione/139"
+   ],
+   "startISO": "2026-10-30T21:00:00+01:00",
+   "tickets": "https://link.dice.fm/w98cb2a7b21c",
+   "url": "https://www.timezones.it/programma-41-edizione/139",
+   "venueId": "officina-degli-esordi",
+   "walkMin": 40
+  },
+  {
+   "address": "Corso Cavour 12, 70122 Bari",
+   "area": "Murat",
+   "artists": [
+    "John Axelrod",
+    "Sophia Liu",
+    "Anna Prohaska",
+    "Laura Verrecchia",
+    "Filip Filipović",
+    "Adolfo Corrado"
+   ],
+   "category": "concert",
+   "checked": "2026-10-24",
+   "description": "Orchestra and Chorus of the Teatro Petruzzelli under John Axelrod in Mozart, Liszt's Piano Concerto No. 1 and Rossini's Petite Messe solennelle.",
+   "distanceKm": 3.12,
+   "id": "concerto-sinfonico-axelrod-2026-10-31",
+   "image": {
+    "file": "img/bari/concerto-sinfonico-axelrod-2026-10-31.webp",
+    "width": 960,
+    "height": 639,
+    "depicts": "interior",
+    "alt": "Inside Concerto sinfonico (Axelrod)",
+    "credit": {
+     "author": "Vob85 at Italian Wikipedia",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_Teatro_Petruzzelli_2008_Interno.jpg"
+    }
+   },
+   "kind": "classical",
+   "lat": 41.1235648,
+   "lon": 16.8731612,
+   "name": "Concerto sinfonico (Axelrod)",
+   "note": "The ticket link's slug names another pianist; the theatre's page lists Sophia Liu.",
+   "sources": [
+    "https://www.fondazionepetruzzelli.it/?post_type=eventi&p=32436"
+   ],
+   "startISO": "2026-10-31T19:00:00+01:00",
+   "tickets": "https://www.vivaticket.com/it/ticket/concerto-axelrod-beatrice-rana/292500",
+   "url": "https://www.fondazionepetruzzelli.it/?post_type=eventi&p=32436",
+   "venueId": "teatro-petruzzelli",
+   "walkMin": 42
+  },
+  {
+   "address": "Conservatorio Niccolò Piccinni, Via Cifarelli 26, 70124 Bari",
+   "area": "Picone",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "The concert hall of the Niccolò Piccinni conservatory, opened in 1981 in the grounds of Villa Lindemann.",
+   "distanceKm": 1.8,
+   "id": "auditorium-nino-rota",
+   "image": {
+    "file": "img/bari/auditorium-nino-rota.webp",
+    "width": 800,
+    "height": 600,
+    "depicts": "building",
+    "alt": "Auditorium \"Nino Rota\"",
+    "credit": {
+     "author": "Vob85 at Italian Wikipedia",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_Auditorium_Nino_Rota_Esterno.jpg"
+    }
+   },
+   "kind": "concert-hall",
+   "lat": 41.1152991,
+   "lon": 16.8570536,
+   "name": "Auditorium \"Nino Rota\"",
+   "sources": [
+    "https://www.consba.it/",
+    "https://fondoambiente.it/luoghi/conservatorio-niccolo-piccinni-e-auditorium-nino-rota-di-bari",
+    "https://cameratamusicalebarese.it/"
+   ],
+   "url": "https://www.consba.it/",
+   "walkMin": 25
+  },
+  {
+   "address": "Strada San Giorgio Martire 22/F, Bari",
+   "area": "Stanic",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "A contemporary theatre run by Teatri di Bari in a former industrial shed, which also hosts concerts.",
+   "distanceKm": 1.8,
+   "hours": "Box office: Tue-Fri 10:30-12:30 and 16:30-19:00, and two hours before shows.",
+   "id": "teatro-kismet",
+   "kind": "theatre",
+   "lat": 41.1095821,
+   "lon": 16.8384357,
+   "name": "Teatro Kismet",
+   "note": "No dates published for 24-31 October when checked.",
+   "sources": [
+    "https://www.teatridibari.it/build/stagione-2026-27-teatro-kismet/stagione-radar-teatri-di-bari/botteghino/"
+   ],
+   "url": "https://www.teatridibari.it/",
+   "walkMin": 24
+  },
+  {
+   "address": "Viale Antonio Salandra 8/A, 70124 Bari",
+   "area": "Picone",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "A small brewery and art room pouring craft beer, with live indie, experimental and acoustic music and exhibitions.",
+   "distanceKm": 2.03,
+   "id": "noise-bari",
+   "kind": "bar",
+   "lat": 41.1158465,
+   "lon": 16.8646588,
+   "name": "Noise",
+   "sources": [
+    "https://noise.eatbu.com/"
+   ],
+   "url": "https://noise.eatbu.com/",
+   "walkMin": 28
+  },
+  {
+   "address": "Via Crispi 5, 70123 Bari",
+   "area": "Libertà",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "A city-run creative hub in Libertà with a concert room used by festivals and club tours.",
+   "distanceKm": 2.93,
+   "hours": "Office: Mon-Fri 09:00-18:00.",
+   "id": "officina-degli-esordi",
+   "image": {
+    "file": "img/bari/officina-degli-esordi.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "building",
+    "alt": "Officina degli Esordi",
+    "credit": {
+     "author": "Pellegrino Prevete",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Officina_degli_esordi_-_Esterno_ingresso.jpg"
+    }
+   },
+   "kind": "arts-space",
+   "lat": 41.1252592,
+   "lon": 16.8601813,
+   "name": "Officina degli Esordi",
+   "sources": [
+    "https://www.officinadegliesordi.it/",
+    "https://www.officinadegliesordi.it/eventi/"
+   ],
+   "url": "https://www.officinadegliesordi.it/",
+   "walkMin": 40
+  },
+  {
+   "address": "Via Cardassi 93, Bari",
+   "area": "Murat",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "An independent bookshop and café-bar that hosts book launches, small concerts, theatre and debates.",
+   "distanceKm": 3.06,
+   "id": "prinz-zaum",
+   "instagram": "https://www.instagram.com/libreria.zaum",
+   "kind": "bar",
+   "lat": 41.1216486,
+   "lon": 16.8758862,
+   "name": "Prinz Zaum",
+   "sources": [
+    "https://www.libreriazaum.it/"
+   ],
+   "url": "https://www.libreriazaum.it/",
+   "walkMin": 41
+  },
+  {
+   "address": "Corso Cavour 12, 70122 Bari",
+   "area": "Murat",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "Bari's opera house on Corso Cavour, home to the city's opera, ballet and symphonic seasons and also open for short guided tours.",
+   "distanceKm": 3.12,
+   "hours": "Box office: Mon 10:00-14:00, Tue-Sat 11:00-19:00, Sun 10:00-13:00; opens 90 min before each show.",
+   "id": "teatro-petruzzelli",
+   "image": {
+    "file": "img/bari/teatro-petruzzelli.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "building",
+    "alt": "Teatro Petruzzelli",
+    "credit": {
+     "author": "Enric",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:009_Teatro_Petruzzelli,_Corso_Cavour_12_(Bari).jpg"
+    }
+   },
+   "kind": "theatre",
+   "lat": 41.1235648,
+   "lon": 16.8731612,
+   "name": "Teatro Petruzzelli",
+   "note": "Guided tours listed for Sun 25 Oct 15:30 and Tue 27 Oct 13:00 and 15:30 (the page also shows a second October calendar adding Mon 26 Oct); tickets on sale 30 min before, schedule may change.",
+   "price": "Guided tour (about 30 min): 7 EUR, reduced 2 EUR.",
+   "sources": [
+    "https://www.italia.it/en/puglia/bari/petruzzelli-theatre",
+    "https://www.fondazionepetruzzelli.it/botteghino/",
+    "https://www.fondazionepetruzzelli.it/visiteguidate/"
+   ],
+   "url": "https://www.fondazionepetruzzelli.it/",
+   "walkMin": 42
+  },
+  {
+   "address": "Piazza del Ferrarese, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "A rebuilt nineteenth-century market hall on Piazza del Ferrarese hosting contemporary art and design shows, talks and festival concerts.",
+   "distanceKm": 3.35,
+   "id": "spazio-murat",
+   "image": {
+    "file": "img/bari/spazio-murat.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "building",
+    "alt": "Spazio Murat",
+    "credit": {
+     "author": "Enric",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:047_Spazio_Murat,_Piazza_del_Ferrarese_(Bari).jpg"
+    }
+   },
+   "kind": "arts-space",
+   "lat": 41.1264808,
+   "lon": 16.8717024,
+   "name": "Spazio Murat",
+   "sources": [
+    "https://www.spaziomurat.it/",
+    "https://luoghidelcontemporaneo.cultura.gov.it/en/esplora/spazio-murat_en/"
+   ],
+   "url": "https://www.spaziomurat.it/",
+   "walkMin": 45
+  },
+  {
+   "address": "Via Giustina Rocca, 70126 Bari (box office Via Argiro 73)",
+   "area": "Municipio 1",
+   "category": "venue",
+   "checked": "2026-10-24",
+   "description": "A large commercial theatre for musicals, comedy and touring concerts, with its box office in Murat.",
+   "distanceKm": 4.06,
+   "hours": "Box office: Mon-Sat 10:00-13:00 and 16:30-19:30.",
+   "id": "teatroteam",
+   "kind": "theatre",
+   "lat": 41.098799,
+   "lon": 16.9032389,
+   "name": "Teatroteam",
+   "note": "Nothing programmed for 24-31 October when checked; next show 1 November.",
+   "sources": [
+    "https://www.teatroteam.it/"
+   ],
+   "url": "https://www.teatroteam.it/",
+   "walkMin": 55
+  },
+  {
+   "address": "Via Pasubio 86, Bari",
+   "area": "Carrassi",
+   "category": "comics",
+   "checked": "2026-10-24",
+   "description": "A manga and anime shop, opened in 2024, selling books and games imported from Japan.",
+   "distanceKm": 1.78,
+   "id": "star-shop-carrassi",
+   "instagram": "https://www.instagram.com/starshopbaricarrassi/",
+   "kind": "manga-shop",
+   "lat": 41.109937,
+   "lon": 16.8705706,
+   "name": "Star Shop Bari Carrassi",
+   "sources": [
+    "https://www.telebari.it/storie/161254-bari-in-via-pasubio-apre-fumetteria-manga-libri-e-giochi-direttamente-dal-giappone-video.html",
+    "https://www.venderefumettiusati.it/fumetterie/puglia/fumetti-usati-bari/"
+   ],
+   "walkMin": 24
+  },
+  {
+   "address": "Via Toti 15D, 70125 Bari",
+   "area": "Municipio 2",
+   "category": "comics",
+   "checked": "2026-10-24",
+   "description": "A comic shop open since 1997 selling new and back-issue comics, gadgets and board games.",
+   "distanceKm": 2.18,
+   "id": "neverland-via-toti",
+   "image": {
+    "file": "img/bari/neverland-via-toti.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Neverland (Via Toti)",
+    "credit": {
+     "author": "Anny0408",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Negozio_di_fumetti_%22Neverland%22_-_Bari.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/neverland.bari/",
+   "kind": "comic-shop",
+   "lat": 41.1132206,
+   "lon": 16.8729079,
+   "name": "Neverland (Via Toti)",
+   "sources": [
+    "https://www.neverland.it/aboutus",
+    "https://www.neverland.it/"
+   ],
+   "url": "https://www.neverland.it/",
+   "walkMin": 30
+  },
+  {
+   "address": "Via Giuseppe Re David 177/14, 70126 Bari",
+   "area": "San Pasquale",
+   "category": "comics",
+   "checked": "2026-10-24",
+   "description": "A comic shop with pre-orders and in-store events.",
+   "distanceKm": 2.36,
+   "id": "kurama-shop",
+   "instagram": "https://www.instagram.com/kuramashop.bari/",
+   "kind": "comic-shop",
+   "lat": 41.113077,
+   "lon": 16.876131,
+   "name": "Kurama Shop",
+   "note": "The site says open every day, Sunday 17:00-20:30; weekday hours are not given.",
+   "sources": [
+    "https://kuramashop.it/"
+   ],
+   "url": "https://kuramashop.it/",
+   "walkMin": 32
+  },
+  {
+   "address": "Corso Italia 1C, 70123 Bari",
+   "area": "Murat",
+   "category": "comics",
+   "checked": "2026-10-24",
+   "description": "Neverland's second shop, opposite the central station at the Bari Nord exit, with the same new and back-issue comics.",
+   "distanceKm": 2.48,
+   "id": "neverland-corso-italia",
+   "instagram": "https://www.instagram.com/neverland.bari/",
+   "kind": "comic-shop",
+   "lat": 41.1187481,
+   "lon": 16.8689777,
+   "name": "Neverland (Corso Italia)",
+   "sources": [
+    "https://www.neverland.it/aboutus",
+    "https://www.neverland.it/"
+   ],
+   "url": "https://www.neverland.it/",
+   "walkMin": 34
+  },
+  {
+   "address": "Via Luigi Zuppetta 9/A, 70121 Bari",
+   "area": "Murat",
+   "category": "comics",
+   "checked": "2026-10-24",
+   "description": "A shop for comics, manga, trading cards, video games, figures and board games.",
+   "distanceKm": 2.65,
+   "hours": "Mon-Sat 09:00-13:00 and 17:00-20:30; closed Sunday.",
+   "id": "umi-games",
+   "instagram": "https://www.instagram.com/umi.games/",
+   "kind": "games-shop",
+   "lat": 41.1183675,
+   "lon": 16.8735153,
+   "name": "UMI Games",
+   "sources": [
+    "https://www.umigames.it/"
+   ],
+   "url": "https://www.umigames.it/",
+   "walkMin": 36
+  },
+  {
+   "address": "Murat, Bari",
+   "area": "Murat",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The nineteenth-century grid-plan town south of Bari Vecchia, with Corso Vittorio Emanuele II, Piazza Umberto I and the shopping street Via Sparano.",
+   "distanceKm": 2.93,
+   "id": "murat",
+   "image": {
+    "file": "img/bari/murat.webp",
+    "width": 960,
+    "height": 640,
+    "depicts": "building",
+    "alt": "Murat district",
+    "credit": {
+     "author": "Andreasciacqua00",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Mincuzzi_(da_via_Sparano).jpg"
+    }
+   },
+   "iswcTip": "The organisers recommend the lively shopping area around Via Sparano, the most characteristic street in the centre.",
+   "kind": "district",
+   "lat": 41.1234669,
+   "lon": 16.8682703,
+   "name": "Murat district",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://it.wikipedia.org/wiki/Murat_(Bari)",
+    "https://en.wikipedia.org/wiki/Bari"
+   ],
+   "walkMin": 40
+  },
+  {
+   "address": "Palazzo della Provincia, 4th floor; Lungomare Nazario Sauro 27 or Via Spalato 19, 70121 Bari",
+   "area": "Madonnella",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The city's main art gallery, from medieval and Venetian painting to Giaquinto, the Neapolitan nineteenth century and the Macchiaioli.",
+   "distanceKm": 3.32,
+   "hours": "Tue-Sat 09:00-19:00, Sun 09:00-13:00; free on the first Sunday of the month.",
+   "id": "pinacoteca-giaquinto",
+   "image": {
+    "file": "img/bari/pinacoteca-giaquinto.webp",
+    "width": 960,
+    "height": 847,
+    "depicts": "place",
+    "alt": "Pinacoteca Metropolitana \"Corrado Giaquinto\"",
+    "credit": {
+     "author": "Sailko",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari,_palazzo_della_provincia,_di_luigi_baffa,_1935,_01.jpg"
+    }
+   },
+   "kind": "museum",
+   "lat": 41.1213932,
+   "lon": 16.8812304,
+   "name": "Pinacoteca Metropolitana \"Corrado Giaquinto\"",
+   "price": "8 EUR combined with Santa Scolastica, valid 2 days.",
+   "sources": [
+    "https://www.pinacotecabari.it",
+    "https://www.museoarcheologicosantascolastica.it"
+   ],
+   "url": "https://www.pinacotecabari.it",
+   "walkMin": 45
+  },
+  {
+   "address": "Piazza Federico II di Svevia 4, Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "A Norman-Swabian fortress at the edge of the old town, now a state museum.",
+   "distanceKm": 3.38,
+   "id": "castello-normanno-svevo",
+   "image": {
+    "file": "img/bari/castello-normanno-svevo.webp",
+    "width": 960,
+    "height": 640,
+    "depicts": "place",
+    "alt": "Castello Normanno-Svevo",
+    "credit": {
+     "author": "Genesis5663",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Senza_titolo_(44_di_401).jpg"
+    }
+   },
+   "iswcTip": "The organisers call the Norman-Swabian castle one of the symbols of Puglia; right in front of its entrance starts Arco Basso, which they call the city's most authentic alley.",
+   "kind": "castle",
+   "lat": 41.1283014,
+   "lon": 16.8663805,
+   "name": "Castello Normanno-Svevo",
+   "note": "Hours and tickets are on the museum's ticketing link from the official page.",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://museipuglia.cultura.gov.it/musei/castello-svevo-di-bari/",
+    "https://en.wikipedia.org/wiki/Castello_Normanno-Svevo_(Bari)"
+   ],
+   "url": "https://museipuglia.cultura.gov.it/musei/castello-svevo-di-bari/",
+   "walkMin": 46
+  },
+  {
+   "address": "Piazza IV Novembre, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "A former theatre built on piles over the sea at the old port, now a contemporary art centre.",
+   "distanceKm": 3.38,
+   "id": "teatro-margherita",
+   "image": {
+    "file": "img/bari/teatro-margherita.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Teatro Margherita",
+    "credit": {
+     "author": "Giovanni L 90",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_-_Teatro_Margherita_-_202209192213.jpg"
+    }
+   },
+   "kind": "arts-space",
+   "lat": 41.1263619,
+   "lon": 16.872861,
+   "name": "Teatro Margherita",
+   "sources": [
+    "https://www.comune.bari.it/-/luoghi/teatro-margherita",
+    "https://en.wikipedia.org/wiki/Teatro_Margherita"
+   ],
+   "walkMin": 46
+  },
+  {
+   "address": "Piazza del Ferrarese, Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The south-eastern gateway to Bari Vecchia, next to Piazza Mercantile and the seafront.",
+   "distanceKm": 3.4,
+   "id": "piazza-del-ferrarese",
+   "image": {
+    "file": "img/bari/piazza-del-ferrarese.webp",
+    "width": 960,
+    "height": 638,
+    "depicts": "place",
+    "alt": "Piazza del Ferrarese",
+    "credit": {
+     "author": "Michael Paraskevas",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_-_panoramio.jpg"
+    }
+   },
+   "kind": "square",
+   "lat": 41.1269334,
+   "lon": 16.8717513,
+   "name": "Piazza del Ferrarese",
+   "sources": [
+    "https://it.wikipedia.org/wiki/Bari_Vecchia"
+   ],
+   "walkMin": 46
+  },
+  {
+   "address": "Lungomare Nazario Sauro, Bari",
+   "area": "Madonnella",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The monumental seafront promenade of the 1920s and 1930s, running from Piazza Diaz past the Pinacoteca.",
+   "distanceKm": 3.43,
+   "id": "lungomare-nazario-sauro",
+   "image": {
+    "file": "img/bari/lungomare-nazario-sauro.webp",
+    "width": 960,
+    "height": 910,
+    "depicts": "place",
+    "alt": "Lungomare Nazario Sauro",
+    "credit": {
+     "author": "Xhensi",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Una_giornata_barese_inizia_con_lo_sfondo_del_mare.jpg"
+    }
+   },
+   "iswcTip": "The organisers call it evocative and among the most beautiful seafronts in Italy, with late Liberty-style buildings, green parks and views of the Adriatic.",
+   "kind": "waterfront",
+   "lat": 41.1209717,
+   "lon": 16.8837471,
+   "name": "Lungomare Nazario Sauro",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://fondoambiente.it/luoghi/lungomare-nazario-sauro-bari"
+   ],
+   "walkMin": 46
+  },
+  {
+   "address": "Piazza dell'Odegitria, Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "Bari's Apulian Romanesque cathedral, seat of the Archdiocese of Bari-Bitonto.",
+   "distanceKm": 3.48,
+   "id": "cattedrale-san-sabino",
+   "image": {
+    "file": "img/bari/cattedrale-san-sabino.webp",
+    "width": 960,
+    "height": 731,
+    "depicts": "place",
+    "alt": "Cattedrale di San Sabino",
+    "credit": {
+     "author": "Berthold Werner",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_BW_2016-10-19_13-57-32.jpg"
+    }
+   },
+   "iswcTip": "The cathedral is among the places the organisers suggest visiting in Bari.",
+   "kind": "church",
+   "lat": 41.12855,
+   "lon": 16.8690772,
+   "name": "Cattedrale di San Sabino",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://gcatholic.org/churches/italy/0758",
+    "https://en.wikipedia.org/wiki/Bari_Cathedral"
+   ],
+   "walkMin": 47
+  },
+  {
+   "address": "Piazza Mercantile, Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The old town's big historic square, once the heart of city life, with the Colonna Infame pillory column.",
+   "distanceKm": 3.48,
+   "id": "piazza-mercantile",
+   "image": {
+    "file": "img/bari/piazza-mercantile.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Piazza Mercantile",
+    "credit": {
+     "author": "Enric",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:065_Piazza_Mercantile_(Bari),_amb_el_Palazzo_del_Sedile_dei_Nobili.jpg"
+    }
+   },
+   "kind": "square",
+   "lat": 41.1277692,
+   "lon": 16.8716338,
+   "name": "Piazza Mercantile",
+   "sources": [
+    "https://it.wikipedia.org/wiki/Bari_Vecchia"
+   ],
+   "walkMin": 47
+  },
+  {
+   "address": "Via Venezia, Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The old town's sea wall, now a walk with wide views over the Adriatic towards Santa Scolastica.",
+   "distanceKm": 3.59,
+   "id": "muraglia",
+   "image": {
+    "file": "img/bari/muraglia.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Muraglia",
+    "credit": {
+     "author": "Diana Cimino Cocco",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:La_Muraglia_di_Bari.jpg"
+    }
+   },
+   "kind": "waterfront",
+   "lat": 41.1284275,
+   "lon": 16.872859,
+   "name": "Muraglia",
+   "sources": [
+    "https://it.wikipedia.org/wiki/Bari_Vecchia"
+   ],
+   "walkMin": 48
+  },
+  {
+   "address": "Largo Abate Elia 13, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "The Romanesque pilgrimage basilica of Bari Vecchia that keeps the relics of St Nicholas in its crypt.",
+   "distanceKm": 3.69,
+   "hours": "Mon-Sat 06:30-20:30, Sun 06:30-22:00.",
+   "id": "basilica-san-nicola",
+   "image": {
+    "file": "img/bari/basilica-san-nicola.webp",
+    "width": 960,
+    "height": 815,
+    "depicts": "place",
+    "alt": "Basilica di San Nicola",
+    "credit": {
+     "author": "Berthold Werner",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_BW_2016-10-19_13-35-11_stitch.jpg"
+    }
+   },
+   "iswcTip": "One of the organisers' suggested visits in old Bari; they note that the relics of the city's patron saint, Saint Nicholas of Myra, are kept in the crypt.",
+   "kind": "church",
+   "lat": 41.1302708,
+   "lon": 16.8701858,
+   "name": "Basilica di San Nicola",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.basilicasannicola.it/sez/9/232/orari",
+    "https://www.basilicasannicola.it/sez/7/museo-nicolaiano"
+   ],
+   "url": "https://www.basilicasannicola.it",
+   "walkMin": 50
+  },
+  {
+   "address": "Lungomare A. Perotti, Bari",
+   "area": "Japigia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "Bari's sandy public city beach along Lungomare Perotti, south-east of the centre.",
+   "distanceKm": 3.77,
+   "id": "pane-e-pomodoro",
+   "image": {
+    "file": "img/bari/pane-e-pomodoro.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Pane e Pomodoro beach",
+    "credit": {
+     "author": "Clamend",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Spiaggia_Pane_e_Pomodoro_Bari.jpg"
+    }
+   },
+   "kind": "beach",
+   "lat": 41.118344,
+   "lon": 16.891917,
+   "name": "Pane e Pomodoro beach",
+   "note": "Swimming is often banned after heavy rain.",
+   "sources": [
+    "https://iltaccodibacco.it/bari/pane-e-pomodoro/"
+   ],
+   "walkMin": 51
+  },
+  {
+   "address": "Via Venezia 73, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "sight",
+   "checked": "2026-10-24",
+   "description": "An archaeology museum from prehistory to the Middle Ages in a former Benedictine convent and bastion at the tip of the old town.",
+   "distanceKm": 3.91,
+   "hours": "Tue-Sat 09:00-19:00 (last entry 18:30); Sun and holidays 09:00-13:00 (last entry 12:30); closed Monday.",
+   "id": "museo-santa-scolastica",
+   "image": {
+    "file": "img/bari/museo-santa-scolastica.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Museo Archeologico di Santa Scolastica",
+    "credit": {
+     "author": "Marcok",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari_-_Museo_archeologico_di_Santa_Scolastica_-_Marcok_2024-09-24_001.jpg"
+    }
+   },
+   "kind": "museum",
+   "lat": 41.132152,
+   "lon": 16.8709598,
+   "name": "Museo Archeologico di Santa Scolastica",
+   "price": "5 EUR, reduced 2 EUR (18-25); 8 EUR with the Pinacoteca, valid 2 days; free under 18 and on the first Sunday of the month.",
+   "sources": [
+    "https://www.museoarcheologicosantascolastica.it"
+   ],
+   "url": "https://www.museoarcheologicosantascolastica.it",
+   "walkMin": 53
+  },
+  {
+   "address": "Via della Resistenza 162/164, 70125 Bari",
+   "area": "Carrassi",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "The Giannini brothers' gelateria, known for rich creams such as praline pistachio and mascarpone with pear, plus fruit sorbets and vegan, sugar-free and gluten-free options.",
+   "distanceKm": 1.8,
+   "group": "gelato",
+   "id": "il-gelatiere",
+   "image": {
+    "file": "img/bari/il-gelatiere.webp",
+    "width": 960,
+    "height": 723,
+    "depicts": "dish",
+    "alt": "A dish Il Gelatiere is known for",
+    "credit": {
+     "author": "Basilicofresco",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Gelato_artigianale_italiano,_Bertinelli.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/ilgelatiere.bari/",
+   "kind": "gelateria",
+   "lat": 41.1023898,
+   "lon": 16.8759391,
+   "name": "Il Gelatiere",
+   "note": "The pin is the middle of the street (OSM has no point for no. 162). The shop's page writes Viale della Resistenza, 70124; OSM and ConGelato say Via, 70125. A second shop is at Viale Antonio Salandra 25.",
+   "sources": [
+    "https://ilgelatiereviadellaresistenza.eatbu.com/?lang=it",
+    "https://www.con-gelato.it/gelateria/il-gelatiere-3/",
+    "https://www.con-gelato.it/notizie-congelate/gelato-gelaterie-bari-dove-mangiare/",
+    "https://www.baritoday.it/cibo/dove-mangiare/le-migliori-gelaterie-di-bari.html",
+    "https://www.cibotoday.it/location/il-gelatiere-bari.html"
+   ],
+   "url": "https://ilgelatiereviadellaresistenza.eatbu.com/",
+   "walkMin": 25
+  },
+  {
+   "address": "Via Giuseppe Fanelli 221/C, Bari",
+   "area": "Carrassi",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A family-run café-bar on Via Fanelli, open since 1969, best known for its gelato topped with hand-whipped cream, with pastries and coffee too.",
+   "distanceKm": 2.09,
+   "group": "gelato",
+   "hours": "Mon-Tue and Thu-Sun 07:00-22:00; closed Wednesday.",
+   "id": "bar-telebari",
+   "instagram": "https://www.instagram.com/bar_telebari/",
+   "kind": "bar",
+   "lat": 41.1043526,
+   "lon": 16.8787953,
+   "name": "Bar Telebari",
+   "note": "A café-bar rather than a gelateria, though its gelato is what it's known for. BariToday reported it reopening in early 2023 after closing over energy bills; the site lists the Via Calefati branch as temporarily closed.",
+   "sources": [
+    "https://bartelebari.it/",
+    "https://bartelebari.it/la-storia/",
+    "https://bartelebari.it/contatti/",
+    "https://www.baritoday.it/cibo/dove-mangiare/le-migliori-gelaterie-di-bari.html",
+    "https://www.con-gelato.it/notizie-congelate/gelato-gelaterie-bari-dove-mangiare/"
+   ],
+   "url": "https://bartelebari.it/",
+   "walkMin": 28
+  },
+  {
+   "address": "Via Niccolò Piccinni 131, 70122 Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "An artisan gelateria in Murat, open since 2012, working with seasonal fruit and little sugar and fat, with semifreddi and gelato cakes as well as cones.",
+   "distanceKm": 3.04,
+   "group": "gelato",
+   "hours": "Mon-Thu 11:00-22:00, Fri-Sat 11:00-23:00, Sun 10:00-22:00.",
+   "id": "gelateria-piccinni",
+   "image": {
+    "file": "img/bari/gelateria-piccinni.webp",
+    "width": 960,
+    "height": 884,
+    "depicts": "dish",
+    "alt": "A dish Gelateria Piccinni is known for",
+    "credit": {
+     "author": "Alessio Damato",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Italian_ice_cream.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/gelateriapiccinnibari/",
+   "kind": "gelateria",
+   "lat": 41.1252156,
+   "lon": 16.8659603,
+   "name": "Gelateria Piccinni",
+   "note": "Hours from the shop's site, which doesn't say whether they change outside summer.",
+   "sources": [
+    "https://www.gelateriapiccinni.it/",
+    "https://www.baritoday.it/cibo/dove-mangiare/le-migliori-gelaterie-di-bari.html",
+    "https://www.con-gelato.it/notizie-congelate/gelato-gelaterie-bari-dove-mangiare/"
+   ],
+   "url": "https://www.gelateriapiccinni.it/",
+   "walkMin": 41
+  },
+  {
+   "address": "Corso Vittorio Emanuele II 140, 70122 Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A seafood restaurant on Corso Vittorio Emanuele II serving local fish and Apulian land-and-sea dishes, with outdoor tables in the warmer months.",
+   "distanceKm": 3.05,
+   "group": "fancy",
+   "hours": "Tue-Sat 12:30-15:00 and 19:45-23:00; Sun 12:30-15:00; closed Monday.",
+   "id": "la-muraya",
+   "image": {
+    "file": "img/bari/la-muraya.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "street",
+    "alt": "The street of La Muraya",
+    "credit": {
+     "author": "August Dominus",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Apulija,_Italija_2017.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/lamurayaristorante/",
+   "kind": "restaurant",
+   "lat": 41.1256007,
+   "lon": 16.8644901,
+   "name": "La Muraya",
+   "note": "The official site gives Monday as the closing day; PagineGialle says Tuesday.",
+   "sources": [
+    "https://lamurayaristorante.com/",
+    "https://lamurayaristorante.com/menu/",
+    "https://www.tripadvisor.com/Restaurant_Review-g187874-d1014272-Reviews-La_Muraya_Ristorante-Bari_Province_of_Bari_Puglia.html",
+    "https://www.paginegialle.it/bari-ba/ristoranti/garden-paltera-michele_4"
+   ],
+   "url": "https://lamurayaristorante.com/",
+   "walkMin": 41
+  },
+  {
+   "address": "Via Pasquale Villari 52, 70122 Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "Chef Antonio Scalera's restaurant, open since 2009 on a quiet street in the centre, with modern cooking built on Apulian produce and recipes; listed in the Michelin Guide.",
+   "distanceKm": 3.14,
+   "group": "fancy",
+   "hours": "Tue-Sat 19:30-22:00; Sun 12:30-14:00.",
+   "id": "la-bul",
+   "kind": "restaurant",
+   "lat": 41.1264876,
+   "lon": 16.8645449,
+   "name": "La Bul",
+   "note": "The Michelin Guide lists other hours (Mon-Sat 19:30-21:30, closed Sunday); the hours above are the restaurant's own. The map point is the street, not the building.",
+   "sources": [
+    "https://ristorantelabul.com/",
+    "https://guide.michelin.com/it/it/puglia/bari/ristorante/la-bul"
+   ],
+   "url": "https://ristorantelabul.com/",
+   "walkMin": 42
+  },
+  {
+   "address": "Corso Cavour 55, Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A gelateria on Corso Cavour going since 1936, also serving granita, filled brioche and coffee, with plenty of fruit and vegan flavours.",
+   "distanceKm": 3.15,
+   "group": "gelato",
+   "id": "gelateria-gasperini",
+   "image": {
+    "file": "img/bari/gelateria-gasperini.webp",
+    "width": 960,
+    "height": 584,
+    "depicts": "street",
+    "alt": "The street of Gelateria Gasperini dal 1936",
+    "credit": {
+     "author": "Sailko",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari,_corso_cavour,_01.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/gasperini_dal_1936/",
+   "kind": "gelateria",
+   "lat": 41.1243631,
+   "lon": 16.8719788,
+   "name": "Gelateria Gasperini dal 1936",
+   "note": "No official website found; the 1936 date comes from the shop's name and press listings.",
+   "sources": [
+    "https://www.baritoday.it/cibo/dove-mangiare/le-migliori-gelaterie-di-bari.html",
+    "https://www.baritoday.it/social/10-migliori-gelaterie-bari.html",
+    "https://www.con-gelato.it/notizie-congelate/gelato-gelaterie-bari-dove-mangiare/"
+   ],
+   "walkMin": 42
+  },
+  {
+   "address": "Via Salvatore Cognetti 53, 70121 Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A small restaurant near Teatro Petruzzelli and the seafront serving Barese and Mediterranean dishes, seafood and spaghetti all'assassina among them.",
+   "distanceKm": 3.18,
+   "group": "value",
+   "hours": "Tue-Sun 13:00-15:30 and 20:00-00:00; closed Monday.",
+   "id": "le-2-aquile",
+   "image": {
+    "file": "img/bari/le-2-aquile.webp",
+    "width": 960,
+    "height": 540,
+    "depicts": "street",
+    "alt": "The street of Le 2 Aquile",
+    "credit": {
+     "author": "Misanthropic One from Eindhoven, Netherlands",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Long-disused_trolleybus_wires_in_Bari_in_2015_-_on_Via_Cognetti_next_to_Teatro_Petruzzelli.jpg"
+    }
+   },
+   "kind": "restaurant",
+   "lat": 41.1232409,
+   "lon": 16.8753862,
+   "name": "Le 2 Aquile",
+   "note": "No guide or press review found; its own page and the listing sites agree on the address.",
+   "sources": [
+    "https://le2aquile.eatbu.com/?lang=it",
+    "https://wanderlog.com/place/details/2052406",
+    "https://www.tripadvisor.com/Restaurant_Review-g187874-d3738368-Reviews-Le_2_Aquile-Bari_Province_of_Bari_Puglia.html",
+    "https://www.mycia.it/menu/bari/le-2-aquile-YAzlYEu2T"
+   ],
+   "url": "https://le2aquile.eatbu.com/",
+   "walkMin": 43
+  },
+  {
+   "address": "Via Vito Nicola De Nicolò 40, 70121 Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A Murat restaurant going for more than fifty years, serving Apulian dishes and fresh fish, and credited as the birthplace of spaghetti all'assassina.",
+   "distanceKm": 3.2,
+   "group": "classic",
+   "hours": "Tue-Sat 12:00-15:00 and 19:45-23:45; Sun 12:00-15:00; closed Monday.",
+   "id": "al-sorso-preferito",
+   "image": {
+    "file": "img/bari/al-sorso-preferito.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "dish",
+    "alt": "A dish Al Sorso Preferito is known for",
+    "credit": {
+     "author": "ScotInPuglia",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_all%E2%80%99assassina,_Bari.jpg"
+    }
+   },
+   "kind": "restaurant",
+   "lat": 41.1235574,
+   "lon": 16.8750988,
+   "name": "Al Sorso Preferito",
+   "note": "Sometimes written \"Il Sorso Preferito\". Accounts of how the dish was invented differ.",
+   "sources": [
+    "https://www.alsorsopreferito.it/",
+    "https://en.wikipedia.org/wiki/Spaghetti_all%27assassina",
+    "https://www.arrivalguides.com/en/Travelguide/BARI/dining/al-sorso-preferito-1940",
+    "https://www.elizabethminchilli.com/2022/02/where-to-eat-in-bari-2"
+   ],
+   "url": "https://www.alsorsopreferito.it/",
+   "walkMin": 43
+  },
+  {
+   "address": "Piazza Giuseppe Massari 15, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A bistro opened in 2020 with an open kitchen and outdoor tables, starting from Apulian cured meats, cheeses and tarallini and going on to pasta, fish and meat.",
+   "distanceKm": 3.22,
+   "group": "value",
+   "id": "tuccio-cucina-e-caffe",
+   "image": {
+    "file": "img/bari/tuccio-cucina-e-caffe.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "street",
+    "alt": "The street of Tuccio Cucina e Caffè",
+    "credit": {
+     "author": "Enric",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:395_Piazza_Giuseppe_Massari_(Bari),_monument_a_Niccol%C3%B2_Piccinni,_al_fons_el_Palazzo_del_Governo.jpg"
+    }
+   },
+   "kind": "bistro",
+   "lat": 41.1267538,
+   "lon": 16.8664543,
+   "name": "Tuccio Cucina e Caffè",
+   "note": "italia.it gives no. 15, Gambero Rosso no. 13; neither is mapped, so the pin is on the square's odd-numbered side.",
+   "sources": [
+    "https://www.tuccio.biz/",
+    "https://www.italia.it/en/puglia/bari/where-to-eat/tuccio",
+    "https://www.gamberorossointernational.com/news/where-to-eat-in-bari-vecchia-the-best-restaurants/"
+   ],
+   "url": "https://www.tuccio.biz/",
+   "walkMin": 43
+  },
+  {
+   "address": "Via Giuseppe Bozzi 73, 70121 Bari",
+   "area": "Murat",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A small restaurant and art space opened in 2019 by gallerist Michele Spinelli and chef Nicola Ricci, pairing Apulian ingredients with Japanese technique among artworks on show.",
+   "distanceKm": 3.24,
+   "group": "fancy",
+   "hours": "Tue-Fri 19:30-23:30; Sat 12:30-15:00 and 19:30-23:30; Sun 12:30-15:00; closed Monday.",
+   "id": "vettor",
+   "instagram": "https://www.instagram.com/vettor_ristorante/",
+   "kind": "restaurant",
+   "lat": 41.1242751,
+   "lon": 16.8744219,
+   "name": "Vettor",
+   "note": "The FAQ on the home page gives slightly different hours from the contact page, used above.",
+   "price": "Tasting menus 75 EUR (A mano libera, four seafood courses and a dessert) and 70 EUR (In viaggio).",
+   "sources": [
+    "https://ristorantevettor.it/",
+    "https://ristorantevettor.it/contact/",
+    "https://ristorantevettor.it/menu/",
+    "https://www.artribune.com/arti-visive/arte-contemporanea/2019/09/a-bari-nasce-un-ristorante-galleria-in-nome-di-vettor-pisani/",
+    "https://www.cibotoday.it/location/vettor-bari.html"
+   ],
+   "url": "https://ristorantevettor.it/",
+   "walkMin": 44
+  },
+  {
+   "address": "Strada Arco Basso, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A Bari Vecchia alley where local women make and sell fresh orecchiette at their doors, best seen in the morning.",
+   "distanceKm": 3.27,
+   "group": "value",
+   "id": "strada-arco-basso",
+   "image": {
+    "file": "img/bari/strada-arco-basso.webp",
+    "width": 960,
+    "height": 960,
+    "depicts": "place",
+    "alt": "Strada Arco Basso (orecchiette street)",
+    "credit": {
+     "author": "Laurens R. Krol",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2019-10-10_Italy,_Bari_DSC_9022_DxO_AF.jpg"
+    }
+   },
+   "iswcTip": "The organisers' favourite alley: after the Arco Basso arch, Via delle Orecchiette, with washing hung out, tables of fresh pasta and ladies making it as they chat.",
+   "kind": "street-food",
+   "lat": 41.127083,
+   "lon": 16.867234,
+   "name": "Strada Arco Basso (orecchiette street)",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.islands.com/1701610/bari-italy-orecchiette-street-famous-fresh-homemade-pasta-port-city-puglia",
+    "https://fathomaway.com/food-stories-bari-vecchia-italy/"
+   ],
+   "walkMin": 44
+  },
+  {
+   "address": "Largo Ignazio Chiurlia 12, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A small, plain, centuries-old osteria nicknamed \"Il Buco\", known for handmade orecchiette (with turnip tops or horse-meat braciola) and tiella of rice, potatoes and mussels.",
+   "distanceKm": 3.28,
+   "group": "classic",
+   "id": "osteria-delle-travi",
+   "image": {
+    "file": "img/bari/osteria-delle-travi.webp",
+    "width": 720,
+    "height": 960,
+    "depicts": "street",
+    "alt": "The street of Osteria delle Travi (Il Buco)",
+    "credit": {
+     "author": "GiovanniPen",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:ItWikiCon_2023_-_archi_largo_chirulla.jpg"
+    }
+   },
+   "kind": "osteria",
+   "lat": 41.1268569,
+   "lon": 16.8685329,
+   "name": "Osteria delle Travi (Il Buco)",
+   "note": "Also listed as \"Osteria Le Travi\". Sources give 1813 or 1831 as its founding year. No official website found, so check opening times locally.",
+   "sources": [
+    "https://www.cronachedigusto.it/dove-mangio/i-cinque-locali-di-bari-dove-assaporare-le-migliori-orecchiette-della-citta/",
+    "https://www.locuste.org/component/content/article/9-ristoranti/1586-osteria-delle-travi",
+    "https://2night.it/743e78-/locali-storici-di-bari-dove-non-puoi-non-essere-stato-almeno-una-volta.html",
+    "https://iltaccodibacco.it/bari/osteria-delle-travi/",
+    "https://doeatbetterexperience.com/de/blog/bari-vecchia-essen-guide/"
+   ],
+   "walkMin": 44
+  },
+  {
+   "address": "Corso Vittorio Emanuele II 13, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A seafood restaurant at the edge of the old town known for raw seafood (crudo, tartare, sea urchins), with seasonal tasting menus and natural and biodynamic wines.",
+   "distanceKm": 3.31,
+   "group": "fancy",
+   "hours": "Mon-Sat 12:00-14:30 and 19:00-22:30; Sun 12:00-15:00 and 19:00-22:30.",
+   "id": "biancofiore",
+   "image": {
+    "file": "img/bari/biancofiore.webp",
+    "width": 720,
+    "height": 960,
+    "depicts": "street",
+    "alt": "The street of Biancofiore",
+    "credit": {
+     "author": "GiovanniPen",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:ItWikiCon_2023_-_teatro_margherita_by_night.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/ristorante_biancofiore/",
+   "kind": "restaurant",
+   "lat": 41.1262825,
+   "lon": 16.8712673,
+   "name": "Biancofiore",
+   "note": "The site's contact page gives other hours (daily 12:00-15:00 and 19:00-23:30) than its footer, used above. Next door to Mastrociccio.",
+   "price": "Tasting menus 60 EUR (six courses, sea or land; wine not included; whole table, minimum 2).",
+   "sources": [
+    "https://www.ristorantebiancofiore.it/",
+    "https://www.ristorantebiancofiore.it/men%C3%B9-degustazione",
+    "https://www.ristorantebiancofiore.it/contatti",
+    "https://www.scattidigusto.it/ristorante-biancofiore-bari-recensione"
+   ],
+   "url": "https://www.ristorantebiancofiore.it/",
+   "walkMin": 45
+  },
+  {
+   "address": "Corso Vittorio Emanuele II 15, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A panzerotti spot on Corso Vittorio Emanuele II at the edge of the old town.",
+   "distanceKm": 3.31,
+   "group": "value",
+   "id": "mastrociccio",
+   "image": {
+    "file": "img/bari/mastrociccio.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "dish",
+    "alt": "A dish Mastrociccio is known for",
+    "credit": {
+     "author": "I, Calcagnile Floriano, User:Florixc",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Calzone_fritto.jpg"
+    }
+   },
+   "kind": "street-food",
+   "lat": 41.1262776,
+   "lon": 16.8711817,
+   "name": "Mastrociccio",
+   "sources": [
+    "https://www.gamberorossointernational.com/news/where-to-eat-the-best-panzerotti-in-bari/"
+   ],
+   "walkMin": 45
+  },
+  {
+   "address": "Strada Vallisa 50, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A family-run seafood trattoria in the old town, open since 2014, known for octopus, its roast-octopus sandwich above all, and fried and grilled fish.",
+   "distanceKm": 3.34,
+   "group": "value",
+   "hours": "Daily 12:00-00:00.",
+   "id": "la-tana-del-polpo",
+   "image": {
+    "file": "img/bari/la-tana-del-polpo.webp",
+    "width": 960,
+    "height": 643,
+    "depicts": "dish",
+    "alt": "A dish La Tana del Polpo is known for",
+    "credit": {
+     "author": "Italo Greco",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:U_p%C3%A8ssce_f%C3%A8te_da_la_cape_(15470938723).jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/latanadelpolpobari/",
+   "kind": "trattoria",
+   "lat": 41.1267075,
+   "lon": 16.8707791,
+   "name": "La Tana del Polpo",
+   "note": "No reservations, says its site. The family also runs a street-food counter at Strada Vallisa 41/42 and a second dining room at Via Roberto il Guiscardo 36.",
+   "sources": [
+    "https://latanadelpolpobari.it/la-tana-dele-polpo-trattoria",
+    "https://latanadelpolpobari.it/contact",
+    "https://latanadelpolpobari.it/about",
+    "https://www.gamberorossointernational.com/news/where-to-eat-in-bari-vecchia-the-best-restaurants/"
+   ],
+   "url": "https://latanadelpolpobari.it/",
+   "walkMin": 45
+  },
+  {
+   "address": "Strada Bianchi Dottula 8, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A bakery going since 1921, known for tomato-and-olive focaccia and panzerotti, with queues mid-morning and around 5 pm.",
+   "distanceKm": 3.36,
+   "group": "classic",
+   "id": "panificio-santa-rita",
+   "image": {
+    "file": "img/bari/panificio-santa-rita.webp",
+    "width": 960,
+    "height": 539,
+    "depicts": "dish",
+    "alt": "A dish Panificio Santa Rita is known for",
+    "credit": {
+     "author": "Elfmir",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:FocacciaBarese.jpg"
+    }
+   },
+   "kind": "bakery",
+   "lat": 41.1275837,
+   "lon": 16.868637,
+   "name": "Panificio Santa Rita",
+   "sources": [
+    "https://www.gamberorossointernational.com/news/food-news/where-to-eat-focaccia-in-bari-13-places-to-try",
+    "https://www.gamberorossointernational.com/news/where-to-eat-the-best-panzerotti-in-bari/"
+   ],
+   "walkMin": 45
+  },
+  {
+   "address": "Piazza Federico II di Svevia 33-36, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A family gelateria by the Swabian Castle that goes back to a granita kiosk of 1880, known for almond and fiordilatte creams, seasonal fruit and lactose-free flavours.",
+   "distanceKm": 3.38,
+   "group": "gelato",
+   "id": "gelateria-gentile",
+   "image": {
+    "file": "img/bari/gelateria-gentile.webp",
+    "width": 960,
+    "height": 640,
+    "depicts": "street",
+    "alt": "The street of Antica Gelateria Gentile",
+    "credit": {
+     "author": "Sailko",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bari,_piazza_federico_II-arco_alto_di_notte.jpg"
+    }
+   },
+   "instagram": "https://www.instagram.com/gelateria_gentile_bari/",
+   "kind": "gelateria",
+   "lat": 41.1279984,
+   "lon": 16.8675066,
+   "name": "Antica Gelateria Gentile",
+   "note": "The official site gives 33-36; Gambero Rosso, BariToday and ConGelato give no. 33.",
+   "sources": [
+    "https://www.gelateriagentile.com/it/",
+    "https://www.gelateriagentile.com/it/la-gelateria/",
+    "https://www.gamberorosso.it/rubriche/classifiche/gelaterie-a-bari-e-dintorni-le-migliori/",
+    "https://www.baritoday.it/cibo/dove-mangiare/le-migliori-gelaterie-di-bari.html",
+    "https://www.con-gelato.it/notizie-congelate/gelato-gelaterie-bari-dove-mangiare/"
+   ],
+   "url": "https://www.gelateriagentile.com/it/",
+   "walkMin": 46
+  },
+  {
+   "address": "Molo San Nicola, next to Teatro Margherita, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "Fishermen selling sea urchins, curled octopus and other raw seafood from their boats and tables on the Molo San Nicola, to eat on the spot.",
+   "distanceKm": 3.38,
+   "group": "classic",
+   "id": "nderr-a-la-lanze",
+   "image": {
+    "file": "img/bari/nderr-a-la-lanze.webp",
+    "width": 960,
+    "height": 643,
+    "depicts": "dish",
+    "alt": "A dish N'derr a la lanze (raw seafood on the pier) is known for",
+    "credit": {
+     "author": "Italo Greco",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Il_crudo_di_mare_(15902301060).jpg"
+    }
+   },
+   "kind": "market",
+   "lat": 41.1257224,
+   "lon": 16.874506,
+   "name": "N'derr a la lanze (raw seafood on the pier)",
+   "note": "Mornings; bring small cash. Sources are food blogs, not an official page.",
+   "sources": [
+    "https://doeatbetterexperience.com/blog/nderr-la-lanze-bari-raw-fish/",
+    "https://www.airdolomiti.eu/destinations/bari/what-to-eat/bari-street-food"
+   ],
+   "walkMin": 46
+  },
+  {
+   "address": "Piazza Federico II di Svevia 6/7, 70122 Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A long-established seafood restaurant facing the Swabian Castle, with a fresh-fish counter on display, vaulted rooms and a veranda.",
+   "distanceKm": 3.48,
+   "group": "classic",
+   "hours": "Mon-Sat 13:00-15:00 and 20:00-23:00; Sun 13:00-15:30 and 20:30-23:00.",
+   "id": "al-pescatore",
+   "instagram": "https://www.instagram.com/alpescatore_ristorante/",
+   "kind": "restaurant",
+   "lat": 41.128906,
+   "lon": 16.8676604,
+   "name": "Al Pescatore",
+   "note": "The restaurant gives no. 6/7; Gambero Rosso says 6 and il Tacco di Bacco 6/8.",
+   "sources": [
+    "https://www.alpescatorebari.com/",
+    "https://www.alpescatorebari.com/contatti-al-pescatore-bari/",
+    "https://www.gamberorossointernational.com/news/where-to-eat-in-bari-vecchia-the-best-restaurants/",
+    "https://iltaccodibacco.it/bari/al-pescatore/"
+   ],
+   "url": "https://www.alpescatorebari.com/",
+   "walkMin": 47
+  },
+  {
+   "address": "Bari Vecchia (street vendors)",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "Slices of fried polenta, salted and served hot, sold informally by old-town residents, mostly in the evening.",
+   "distanceKm": 3.61,
+   "group": "value",
+   "id": "sgagliozze-bari-vecchia",
+   "image": {
+    "file": "img/bari/sgagliozze-bari-vecchia.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "dish",
+    "alt": "A dish Sgagliozze in Bari Vecchia is known for",
+    "credit": {
+     "author": "El Mono Español",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Polenta_fritta_da_sgranocchiare.jpg"
+    }
+   },
+   "kind": "street-food",
+   "lat": 41.1296759,
+   "lon": 16.8695799,
+   "name": "Sgagliozze in Bari Vecchia",
+   "note": "Do Eat Better and Budget Traveller give the best-known spot, Maria delle Sgagliozze's, as Strada delle Crociate 13 (evenings); Fathom puts her at the Arco di San Nicola. Budget Traveller (2026) says her family and other vendors carry on there. The point is the old town, not a shop.",
+   "sources": [
+    "https://doeatbetterexperience.com/it/blog/guida-street-food-bari-vecchia/",
+    "https://fathomaway.com/food-stories-bari-vecchia-italy/",
+    "https://www.airdolomiti.eu/destinations/bari/what-to-eat/bari-street-food",
+    "https://budgettraveller.org/cheap-eats-guide-bari/"
+   ],
+   "walkMin": 49
+  },
+  {
+   "address": "Strada Palazzo di Città 38, Bari",
+   "area": "Bari Vecchia",
+   "category": "food",
+   "checked": "2026-10-24",
+   "description": "A historic old-town bakery near the Basilica known for focaccia barese and panzerotti.",
+   "distanceKm": 3.65,
+   "group": "classic",
+   "id": "panificio-fiore",
+   "image": {
+    "file": "img/bari/panificio-fiore.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "dish",
+    "alt": "A dish Panificio Fiore is known for",
+    "credit": {
+     "author": "Simona.IT",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Focaccia_Barese.jpg"
+    }
+   },
+   "kind": "bakery",
+   "lat": 41.1296977,
+   "lon": 16.8709494,
+   "name": "Panificio Fiore",
+   "sources": [
+    "https://www.gamberorossointernational.com/news/food-news/where-to-eat-focaccia-in-bari-13-places-to-try",
+    "https://www.gamberorossointernational.com/news/where-to-eat-the-best-panzerotti-in-bari/"
+   ],
+   "walkMin": 49
+  },
+  {
+   "address": "Bitonto",
+   "area": "Metropolitan City of Bari",
+   "category": "daytrip",
+   "checked": "2026-10-25",
+   "description": "A town just west of Bari with a Romanesque cathedral.",
+   "distanceKm": 13.72,
+   "id": "bitonto",
+   "image": {
+    "file": "img/bari/bitonto.webp",
+    "width": 960,
+    "height": 640,
+    "depicts": "place",
+    "alt": "Bitonto",
+    "credit": {
+     "author": "Giugi30",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:DSF5161.jpg"
+    }
+   },
+   "iswcTip": "Home to Puglia's first national gallery and the region's largest diocesan museum; its cathedral is a key example of Apulian Romanesque, and the town was recognised as a city of art in 2004.",
+   "kind": "town",
+   "lat": 41.1084971,
+   "lon": 16.691548,
+   "name": "Bitonto",
+   "note": "Suggested by the organisers; this guide has no checked train details for it.",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.openstreetmap.org/node/68528730"
+   ],
+   "walkMin": null
+  },
+  {
+   "address": "Ruvo di Puglia",
+   "area": "Metropolitan City of Bari",
+   "category": "daytrip",
+   "checked": "2026-10-25",
+   "description": "A town on the edge of the Alta Murgia with a Romanesque cathedral and an archaeological museum.",
+   "distanceKm": 31.09,
+   "id": "ruvo-di-puglia",
+   "image": {
+    "file": "img/bari/ruvo-di-puglia.webp",
+    "width": 960,
+    "height": 638,
+    "depicts": "place",
+    "alt": "Ruvo di Puglia",
+    "credit": {
+     "author": "TONIODELBARRIO6464",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:CATTEDRALE_DI_RUVO_DI_PUGLIA-2017.jpg"
+    }
+   },
+   "iswcTip": "A city of art in the Alta Murgia National Park, with the Jatta National Archaeological Museum (Hellenistic finds, including the Talos vase); known for its Holy Week.",
+   "kind": "town",
+   "lat": 41.1171985,
+   "lon": 16.4845354,
+   "name": "Ruvo di Puglia",
+   "note": "Suggested by the organisers; this guide has no checked train details for it.",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.openstreetmap.org/relation/40975"
+   ],
+   "walkMin": null
+  },
+  {
+   "address": "Polignano a Mare railway station",
+   "area": "Metropolitan City of Bari",
+   "category": "daytrip",
+   "checked": "2026-10-24",
+   "description": "A coastal town south-east of Bari, a short hop on the Trenitalia regional line towards Lecce.",
+   "distanceKm": 32.8,
+   "from": "Bari Centrale",
+   "id": "polignano-a-mare",
+   "image": {
+    "file": "img/bari/polignano-a-mare.webp",
+    "width": 960,
+    "height": 667,
+    "depicts": "place",
+    "alt": "Polignano a Mare",
+    "credit": {
+     "author": "ParisTaras",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Polignano_a_mare_-Lama_Monachile.jpg"
+    }
+   },
+   "iswcTip": "Suggested by the organisers: Domenico Modugno's hometown on a spur over the sea, with sea caves, white houses on the cliff and terraces with views.",
+   "journey": "About 30 min by regional train (from a Trenitalia service notice, July 2026).",
+   "kind": "town",
+   "lat": 40.9909552,
+   "line": "Bari-Lecce (regional)",
+   "lon": 17.218705,
+   "name": "Polignano a Mare",
+   "operator": "Trenitalia",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.trenitalia.com/content/dam/trenitalia/allegati/modifiche-al-servizio/2026-07/LRS%20dalL%271%20all%278%20luglio%202026.pdf"
+   ],
+   "url": "https://www.trenitalia.com/",
+   "walkMin": null
+  },
+  {
+   "address": "Monopoli railway station",
+   "area": "Metropolitan City of Bari",
+   "category": "daytrip",
+   "checked": "2026-10-24",
+   "description": "A coastal town a few stops past Polignano on the same regional line.",
+   "distanceKm": 40.2,
+   "from": "Bari Centrale",
+   "id": "monopoli",
+   "image": {
+    "file": "img/bari/monopoli.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Monopoli",
+    "credit": {
+     "author": "Hagai Agmon-Snir حچاي اچمون-سنير חגי אגמון-שניר",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Monopoli-ItalyiDec052021.jpg_03.jpg"
+    }
+   },
+   "iswcTip": "One of the towns south of Bari the organisers suggest visiting.",
+   "journey": "About 35 min by regional train (from a Trenitalia service notice, July 2026).",
+   "kind": "town",
+   "lat": 40.9520273,
+   "line": "Bari-Lecce (regional)",
+   "lon": 17.2925128,
+   "name": "Monopoli",
+   "operator": "Trenitalia",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.trenitalia.com/content/dam/trenitalia/allegati/modifiche-al-servizio/2026-07/LRS%20dalL%271%20all%278%20luglio%202026.pdf"
+   ],
+   "url": "https://www.trenitalia.com/",
+   "walkMin": null
+  },
+  {
+   "address": "Trani railway station, Piazza XX Settembre",
+   "area": "Barletta-Andria-Trani",
+   "category": "daytrip",
+   "checked": "2026-10-24",
+   "description": "A coastal town north-west of Bari on the Adriatic line towards Foggia.",
+   "distanceKm": 41.36,
+   "from": "Bari Centrale",
+   "id": "trani",
+   "image": {
+    "file": "img/bari/trani.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Trani",
+    "credit": {
+     "author": "Martin Stiburek",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Trani_061.JPG"
+    }
+   },
+   "iswcTip": "Suggested by the organisers as a city of art, with its cathedral on the sea and its Swabian castle.",
+   "journey": "About 1 h on a stopping regional train (from a Trenitalia service notice, August 2026); faster trains may exist.",
+   "kind": "town",
+   "lat": 41.2726957,
+   "line": "Bari-Foggia (regional)",
+   "lon": 16.4176867,
+   "name": "Trani",
+   "operator": "Trenitalia",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.trenitalia.com/content/dam/trenitalia/allegati/modifiche-al-servizio/2026-08/PUG%20R%204329.pdf"
+   ],
+   "url": "https://www.trenitalia.com/",
+   "walkMin": null
+  },
+  {
+   "address": "Alberobello railway station",
+   "area": "Metropolitan City of Bari",
+   "category": "daytrip",
+   "checked": "2026-10-24",
+   "description": "The town of the conical trulli houses, on the FSE line from Bari towards Martina Franca.",
+   "distanceKm": 47.6,
+   "from": "Bari Centrale",
+   "id": "alberobello",
+   "image": {
+    "file": "img/bari/alberobello.webp",
+    "width": 960,
+    "height": 688,
+    "depicts": "place",
+    "alt": "Alberobello",
+    "credit": {
+     "author": "ParisTaras",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Alberobello_con_il_drone.jpg"
+    }
+   },
+   "iswcTip": "Suggested by the organisers: the UNESCO town of trulli; the Rione Monti district has over 1,000 of them, Aia Piccola about 400 more.",
+   "kind": "town",
+   "lat": 40.7866728,
+   "line": "Bari-Putignano-Martina Franca",
+   "lon": 17.2421912,
+   "name": "Alberobello",
+   "note": "Journey time not confirmed (the FSE timetable page did not load); the town's site says a change at Putignano may be needed. Check fssudest.it before going.",
+   "operator": "FSE (Ferrovie del Sud Est)",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://alberobello.com/en/getting-here-and-around/how-to-reach-alberobello",
+    "https://en.wikipedia.org/wiki/Bari%E2%80%93Martina_Franca%E2%80%93Taranto_railway"
+   ],
+   "url": "https://www.fssudest.it/",
+   "walkMin": null
+  },
+  {
+   "address": "Strada Provinciale 8 di Castel del Monte, Andria",
+   "area": "Barletta-Andria-Trani",
+   "category": "daytrip",
+   "checked": "2026-10-25",
+   "description": "An octagonal hilltop castle near Andria, a UNESCO World Heritage Site.",
+   "distanceKm": 48.94,
+   "id": "castel-del-monte",
+   "image": {
+    "file": "img/bari/castel-del-monte.webp",
+    "width": 960,
+    "height": 691,
+    "depicts": "place",
+    "alt": "Castel del Monte",
+    "credit": {
+     "author": "ParisTaras",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Castel_del_Monte_-_Andria.jpg"
+    }
+   },
+   "iswcTip": "A perfectly octagonal castle, outer walls and courtyard both eight-sided, each side about 10 metres long, mixing Northern European, Islamic and classical elements; on the UNESCO list since 1996.",
+   "kind": "castle",
+   "lat": 41.0847439,
+   "lon": 16.2711149,
+   "name": "Castel del Monte",
+   "note": "Suggested by the organisers; this guide has no checked transport details for it.",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.openstreetmap.org/relation/16523679"
+   ],
+   "walkMin": null
+  },
+  {
+   "address": "Matera Centrale station, Viale Aldo Moro",
+   "area": "Basilicata",
+   "category": "daytrip",
+   "checked": "2026-10-24",
+   "description": "The town of the Sassi cave districts in Basilicata, reached on the narrow-gauge FAL line from its own platform at Bari Centrale.",
+   "distanceKm": 52.64,
+   "from": "Bari Centrale (FAL station, Corso Italia)",
+   "id": "matera",
+   "image": {
+    "file": "img/bari/matera.webp",
+    "width": 960,
+    "height": 641,
+    "depicts": "place",
+    "alt": "Matera",
+    "credit": {
+     "author": "Cinzia astorino",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Il_fascino_dei_sassi.jpg"
+    }
+   },
+   "journey": "About 1 h 45 min, usually changing at Altamura (worked out from the FAL timetable valid from 12 Oct 2026); on Sundays and holidays FAL runs replacement buses.",
+   "kind": "town",
+   "lat": 40.6662928,
+   "line": "Bari-Altamura-Matera",
+   "lon": 16.6013142,
+   "name": "Matera",
+   "operator": "FAL (Ferrovie Appulo Lucane)",
+   "sources": [
+    "https://ferrovieappulolucane.it/orari/",
+    "https://ferrovieappulolucane.it/wp-content/uploads/2026/10/ORARIO-TRENI-DA-E-PER-BA-DAL-12-OTT-2026-1.pdf",
+    "https://ferrovieappulolucane.it/wp-content/uploads/2026/08/ORARIO-BUS-FESTIVI-E-DOMENICA-03-AGO-2026.pdf"
+   ],
+   "url": "https://ferrovieappulolucane.it/orari/",
+   "walkMin": null
+  },
+  {
+   "address": "Locorotondo",
+   "area": "Metropolitan City of Bari",
+   "category": "daytrip",
+   "checked": "2026-10-25",
+   "description": "A white hill town of the Itria Valley with a round historic centre.",
+   "distanceKm": 55.07,
+   "id": "locorotondo",
+   "image": {
+    "file": "img/bari/locorotondo.webp",
+    "width": 960,
+    "height": 635,
+    "depicts": "place",
+    "alt": "Locorotondo",
+    "credit": {
+     "author": "ParisTaras",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Locorotondo_con_il_drone.jpg"
+    }
+   },
+   "iswcTip": "One of Italy's most beautiful villages, its name meaning 'round place' after the circular town plan, known for its cummerse: houses with sloping roofs of limestone slabs called chiancarelle.",
+   "kind": "town",
+   "lat": 40.75523,
+   "lon": 17.3265,
+   "name": "Locorotondo",
+   "note": "Suggested by the organisers; this guide has no checked train details for it.",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.openstreetmap.org/relation/40761"
+   ],
+   "walkMin": null
+  },
+  {
+   "address": "Ostuni",
+   "area": "Brindisi",
+   "category": "daytrip",
+   "checked": "2026-10-25",
+   "description": "The whitewashed hill town of the Brindisi province, between olive groves and the sea.",
+   "distanceKm": 73.59,
+   "id": "ostuni",
+   "image": {
+    "file": "img/bari/ostuni.webp",
+    "width": 960,
+    "height": 720,
+    "depicts": "place",
+    "alt": "Ostuni",
+    "credit": {
+     "author": "ParisTaras",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Ostuni_col_drone.jpg"
+    }
+   },
+   "iswcTip": "The 'White City', its houses whitewashed with quicklime; La Terra, the historic centre, is a tangle of alleys, squares and stairways crowned by a sixteenth-century cathedral.",
+   "kind": "town",
+   "lat": 40.7277814,
+   "lon": 17.5796779,
+   "name": "Ostuni",
+   "note": "Suggested by the organisers; this guide has no checked train details for it.",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism",
+    "https://www.openstreetmap.org/relation/40666"
+   ],
+   "walkMin": null
+  }
+ ],
+ "practical": [
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-venue",
+   "links": [
+    {
+     "label": "Venue website",
+     "url": "https://www.thenicolaushotel.com/"
+    }
+   ],
+   "points": [
+    "4-star hotel and conference centre",
+    "15 modular meeting rooms",
+    "Wi-Fi in rooms and common areas",
+    "5 different dining locations",
+    "For hotel guests: wellness area, free bike sharing, 174 bedrooms"
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation",
+    "https://iswc2026.semanticweb.org/"
+   ],
+   "text": "The conference takes place at The Nicolaus Hotel, one of the largest hotels and conference centres in Bari.",
+   "title": "The Nicolaus Hotel",
+   "topic": "venue"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-rooms",
+   "links": [
+    {
+     "label": "Floor plans",
+     "url": "#/map"
+    }
+   ],
+   "rows": [
+    [
+     "Coffee breaks (27-29 Oct)",
+     "Foyer (Floor -1)"
+    ],
+    [
+     "Lunch (27-29 Oct)",
+     "Cassiopea (Floor 1)"
+    ],
+    [
+     "Keynotes and opening",
+     "Plenary"
+    ],
+    [
+     "Main conference sessions",
+     "Sezione 1, Sezione 2, Sezione 3&4, Sezione 5"
+    ],
+    [
+     "Workshops and tutorials (25-26 Oct)",
+     "Sezione 1-8, Sala Andromeda, Sala Cigno, Pegaso, Orione, Auriga (Perseo)"
+    ]
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/program/schedule"
+   ],
+   "text": "The programme names these rooms. The venue's floor plans cover floors -1, 1 and 2; the Map tab has them.",
+   "title": "Rooms, breaks and lunch",
+   "topic": "venue"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-registration-desk",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/program/schedule",
+    "https://iswc2026.semanticweb.org/#/attending/registration"
+   ],
+   "text": "Registration is listed at 08:00 on every conference day, Sunday 25 to Thursday 29 October. The registration page asks you to show the receipt from your confirmation email at the registration desk at the venue.",
+   "title": "Registration desk",
+   "topic": "venue"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-from-airport",
+   "links": [
+    {
+     "label": "Airport",
+     "url": "https://bari.airports.aeroportidipuglia.it/en/"
+    },
+    {
+     "label": "Airport transfers",
+     "url": "https://bari.airports.aeroportidipuglia.it/en/da-e-per-gli-aeroporti/type/bus/"
+    }
+   ],
+   "rows": [
+    [
+     "Train",
+     "20 min · €5.40"
+    ],
+    [
+     "Shuttle service",
+     "30 min · €5.00"
+    ],
+    [
+     "Bus no. 16",
+     "50 min · €1.20"
+    ],
+    [
+     "Taxi or car",
+     "25 min · €25.00"
+    ],
+    [
+     "Nicolaus shuttle",
+     "Free, to and from the airport, subject to availability at scheduled times; book at least 24 hours ahead"
+    ],
+    [
+     "Taxi to the venue",
+     "Flat rate of about €30 from the airport"
+    ]
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation"
+   ],
+   "text": "Bari Palese \"Karol Wojtyła\" International Airport is 9 km north-west of the city centre. The site's figures for the airport to the city centre:",
+   "title": "From Bari airport (BRI)",
+   "topic": "travel"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-from-station",
+   "links": [
+    {
+     "label": "Bari Centrale on the map",
+     "url": "https://maps.app.goo.gl/MHtRHa3o888gmUES8"
+    }
+   ],
+   "rows": [
+    [
+     "AMTAB line 6",
+     "Stop Via Matarrese"
+    ],
+    [
+     "AMTAB line 10",
+     "Stop Via Matarrese"
+    ],
+    [
+     "AMTAB line D",
+     "Stop Via Camillo Rosalba"
+    ],
+    [
+     "Taxi",
+     "Flat rate of about €10 from the central railway station"
+    ]
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation"
+   ],
+   "text": "From Bari Centrale the venue is roughly 20-25 minutes by public transport, or about a 40 minute walk.",
+   "title": "From Bari Centrale station",
+   "topic": "travel"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-tickets",
+   "links": [
+    {
+     "label": "Trenitalia",
+     "url": "https://www.trenitalia.com/en.html"
+    },
+    {
+     "label": "AMTAB tickets",
+     "url": "https://www.amtab.it/it/9-uncategorised/1038-biglietti"
+    }
+   ],
+   "rows": [
+    [
+     "Train (Trenitalia)",
+     "Automatic machines, local vendors, or the Trenitalia website"
+    ],
+    [
+     "Bus (AMTAB)",
+     "Local vendors, card payment on board, and SMS payment"
+    ]
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation"
+   ],
+   "text": "Trenitalia is the national rail operator; AMTAB runs the city buses.",
+   "title": "Train and bus tickets",
+   "topic": "travel"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-by-car",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation"
+   ],
+   "text": "Take the SS16 BIS towards Brindisi, exit 11 \"Poggiofranco\" on the Bari bypass, then follow the signs for \"The Nicolaus Hotel\".",
+   "title": "By car",
+   "topic": "travel"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-hotels-nearby",
+   "links": [
+    {
+     "label": "Hi Hotel",
+     "url": "https://www.hihotelbari.com/"
+    }
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/venueandaccomodation"
+   ],
+   "text": "Besides The Nicolaus Hotel itself, the site names Hi Hotel (about a 10 minute walk, 950 m), Hotel Rondò and Villa Romanazzi Carducci as within walking distance of the venue.",
+   "title": "Hotels within walking distance",
+   "topic": "travel"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-dc-dinner",
+   "links": [
+    {
+     "label": "Map link from the programme",
+     "url": "https://share.google/V4sXl08R9D12jN3pA"
+    }
+   ],
+   "place": "L'Osteria Dei Quattro Gatti",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/program/schedule"
+   ],
+   "startISO": "2026-10-25T19:30:00+01:00",
+   "text": "The programme lists the Doctoral Consortium dinner at L'Osteria Dei Quattro Gatti, from 19:30.",
+   "title": "Doctoral Consortium dinner",
+   "topic": "events"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-welcome-reception",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/program/schedule",
+    "https://iswc2026.semanticweb.org/#/attending/registration"
+   ],
+   "startISO": "2026-10-26T18:30:00+01:00",
+   "text": "From 18:30 until late. The archived programme gives no separate location. Included in the main conference registration.",
+   "title": "Welcome Reception",
+   "topic": "events"
+  },
+  {
+   "checked": "2026-10-25",
+   "endISO": "2026-10-27T21:00:00+01:00",
+   "id": "iswc-posters-demos",
+   "place": "Plenary, The Nicolaus Hotel",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/program/schedule",
+    "https://iswc2026.semanticweb.org/#/attending/registration"
+   ],
+   "startISO": "2026-10-27T19:15:00+01:00",
+   "text": "The evening poster and demo session, 19:15-21:00. Registration includes the Posters & Demos session and reception.",
+   "title": "Posters and Demos with reception",
+   "topic": "events"
+  },
+  {
+   "address": "Viale delle Murge, Bari",
+   "checked": "2026-10-25",
+   "distanceKm": 1.14,
+   "id": "iswc-gala-dinner",
+   "lat": 41.1092029,
+   "links": [
+    {
+     "label": "Villa De Grecis",
+     "url": "https://www.villadegrecis.com"
+    }
+   ],
+   "lon": 16.8518206,
+   "place": "Villa De Grecis",
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/program/schedule",
+    "https://iswc2026.semanticweb.org/#/attending/registration",
+    "https://www.openstreetmap.org/way/1208984475"
+   ],
+   "startISO": "2026-10-28T19:15:00+01:00",
+   "text": "From 19:15 until late at Villa De Grecis. The Gala Dinner is included in the main conference registration; an extra ticket for an accompanying person is €100 (VAT included).",
+   "title": "Gala Dinner & Disco",
+   "topic": "events",
+   "walkMin": 16
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-bike-ride",
+   "links": [
+    {
+     "label": "Bike Ride page",
+     "url": "https://iswc2026.semanticweb.org/#/bikeride"
+    }
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/"
+   ],
+   "text": "The site's news of 1 October 2026 announced that Bike Ride information is available on its own page. That page was not captured in the archive this app is built from, so check the official site for the details.",
+   "title": "Bike Ride",
+   "topic": "events"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-local-food",
+   "links": [
+    {
+     "label": "Bari Experience: where and what to eat in old Bari",
+     "url": "https://www.bariexperience.com/en/visit-bari-puglia/where-what-to-eat-in-old-bari-typical-apulian-bari-dishes/"
+    },
+    {
+     "label": "Free Walking Tour Bari: what to eat",
+     "url": "https://www.freewalkingtourbari.it/en/out-and-about/what-to-eat-in-bari/"
+    }
+   ],
+   "points": [
+    "mozzarella, burrata and stracciatella",
+    "panzerotti",
+    "orecchiette pasta with turnip tops",
+    "bombette and brasciola (meat)",
+    "raw seafood"
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism"
+   ],
+   "text": "The organisers' tourism page: Bari is well known for its wide offer of typical food. Some examples they give:",
+   "title": "What to eat",
+   "topic": "tips"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-sightseeing",
+   "links": [
+    {
+     "label": "Bari Experience: 10 things to see in Bari",
+     "url": "https://www.bariexperience.com/en/see-bari-days/10-things-to-see-bari-puglia-places-places-to-visit/"
+    },
+    {
+     "label": "Bari Experience: places near Bari and around Puglia",
+     "url": "https://www.bariexperience.com/en/visit-places-in-puglia/see-visit-near-bari-and-surrounding-province-visit-puglia-holidays/"
+    },
+    {
+     "label": "Slow Active Tours",
+     "url": "https://www.slowactivetours.com/en/"
+    },
+    {
+     "label": "Lonely Planet: guide to Puglia",
+     "url": "https://www.lonelyplanet.com/articles/guide-to-puglia"
+    }
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/tourism"
+   ],
+   "text": "The organisers suggest the cathedral, the Basilica of Saint Nicholas, the Swabian Castle, the old town (Bari Vecchia, between the old and new ports) and the underground remains of the old city, the Nazario Sauro seafront and the shopping streets around Via Sparano. Nearby towns they name: Polignano, Monopoli, Alberobello, Locorotondo and Cisternino to the south; Giovinazzo, Trani, Altamura and Castel del Monte to the north. The Sights and Day trips tabs mark their suggestions.",
+   "title": "What to see",
+   "topic": "tips"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-secretariat",
+   "links": [
+    {
+     "label": "CIC Sud",
+     "url": "https://www.cicsud.it/"
+    }
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/visa",
+    "https://iswc2026.semanticweb.org/#/attending/registration"
+   ],
+   "text": "The organising secretariat is CIC Sud (Centro Italiano Congressi Bari), iswc2026@cicsud.it. Visa invitation letters are only issued to registered participants (subject \"Visa Request – ISWC 2026\"); cancellations and changes go to the same address in writing.",
+   "title": "Conference secretariat",
+   "topic": "tips"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-childcare",
+   "links": [
+    {
+     "label": "Sitly",
+     "url": "https://www.sitly.it/en/babysitter/bari"
+    },
+    {
+     "label": "Babysits",
+     "url": "https://en.babysits.it/babysitter/bari/"
+    },
+    {
+     "label": "Cronoshare",
+     "url": "https://www.cronoshare.it/servizi/babysitter-inglese/bari/bari"
+    }
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/childcare"
+   ],
+   "text": "Childcare is not a service offered by the conference. The site lists independent providers of babysitting in English; contact them directly about availability, rates and bookings. The secretariat (iswc2026@cicsud.it) offers further help.",
+   "title": "Childcare",
+   "topic": "tips"
+  },
+  {
+   "checked": "2026-10-25",
+   "id": "iswc-code-of-conduct",
+   "links": [
+    {
+     "label": "Code of conduct",
+     "url": "https://iswc2026.semanticweb.org/#/attending/codeofconduct"
+    }
+   ],
+   "sources": [
+    "https://iswc2026.semanticweb.org/#/attending/codeofconduct"
+   ],
+   "text": "To report any behaviour that makes you or others uncomfortable, contact any of the SWSA members, by email or in person; they treat reports confidentially.",
+   "title": "Code of conduct",
+   "topic": "tips"
+  }
+ ]
+}

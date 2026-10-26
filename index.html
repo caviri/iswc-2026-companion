@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="iswc26-edition" content="public">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ISWC 2026 Companion</title>
+  <meta name="description" content="Swipe through the ISWC 2026 program in Bari, keep what matters, take notes. Works offline.">
+  <meta name="theme-color" content="#E7EDEF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C171D" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ISWC 26">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="preload" href="vendor/rete-graph.min.js" as="fetch" crossorigin>
+  <link rel="preload" href="data/iswc26.rete" as="fetch" crossorigin>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <main id="app" tabindex="-1">
+    <div class="boot" role="status">
+      <span class="spinner boot-spinner" aria-hidden="true"></span>
+      <p class="boot-step">Loading the programme</p>
+      <div class="boot-bar indeterminate" role="progressbar" aria-label="Download" aria-valuemin="0" aria-valuemax="100"><i></i></div>
+      <p class="boot-detail"></p>
+      <p class="boot-slow" hidden>The first visit downloads the whole programme once (a few MB). After that the app opens straight away, even offline.</p>
+    </div>
+  </main>
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#/home" data-route="home"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7M6 9.5V20h12V9.5M10 20v-5h4v5"/></svg><span>Home</span></a>
+    <a href="#/deck" data-route="deck"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5h10a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2zM8.5 2.5h7"/></svg><span>Deck</span></a>
+    <a href="#/mine" data-route="mine"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 3.5h13v17l-6.5-4.5-6.5 4.5z"/></svg><span>My ISWC</span></a>
+    <a href="#/explore" data-route="explore"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM15.8 8.2l-2.3 5.3-5.3 2.3 2.3-5.3z"/></svg><span>Explore</span></a>
+    <button type="button" class="tab-more" data-route="more" aria-haspopup="dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4.5h6v6h-6zM13.5 4.5h6v6h-6zM4.5 13.5h6v6h-6zM13.5 13.5h6v6h-6z"/></svg><span>More</span></button>
+  </nav>
+  <noscript><p class="noscript">This app needs JavaScript.</p></noscript>
+</body>
+</html>

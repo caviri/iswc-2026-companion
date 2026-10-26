@@ -1,0 +1,201 @@
+[
+  {
+    "id": "room-auriga-perseo",
+    "name": "Auriga (Perseo)",
+    "floor": 2,
+    "box": {
+      "x": 0.5415,
+      "y": 0.174,
+      "w": 0.096,
+      "h": 0.151
+    },
+    "map": "floor-2.jpg"
+  },
+  {
+    "id": "room-cassiopea",
+    "name": "Cassiopea",
+    "floor": 1,
+    "box": {
+      "x": 0.385,
+      "y": 0.166,
+      "w": 0.3575,
+      "h": 0.711
+    },
+    "map": "floor-1.jpg"
+  },
+  {
+    "id": "room-foyer",
+    "name": "Foyer",
+    "floor": -1,
+    "box": {
+      "x": 0.4743,
+      "y": 0.4041,
+      "w": 0.0484,
+      "h": 0.0416
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-orione",
+    "name": "Orione",
+    "floor": 2,
+    "box": {
+      "x": 0.28,
+      "y": 0.367,
+      "w": 0.095,
+      "h": 0.214
+    },
+    "map": "floor-2.jpg"
+  },
+  {
+    "id": "room-pegaso",
+    "name": "Pegaso",
+    "floor": 2,
+    "box": {
+      "x": 0.28,
+      "y": 0.7357,
+      "w": 0.095,
+      "h": 0.1453
+    },
+    "map": "floor-2.jpg"
+  },
+  {
+    "id": "room-plenary",
+    "name": "Plenary",
+    "floor": null,
+    "box": null,
+    "map": null
+  },
+  {
+    "id": "room-sala-andromeda",
+    "name": "Sala Andromeda",
+    "floor": 2,
+    "box": {
+      "x": 0.6375,
+      "y": 0.174,
+      "w": 0.0725,
+      "h": 0.151
+    },
+    "map": "floor-2.jpg"
+  },
+  {
+    "id": "room-sala-cigno",
+    "name": "Sala Cigno",
+    "floor": 2,
+    "box": {
+      "x": 0.4,
+      "y": 0.174,
+      "w": 0.1415,
+      "h": 0.151
+    },
+    "map": "floor-2.jpg"
+  },
+  {
+    "id": "room-sezione-1",
+    "name": "Sezione 1",
+    "floor": -1,
+    "box": {
+      "x": 0.4684,
+      "y": 0.5073,
+      "w": 0.056,
+      "h": 0.0524
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-2",
+    "name": "Sezione 2",
+    "floor": -1,
+    "box": {
+      "x": 0.5519,
+      "y": 0.5073,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-3",
+    "name": "Sezione 3",
+    "floor": -1,
+    "box": {
+      "x": 0.4374,
+      "y": 0.3149,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-3-4",
+    "name": "Sezione 3&4",
+    "floor": -1,
+    "box": {
+      "x": 0.4374,
+      "y": 0.3149,
+      "w": 0.102,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-4",
+    "name": "Sezione 4",
+    "floor": -1,
+    "box": {
+      "x": 0.4835,
+      "y": 0.3149,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-5",
+    "name": "Sezione 5",
+    "floor": -1,
+    "box": {
+      "x": 0.5432,
+      "y": 0.3159,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-6",
+    "name": "Sezione 6",
+    "floor": -1,
+    "box": {
+      "x": 0.6335,
+      "y": 0.4633,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-7",
+    "name": "Sezione 7",
+    "floor": -1,
+    "box": {
+      "x": 0.6335,
+      "y": 0.5469,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  },
+  {
+    "id": "room-sezione-8",
+    "name": "Sezione 8",
+    "floor": -1,
+    "box": {
+      "x": 0.6424,
+      "y": 0.3419,
+      "w": 0.056,
+      "h": 0.0523
+    },
+    "map": "floor-m1.jpg"
+  }
+]
