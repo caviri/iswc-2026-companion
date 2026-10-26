@@ -1,7 +1,7 @@
 // Service worker: cache-first for everything the app needs, so it runs offline after the first visit.
 // BUILD is rewritten by `make stamp` (part of `make data`) to a hash of app/ contents, so every
 // deploy with changed code or data gets a fresh cache and the old one is deleted on activate.
-const BUILD = "ef3bb01b3d4c";
+const BUILD = "40825cf12d0f";
 const CACHE = `iswc26-${BUILD}`;
 // Images (img/, ~0.7 MB) are NOT precached: they are cached when first shown (or all at once from the credits
 // page) in a cache of their own that outlives builds. Must equal IMG_CACHE in js/images-model.js.
@@ -190,9 +190,7 @@ const IMAGES = {
  "img/repos/repo-paper-37.webp": "4fcc55b1",
  "img/repos/repo-paper-444.webp": "b55b44fd",
  "img/repos/repo-paper-89.webp": "d0bc12d3",
- "img/rete/jupyterlite.webp": "8aaae617",
- "img/rete/logo.svg": "3dd4d1de",
- "img/rete/mcpb-tools.webp": "b7b2e330"
+ "img/rete/logo.svg": "3dd4d1de"
 };
 const imgKey = (path, v) => (path in IMAGES && IMAGES[path] === v ? path : null);
 /** The cached urls (absolute) that no longer match a current image file and hash. */

@@ -19,7 +19,7 @@ import { h, icon, reducedMotion } from "./ui.js";
 import { hasRoute } from "./edition.js";
 import { closeTermPopover } from "./terms.js";
 import { thumbSVG } from "./thumbs.js";
-import { dayLong, itemTag, groupNav, groupOf } from "./model.js";
+import { dayLong, itemTag, groupNav, groupOf, NAV_GROUPS } from "./model.js";
 import { personOf } from "./people-model.js";
 import { detailContent } from "./views/detail.js";
 import { personContent } from "./views/person.js";
@@ -39,9 +39,16 @@ const NAV = [
   ["explore", "Explore", "explore"], ["grid", "Timetable", "grid"], ["map", "Map", "map"], ["browse", "Browse", "browse"], ["people", "People", "people"], ["sci-k", "Sci-K", "flask"], ["bari", "Bari", "bari"], ["logistics", "Logistics", "logistics"], ["sparql", "SPARQL", "code"], ["rete", "Built with rete", "rete"], ["ontology", "Ontology", "book"], ["credits", "Credits", "doc"], ["settings", "Settings", "gear"],
 ].filter(([r]) => hasRoute(r));
 
-// Sidebar groups the person folded (a per-browser convenience); the current route's group always opens.
+// Sidebar groups the person folded (a per-browser convenience); until they choose, only Programme is open. The
+// current route's group always opens.
 const GROUPS_KEY = "iswc26:side-groups";
-function loadFolded() { try { const v = JSON.parse(localStorage.getItem(GROUPS_KEY) || "[]"); return new Set(Array.isArray(v) ? v : []); } catch { return new Set(); } }
+const FOLDED_FIRST = () => new Set(NAV_GROUPS.map(([id]) => id).filter((id) => id !== "programme"));
+function loadFolded() {
+  try {
+    const v = JSON.parse(localStorage.getItem(GROUPS_KEY) ?? "null");
+    return Array.isArray(v) ? new Set(v) : FOLDED_FIRST();
+  } catch { return FOLDED_FIRST(); }
+}
 function saveFolded(set) { try { localStorage.setItem(GROUPS_KEY, JSON.stringify([...set])); } catch { /* storage unavailable: folds last this visit */ } }
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

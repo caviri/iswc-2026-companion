@@ -181,7 +181,5 @@ export const IMG_VERSIONS = {
  "img/repos/repo-paper-37.webp": "4fcc55b1",
  "img/repos/repo-paper-444.webp": "b55b44fd",
  "img/repos/repo-paper-89.webp": "d0bc12d3",
- "img/rete/jupyterlite.webp": "8aaae617",
- "img/rete/logo.svg": "3dd4d1de",
- "img/rete/mcpb-tools.webp": "b7b2e330"
+ "img/rete/logo.svg": "3dd4d1de"
 };

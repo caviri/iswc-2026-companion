@@ -17,12 +17,6 @@ const ext = (url, cls, ...kids) => h("a", { class: cls, href: url, target: "_bla
 
 const diagram = diagramFigure;
 
-function shot(im) {
-  return h("figure", { class: "rt-fig" },
-    h("img", { src: imgUrl(im.file), alt: im.alt, width: im.width, height: im.height, loading: "lazy", decoding: "async" }),
-    h("figcaption", {}, im.alt, " ", h("span", { class: "rt-credit" }, "Image: ", ext(im.url, "", im.from), " · Apache-2.0")));
-}
-
 function stats(g) {
   let card = null, rel = null;
   try { card = g?.card?.() ?? null; } catch { /* no card */ }
@@ -99,14 +93,8 @@ export function renderRete(root, program, store) {
       demo ? h("a", { class: "rt-paper", href: `#/item/${encodeURIComponent(demo.id)}` }, h("strong", {}, demo.title), h("span", {}, demo.authors.join(", "))) : null,
       h("p", { class: "rt-prose" }, "Three graphs, up to 60 GB (Crossref, 3.78 billion triples), queried from a browser, a notebook and an AI assistant, with no SPARQL endpoint anywhere. Bring your questions, your graph, or this app."),
       keep ? h("div", { class: "rt-keep" }, h("span", { class: "src-note" }, "Add the demo to My ISWC:"), keep) : null,
-      h("div", { class: "rt-gallery" },
-        h("div", { class: "rt-tryit" }, h("h3", { class: "rt-h3" }, "In the browser"),
-          h("p", { class: "src-note" }, "Open a graph and query it in the page: the engine runs in WebAssembly."),
-          h("div", { class: "rt-icons" },
-            ext(LINKS.repo, "rt-icon-btn", icon("github", { size: 26 }), h("span", {}, "GitHub")),
-            ext(LINKS.playground, "rt-icon-btn", icon("play", { size: 26 }), h("span", {}, "Playground")))),
-        h("div", {}, h("h3", { class: "rt-h3" }, "In a notebook"), shot(IMAGES.notebook)),
-        h("div", {}, h("h3", { class: "rt-h3" }, "From an agent"), shot(IMAGES.agent))),
-      h("p", {}, ext(LINKS.demo, "pill-btn primary", icon("external", { size: 18 }), "Open the demo: demo.graphplaza.com")))));
+      h("ul", { class: "rt-links" },
+        h("li", {}, ext(LINKS.demo, "pill-btn primary", icon("external", { size: 18 }), "Open the demo: demo.graphplaza.com")),
+        h("li", {}, ext(LINKS.repo, "pill-btn", icon("github", { size: 18 }), "github.com/caviri/rete"))))));
   return () => { keep?.dispose?.(); };
 }

@@ -1957,15 +1957,6 @@ div.rt-prose { display: grid; gap: 10px; }
 .rt-paper span { color: var(--ink-2); font-size: var(--fs-s); }
 .rt-paper:hover strong { color: var(--sea); }
 .rt-keep { display: grid; gap: 6px; max-width: 420px; }
-.rt-gallery { display: grid; gap: 14px; }
-@media (min-width: 900px) { .rt-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-.rt-gallery .rt-fig img { max-height: 240px; object-fit: cover; object-position: top; }
-.rt-tryit { display: grid; gap: 8px; align-content: start; }
-.rt-tryit p { margin: 0; }
-.rt-icons { display: flex; gap: 10px; }
-.rt-icon-btn { display: grid; justify-items: center; gap: 4px; width: 92px; padding: 12px 6px 10px; border-radius: 16px;
-  border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-size: var(--fs-xs); font-weight: 650; }
-.rt-icon-btn:hover, .rt-icon-btn:focus-visible { border-color: var(--sea); color: var(--sea); }
 /* diagrams drawn for the page (js/rete-diagrams.js): colours from the tokens, so light and dark follow */
 .rt-dg { gap: 8px; max-width: 760px; }
 .dg-wrap { position: relative; display: block; width: 100%; padding: 10px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface);

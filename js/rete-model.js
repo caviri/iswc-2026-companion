@@ -15,10 +15,6 @@ export const DEMO_PAPER = "paper-demos-rete-browser-native-sparql-over-static-r"
 /** Images on the page: local file, what it shows, and where it comes from (the rete project, Apache-2.0). */
 export const IMAGES = {
   logo: { file: "img/rete/logo.svg", width: 520, height: 140, from: "rete on GitHub", url: LINKS.repo, alt: "The rete logo" },
-  notebook: { file: "img/rete/jupyterlite.webp", width: 1600, height: 1244, from: "the ISWC 2026 demo", url: LINKS.demo,
-    alt: "In a notebook: the same files from Python, in JupyterLite running in the browser." },
-  agent: { file: "img/rete/mcpb-tools.webp", width: 982, height: 948, from: "the ISWC 2026 demo", url: LINKS.demo,
-    alt: "From an agent: an assistant querying the files through the rete MCP extension." },
 };
 
 /** The vocabularies the graph uses, each with what it is used for here. */
