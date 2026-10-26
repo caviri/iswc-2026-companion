@@ -12,7 +12,7 @@ import { dayLong } from "../model.js";
 import { replaceRoute } from "../route-state.js";
 import {
   BARI_FILTERS, PRACTICAL_FILTER, CATEGORY_COLOR, loadGuide, eventDays, eventsAt, placesIn, foodGroups, categoryCounts,
-  walkLabel, osmUrl, googleMapsUrl, trainLine, checkedLabel, sourceLabel, dayLabel, romeDay, romeTime, isPast,
+  walkLabel, osmUrl, googleMapsUrl, directionsUrl, trainLine, checkedLabel, sourceLabel, dayLabel, romeDay, romeTime, isPast,
   practicalGroups, whenLabel, iswcSource, photoFor,
 } from "../bari-model.js";
 import { imgUrl } from "../images-model.js";
@@ -77,7 +77,7 @@ const practicalLink = (l) => (l.url.startsWith("#/")
 function practicalCard(e, nowISO) {
   const past = e.startISO ? isPast(e, nowISO) : false;
   const where = [e.place, e.address, walkLabel(e.walkMin)].filter(Boolean).join(" · ");
-  const osm = osmUrl(e.lat, e.lon);
+  const osm = osmUrl(e.lat, e.lon), dir = directionsUrl(e);
   return h("li", { class: `bari-card bari-prac${past ? " past" : ""}`, id: anchor(e.id) },
     h("span", { class: "bari-card-title" }, h("strong", { class: "bari-name" }, e.title),
       past ? h("span", { class: "bari-ended" }, "Over") : null),
@@ -87,6 +87,7 @@ function practicalCard(e, nowISO) {
     e.points.length ? h("ul", { class: "bari-points" }, e.points.map((t) => h("li", {}, t))) : null,
     e.rows.length ? h("dl", { class: "bari-rows" }, e.rows.map(([k, v]) => [h("dt", {}, k), h("dd", {}, v)])) : null,
     h("div", { class: "bari-actions" },
+      dir ? ext(dir, "pill-btn", icon("pin", { size: 18 }), "Directions") : null,
       osm ? ext(osm, "pill-btn", icon("map", { size: 18 }), "Open in Maps") : null,
       e.links.map(practicalLink)),
     footer(e));
@@ -107,6 +108,7 @@ function photo(im, cls = "") {
 }
 
 function eventRow(ev, venue, past, time) {
+  const dir = directionsUrl(venue ?? ev);
   return h("li", { class: `bari-ev${past ? " past" : ""}`, id: anchor(ev.id) },
     h("span", { class: "bari-ev-time" }, time, past ? h("span", { class: "bari-ended" }, "Ended") : null),
     h("div", { class: "bari-ev-body" },
@@ -119,7 +121,8 @@ function eventRow(ev, venue, past, time) {
       ev.description ? h("p", { class: "bari-desc" }, ev.description) : null,
       h("div", { class: "bari-actions" },
         ev.price ? h("span", { class: "bari-price" }, ev.price) : null,
-        ticketsBtn(ev))));
+        ticketsBtn(ev),
+        dir ? ext(dir, "pill-btn", icon("pin", { size: 18 }), "Directions") : null)));
 }
 
 /** A place card: tag, area, walk time, description, map and web links, events there, sources. Expands inline. */
@@ -128,7 +131,7 @@ function placeCard(x, guide, nowISO, open, onToggle) {
   const today = nowISO.slice(0, 10);
   const events = x.category === "venue" ? eventsAt(guide.items, x.id, nowISO) : [];
   const train = x.category === "daytrip" ? trainLine(x) : "";
-  const osm = osmUrl(x.lat, x.lon), gm = googleMapsUrl(x);
+  const osm = osmUrl(x.lat, x.lon), gm = googleMapsUrl(x), dir = directionsUrl(x);
   const more = [x.address ? h("p", {}, icon("pin", { size: 16 }), x.address) : null,
     x.hours ? h("p", {}, icon("clock", { size: 16 }), String(x.hours)) : null,
     x.note ? h("p", {}, String(x.note)) : null].filter(Boolean);
@@ -147,6 +150,7 @@ function placeCard(x, guide, nowISO, open, onToggle) {
       h("ul", {}, events.map((ev) => h("li", {}, h("span", { class: "bari-at-when" }, whenText(ev, today)), " ",
         h("a", { href: `#/bari?item=${encodeURIComponent(ev.id)}` }, ev.name), ev.price ? ` · ${ev.price}` : "")))) : null,
     h("div", { class: "bari-actions" },
+      dir ? ext(dir, "pill-btn", icon("pin", { size: 18 }), "Directions") : null,
       osm ? ext(osm, "pill-btn", icon("map", { size: 18 }), "Open in Maps") : null,
       gm && isOpen ? ext(gm, "pill-btn", icon("search", { size: 18 }), "Google Maps") : null,
       x.url ? ext(x.url, "pill-btn", icon("external", { size: 18 }), x.category === "daytrip" ? "Info" : "Website") : null,
@@ -182,13 +186,14 @@ export function renderBari(root, appClock, params = {}) {
     const v = guide?.venue;
     venueBox.hidden = !v || (!v.address && !v.url);
     if (venueBox.hidden) return;
-    const osm = osmUrl(v.lat, v.lon);
+    const osm = osmUrl(v.lat, v.lon), dir = directionsUrl(v);
     venueBox.replaceChildren(...[ // replaceChildren would print a missing photo as "null"
       photo(v.image, "venue"),
       h("p", { class: "bari-venue-k" }, "Conference venue"),
       h("strong", { class: "bari-venue-name" }, v.name),
       v.address ? h("p", { class: "bari-meta" }, v.address) : null,
       h("div", { class: "bari-actions" },
+        dir ? ext(dir, "pill-btn", icon("pin", { size: 18 }), "Directions") : null,
         osm ? ext(osm, "pill-btn", icon("map", { size: 18 }), "Open in Maps") : null,
         v.url ? ext(v.url, "pill-btn", icon("external", { size: 18 }), "Website") : null,
         guide.practical.length && st.filter !== "practical" ? h("button", {

@@ -165,6 +165,8 @@ function placeBlock(program, s, miniMap = null, board = null) {
     icon("pin", { size: 20 }),
     h("span", { class: "place-text" }, h("strong", {}, p.name), p.floor ? h("span", {}, p.floor) : null),
     board ? h("span", { class: "place-board" }, board) : null,
+    s.venueGeo ? h("a", { class: "pill-btn", href: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(s.venueGeo)}`, target: "_blank", rel: "noopener noreferrer" },
+      icon("pin", { size: 16 }), "Directions") : null,
     s.venueUrl ? h("a", { class: "pill-btn", href: s.venueUrl, target: "_blank", rel: "noopener noreferrer" }, "Venue", icon("external", { size: 14 })) : null,
     onMap ? h("a", { class: "pill-btn", href: `#/map?room=${encodeURIComponent(room.id)}` }, icon("map", { size: 18 }), "Show on map") : null);
   const mini = miniMap && room && !s.allRooms ? miniMap(room) : null;

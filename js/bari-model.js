@@ -243,6 +243,15 @@ export function osmUrl(lat, lon) {
   return safeUrl(`https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${lat}/${lon}`);
 }
 
+/**
+ * Google Maps directions to the place from wherever the phone is (no origin: Google starts at the current
+ * location): its coordinates when known, else "name, address". null with neither.
+ */
+export function directionsUrl(item) {
+  const to = num(item?.lat) != null && num(item?.lon) != null ? `${item.lat},${item.lon}` : item?.name && item?.address ? `${item.name}, ${item.address}` : null;
+  return to ? safeUrl(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(to)}`) : null;
+}
+
 /** A Google Maps search for the place: "name, address" (or the coordinates). */
 export function googleMapsUrl(item) {
   const q = item?.name && item?.address ? `${item.name}, ${item.address}` : num(item?.lat) != null && num(item?.lon) != null ? `${item.lat},${item.lon}` : item?.name;

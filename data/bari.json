@@ -12,7 +12,7 @@
   ],
   "url": "https://www.thenicolaushotel.com/"
  },
- "generated": "2026-10-24..2026-10-25",
+ "generated": "2026-10-24..2026-10-26",
  "items": [
   {
    "address": "Corso Cavour 12, 70122 Bari",
@@ -2212,16 +2212,33 @@
    "topic": "events"
   },
   {
-   "checked": "2026-10-25",
+   "address": "Bari old town (Bari Vecchia)",
+   "checked": "2026-10-26",
+   "distanceKm": 3.75,
    "id": "iswc-welcome-reception",
+   "lat": 41.1312838,
+   "links": [
+    {
+     "label": "Ex Convento",
+     "url": "https://cultura.gov.it/luogo/ex-convento-di-san-francesco-della-scarpa"
+    },
+    {
+     "label": "Santa Chiara",
+     "url": "https://sabapba.cultura.gov.it/complesso-monumentale-di-santa-chiara"
+    }
+   ],
+   "lon": 16.8683852,
+   "place": "Ex Convento di San Francesco della Scarpa and Complesso monumentale di Santa Chiara",
    "sources": [
     "https://iswc2026.semanticweb.org/#/program/schedule",
-    "https://iswc2026.semanticweb.org/#/attending/registration"
+    "https://iswc2026.semanticweb.org/#/attending/registration",
+    "https://www.openstreetmap.org/way/561065661"
    ],
-   "startISO": "2026-10-26T18:30:00+01:00",
-   "text": "From 18:30 until late. The archived programme gives no separate location. Included in the main conference registration.",
+   "startISO": "2026-10-26T19:15:00+01:00",
+   "text": "From 19:15 until late, with a surprise, in the old town. Included in the main conference registration. The organisers announced the time and the two venues at the conference (the archived programme said 18:30 and gave no place).",
    "title": "Welcome Reception",
-   "topic": "events"
+   "topic": "events",
+   "walkMin": 50
   },
   {
    "checked": "2026-10-25",

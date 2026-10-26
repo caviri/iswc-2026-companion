@@ -136,6 +136,8 @@ ic:venue a owl:DatatypeProperty ; rdfs:label "venue"@en ; schema:domainIncludes 
     rdfs:comment "Where an event outside the conference centre is held (a social event), by name."@en .
 ic:venueUrl a owl:DatatypeProperty ; rdfs:label "venue page"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
     rdfs:comment "The venue's own web page."@en .
+ic:venueGeo a owl:DatatypeProperty ; rdfs:label "venue coordinates"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
+    rdfs:comment "That venue as \"lat,lon\" (WGS84, from OpenStreetMap): where directions lead."@en .
 ic:address a owl:DatatypeProperty ; rdfs:label "venue address"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
     rdfs:comment "Where that venue is, as the conference writes it."@en .
 ic:link a owl:DatatypeProperty ; rdfs:label "programme link"@en ; rdfs:range xsd:string ;

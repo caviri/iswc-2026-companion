@@ -4,7 +4,7 @@ import { affiliationText } from "./people-model.js";
 
 const SESSION_KEYS = ["id", "day", "start", "end", "startISO", "endISO", "kind", "title", "roomId", "allRooms", "chairs",
   "link", "paperIds", "topics", "description", "speaker", "affiliation", "talkTitle", "website", "bio", "organizers", "slot",
-  "terms", "cluster", "speakerId", "organizerIds", "chairIds", "descriptionSource", "descriptionUrl", "agendaSource", "agendaUrl", "venue", "venueUrl", "address"];
+  "terms", "cluster", "speakerId", "organizerIds", "chairIds", "descriptionSource", "descriptionUrl", "agendaSource", "agendaUrl", "venue", "venueUrl", "venueGeo", "address"];
 // abstract / abstractSource: "OpenAlex" | "arXiv" | "Crossref" (null when no open abstract was found)
 const PAPER_KEYS = ["id", "title", "authors", "authorIds", "track", "spotlight", "sessionId", "lists", "topics", "terms", "cluster",
   "abstract", "abstractSource", "board"];

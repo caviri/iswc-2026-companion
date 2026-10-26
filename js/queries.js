@@ -4,7 +4,7 @@ export const Q_SESSIONS = `PREFIX schema: <http://schema.org/>
 PREFIX ic: <https://w3id.org/iswc26-companion/>
 SELECT ?stableId ?day ?start ?end ?startISO ?endISO ?kind ?title ?roomId ?allRooms ?chairs ?link ?paperIds
        ?description ?speaker ?affiliation ?talkTitle ?website ?bio ?organizers ?slot ?cluster ?speakerId
-       ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl ?venue ?venueUrl ?address
+       ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl ?venue ?venueUrl ?venueGeo ?address
        (GROUP_CONCAT(DISTINCT ?t; separator="|") AS ?topics)
        (GROUP_CONCAT(DISTINCT ?g; separator="|") AS ?terms)
 WHERE {
@@ -36,11 +36,12 @@ WHERE {
   OPTIONAL { ?s ic:agendaUrl ?agendaUrl }
   OPTIONAL { ?s ic:venue ?venue }
   OPTIONAL { ?s ic:venueUrl ?venueUrl }
+  OPTIONAL { ?s ic:venueGeo ?venueGeo }
   OPTIONAL { ?s ic:address ?address }
 }
 GROUP BY ?stableId ?day ?start ?end ?startISO ?endISO ?kind ?title ?roomId ?allRooms ?chairs ?link ?paperIds
          ?description ?speaker ?affiliation ?talkTitle ?website ?bio ?organizers ?slot ?cluster ?speakerId
-         ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl ?venue ?venueUrl ?address
+         ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl ?venue ?venueUrl ?venueGeo ?address
 ORDER BY ?startISO ?stableId`;
 
 export const Q_PAPERS = `PREFIX schema: <http://schema.org/>

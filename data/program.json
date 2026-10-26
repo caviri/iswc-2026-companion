@@ -65069,7 +65069,8 @@
    "terms": [],
    "title": "Welcome Reception",
    "topics": [],
-   "venue": "Ex Convento di San Francesco della Scarpa and Complesso monumentale di Santa Chiara"
+   "venue": "Ex Convento di San Francesco della Scarpa and Complesso monumentale di Santa Chiara",
+   "venueGeo": "41.1312838,16.8683852"
   },
   {
    "allRooms": false,
@@ -66240,6 +66241,7 @@
    "title": "Gala Dinner & Disco (Villa de Grecis)",
    "topics": [],
    "venue": "Villa de Grecis",
+   "venueGeo": "41.1092029,16.8518206",
    "venueUrl": "https://www.villadegrecis.com/"
   },
   {
