@@ -15,7 +15,7 @@ import { researchHighlights, federatedQuery, explorerHref } from "../research-mo
 import { stars, statusBadge } from "./research.js";
 import { imgEl, logoChip, photoCredit } from "./images.js";
 import { placeHero, dedupeTitle, imgUrl } from "../images-model.js";
-import { demoWhen } from "../rete-model.js";
+import { demoWhen, demoWhere } from "../rete-model.js";
 import { bariGuide } from "./bari.js";
 import { tonight, walkLabel } from "../bari-model.js";
 
@@ -236,7 +236,7 @@ function reteCard(program) {
   return h("a", { class: "hm-rete", href: "#/rete" },
     h("img", { src: imgUrl("img/rete/logo.svg"), alt: "", width: 88, height: 24 }),
     h("strong", {}, "Built with rete: no backend, one graph file"),
-    h("span", {}, "A self-contained static page: the data is one RDF graph, queried with SPARQL in your browser. Come to our demo", s ? `, ${demoWhen(s, placeOf(program, s).name)}.` : "."));
+    h("span", {}, "A self-contained static page: the data is one RDF graph, queried with SPARQL in your browser. Come to our demo", s ? `, ${demoWhen(s, demoWhere(program, s))}.` : "."));
 }
 
 /**

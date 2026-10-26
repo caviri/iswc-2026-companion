@@ -132,6 +132,12 @@ ic:bio a owl:DatatypeProperty ; rdfs:label "speaker bio"@en ; rdfs:range xsd:str
     rdfs:comment "A keynote speaker's biography as the programme publishes it."@en .
 ic:website a owl:DatatypeProperty ; rdfs:label "website"@en ; rdfs:range xsd:string ;
     rdfs:comment "The event's own website."@en .
+ic:venue a owl:DatatypeProperty ; rdfs:label "venue"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
+    rdfs:comment "Where an event outside the conference centre is held (a social event), by name."@en .
+ic:venueUrl a owl:DatatypeProperty ; rdfs:label "venue page"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
+    rdfs:comment "The venue's own web page."@en .
+ic:address a owl:DatatypeProperty ; rdfs:label "venue address"@en ; schema:domainIncludes schema:Event ; rdfs:range xsd:string ;
+    rdfs:comment "Where that venue is, as the conference writes it."@en .
 ic:link a owl:DatatypeProperty ; rdfs:label "programme link"@en ; rdfs:range xsd:string ;
     rdfs:comment "The link the conference programme gives for the session."@en .
 ic:description a owl:DatatypeProperty ; rdfs:label "description"@en ; rdfs:range xsd:string .
@@ -149,6 +155,8 @@ ic:track a owl:DatatypeProperty ; rdfs:label "track"@en ; schema:domainIncludes 
 ic:list a owl:DatatypeProperty ; rdfs:label "accepted list"@en ; schema:domainIncludes schema:ScholarlyArticle ; rdfs:range xsd:string ;
     rdfs:comment "Which list of accepted papers it appears in (research, resource, demos, posters...)."@en .
 ic:spotlight a owl:DatatypeProperty ; rdfs:label "spotlight"@en ; schema:domainIncludes schema:ScholarlyArticle ; rdfs:range xsd:boolean .
+ic:board a owl:DatatypeProperty ; rdfs:label "board number"@en ; schema:domainIncludes schema:ScholarlyArticle ; rdfs:range xsd:integer ;
+    rdfs:comment "At the Posters & Demos session: a poster's board, or a demo's table, as the organisers numbered them."@en .
 ic:authorsOrdered a owl:DatatypeProperty ; rdfs:label "authors, in order"@en ; rdfs:range xsd:string .
 ic:authorIdsOrdered a owl:DatatypeProperty ; rdfs:label "author ids, in order"@en ; rdfs:range xsd:string .
 ic:abstractSource a owl:DatatypeProperty ; rdfs:label "abstract source"@en ; rdfs:range xsd:string ;

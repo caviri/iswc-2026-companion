@@ -2,7 +2,7 @@
 // maybes (swiped up) shown outlined among them, and a "Maybe" tab to review them: keep or skip each one.
 // Grouping and clash rules are pure (js/model.js mineTimeline, maybeList; tests/app/mine.test.mjs).
 import { h, icon, tagPill } from "../ui.js";
-import { dayLong, dayShort, timeRange, placeOf, mineTimeline, defaultMineDay, nowNextFor, itemTag, maybeList, firmEntry } from "../model.js";
+import { dayLong, dayShort, timeRange, placeOf, mineTimeline, defaultMineDay, nowNextFor, itemTag, maybeList, firmEntry, boardLabel } from "../model.js";
 import { onVerdictWhile } from "../verdict-bus.js";
 
 /** The item's type tag in front of a meta line's text. */
@@ -121,7 +121,7 @@ function paperRow(program, store, p, maybe = false) {
     maybe ? icon("maybe", { size: 15 }) : icon("heart", { size: 15, fill: true }),
     h("span", { class: "tl-text" },
       h("span", { class: "tl-ptitle" }, p.title),
-      h("span", { class: "tl-meta row-tagline" }, tagged(program, p, [p.talk ? timeRange(p.talk) : "", maybe ? "Maybe" : ""].filter(Boolean).join(" · "))),
+      h("span", { class: "tl-meta row-tagline" }, tagged(program, p, [p.talk ? timeRange(p.talk) : "", boardLabel(p), maybe ? "Maybe" : ""].filter(Boolean).join(" · "))),
       noteLine(store, p.id))),
   maybe ? quickVerdict(store, p) : null);
 }

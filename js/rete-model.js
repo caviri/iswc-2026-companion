@@ -2,6 +2,7 @@
 // vocabularies, and the demo at ISWC 2026. Pure: content, queries and formatting; views/rete.js draws it.
 // Tested in tests/app/rete.test.mjs.
 import { PREFIXES } from "./sparql-model.js";
+import { placeOf } from "./model.js";
 
 export const LINKS = {
   repo: "https://github.com/caviri/rete",
@@ -66,6 +67,12 @@ export function bigNumber(n) {
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+/** Where to find the demo in its session: "Plenary, table 34" (the room alone until tables are numbered). */
+export function demoWhere(program, session) {
+  const table = program?.byId?.get(DEMO_PAPER)?.board;
+  return [placeOf(program, session).name, table != null ? `table ${table}` : null].filter(Boolean).join(", ");
+}
+
 /** A session as "19:15–21:00 on 27 October (Tuesday) at Plenary" (the room left out when unknown). */
 export function demoWhen(session, room = null) {
   if (!session?.day) return "";

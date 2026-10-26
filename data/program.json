@@ -9252,13 +9252,14 @@
     "Mehwish Alam",
     "Maribel Acosta"
    ],
+   "board": 22,
    "cluster": "c-link-prediction",
    "id": "paper-posters-a-benchmark-for-hierarchical-link-predic",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "benchmark",
@@ -9287,13 +9288,14 @@
     "Yacine Sam",
     "Vittorio Scarano"
    ],
+   "board": 14,
    "cluster": "c-sparql",
    "id": "paper-posters-a-multi-agent-framework-for-federated-sp",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "multi-agent",
@@ -9324,6 +9326,7 @@
     "Bin Wang",
     "Xiaochun Yang"
    ],
+   "board": 30,
    "cluster": "c-kg-completion-kg-embeddings",
    "id": "paper-posters-adapting-knowledge-graphs-for-behavior-d",
    "links": [
@@ -9349,7 +9352,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -9372,13 +9375,14 @@
     "Sebastian Walter",
     "Hannah Bast"
    ],
+   "board": 15,
    "cluster": "c-entity-resolution-llm-entity-linking",
    "id": "paper-posters-agentic-knowledge-graph-entity-linking",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ai-agent",
@@ -9411,6 +9415,7 @@
     "Heiko Paulheim",
     "Daria Stepanova"
    ],
+   "board": 8,
    "cluster": "c-llm-competency-question",
    "id": "paper-posters-apolo-automatic-prompt-optimization-for",
    "links": [
@@ -9436,7 +9441,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ontology",
@@ -9462,13 +9467,14 @@
     "Bianca Benelli",
     "Matteo Lissandrini"
    ],
+   "board": 6,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-building-a-virtual-knowledge-graph-for-d",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "croissant",
@@ -9500,13 +9506,14 @@
     "Gernot Steindl",
     "Wolfgang Kastner"
    ],
+   "board": 18,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-deltaquads-building-an-rdf-store-on-delt",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "data-lake",
@@ -9535,6 +9542,7 @@
     "Alon Halevy",
     "Natasha Noy"
    ],
+   "board": 21,
    "cluster": "c-ai-agents-linked-data-semantic-layer",
    "id": "paper-posters-do-data-agents-need-semantic-metadata-a",
    "links": [
@@ -9560,7 +9568,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ai-agent"
@@ -9587,13 +9595,14 @@
     "Elisa Quintarelli",
     "Matteo Lissandrini"
    ],
+   "board": 16,
    "cluster": "c-sparql",
    "id": "paper-posters-fault-framework-for-failure-analysis-and",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "sparql",
@@ -9617,6 +9626,7 @@
     "Md Saikat Islam Khan Bappy",
     "Oshani Seneviratne"
    ],
+   "board": 10,
    "cluster": "c-question-answering-over-kgs-rag",
    "id": "paper-posters-fedv-kgqa-in-practice-design-lessons-and",
    "links": [
@@ -9642,7 +9652,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "kgqa"
@@ -9666,13 +9676,14 @@
     "Raphael Troncy",
     "Luigi De Russis"
    ],
+   "board": 19,
    "cluster": "c-llm-competency-question",
    "id": "paper-posters-formalising-personas-for-large-language",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "llm",
@@ -9700,13 +9711,14 @@
     "Jun Zhao",
     "Nigel Shadbolt"
    ],
+   "board": 32,
    "cluster": "c-ontology-engineering-reasoning",
    "id": "paper-posters-from-pr2graph-to-formal-policies-modelli",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [],
    "title": "From Pr²Graph to Formal Policies: Modelling Choices and Their Reasoning Consequences",
@@ -9723,13 +9735,14 @@
    "authors": [
     "Udayan Khurana"
    ],
+   "board": 2,
    "cluster": "c-llm-ai-agents-retrieval",
    "id": "paper-posters-grove-reducing-hallucination-in-llms-wit",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "hallucination",
@@ -9748,13 +9761,14 @@
    "authors": [
     "Wenting Sun"
    ],
+   "board": 20,
    "cluster": "c-llm-competency-question",
    "id": "paper-posters-harnesskg-exploring-an-ontology-for-agen",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ai-agent",
@@ -9782,13 +9796,14 @@
     "Gernot Steindl",
     "Wolfgang Kastner"
    ],
+   "board": 17,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-live-queryable-rdf-data-dumps-with-apach",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "parquet",
@@ -9820,6 +9835,7 @@
     "Bin Wang",
     "Xiaochun Yang"
    ],
+   "board": 9,
    "cluster": "c-kg-completion-kg-embeddings",
    "id": "paper-posters-llm-based-knowledge-graph-completion-com",
    "links": [
@@ -9845,7 +9861,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "kg-completion",
@@ -9868,13 +9884,14 @@
     "Wenxin Hu",
     "Ryutaro Ichise"
    ],
+   "board": 31,
    "cluster": "c-llm-competency-question",
    "id": "paper-posters-llm-enhanced-beyond-equivalence-ontology",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "llm",
@@ -9901,13 +9918,14 @@
     "Paolo Papotti",
     "Fabian M. Suchanek"
    ],
+   "board": 27,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-marita-mining-approximate-rules-in-table",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [],
    "title": "MARITA: Mining Approximate Rules in Tables",
@@ -9933,13 +9951,14 @@
     "Mori Kurokawa",
     "Kazushi Ikeda"
    ],
+   "board": 11,
    "cluster": "c-domain-applications",
    "id": "paper-posters-multi-layer-knowledge-graph-construction",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "kg-construction",
@@ -9970,6 +9989,7 @@
     "He Tan",
     "Jiaoyan Chen"
    ],
+   "board": 1,
    "cluster": "c-llm-competency-question",
    "id": "paper-posters-ontology-refinement-with-embeddings-and",
    "links": [
@@ -9995,7 +10015,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "llm",
@@ -10022,13 +10042,14 @@
     "Antonio Bulgheroni",
     "Lorenzo Fongaro"
    ],
+   "board": 12,
    "cluster": "c-provenance-rdf-stream-processing",
    "id": "paper-posters-proton-qa-1-0-a-nucleus-for-provenance-a",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "benchmark",
@@ -10058,13 +10079,14 @@
     "Julia Butte",
     "Tobias Käfer"
    ],
+   "board": 29,
    "cluster": "c-sparql",
    "id": "paper-posters-rdfdl-making-verified-hybrid-system-tran",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "sparql"
@@ -10084,13 +10106,14 @@
     "Takanori Ugai",
     "Takeshi Morita"
    ],
+   "board": 13,
    "cluster": "c-llm-ai-agents-retrieval",
    "id": "paper-posters-reasoning-over-hybrid-graphs-adaptive-ca",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "graphrag",
@@ -10113,6 +10136,7 @@
     "Nicolas Ferranti",
     "Axel Polleres"
    ],
+   "board": 7,
    "cluster": "c-wikidata-decentralised-data-solid",
    "id": "paper-posters-reconstructing-wikidata-statement-lifecy",
    "links": [
@@ -10136,7 +10160,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "wikidata"
@@ -10159,13 +10183,14 @@
     "Martina Pernigotto",
     "Matteo Lissandrini"
    ],
+   "board": 5,
    "cluster": "c-ai-agents-linked-data-semantic-layer",
    "id": "paper-posters-rossijskijfeatrdb-modeling-russian-imper",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "linked-data"
@@ -10192,6 +10217,7 @@
     "Heiko Paulheim",
     "Daria Stepanova"
    ],
+   "board": 25,
    "cluster": "c-kg-completion-kg-embeddings",
    "id": "paper-posters-scalable-gnn-based-knowledge-graph-repre",
    "links": [
@@ -10217,7 +10243,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "gnn",
@@ -10239,6 +10265,7 @@
     "Gustavo Publio",
     "Shqiponja Ahmetaj"
    ],
+   "board": 24,
    "cluster": "c-shacl-data-quality-shape-learning",
    "id": "paper-posters-symbolic-routing-for-executable-shacl-re",
    "links": [
@@ -10252,7 +10279,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "shacl"
@@ -10274,13 +10301,14 @@
     "Lesley Anderson",
     "Milan Markovic"
    ],
+   "board": 26,
    "cluster": "c-provenance-rdf-stream-processing",
    "id": "paper-posters-towards-a-provenance-framework-for-model",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "provenance"
@@ -10302,13 +10330,14 @@
     "Zola Mahlaza",
     "C. Maria Keet"
    ],
+   "board": 23,
    "cluster": "c-temporal-kg-evolution-learning",
    "id": "paper-posters-towards-an-evaluation-framework-for-even",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph"
@@ -10334,13 +10363,14 @@
     "Clément Frainay",
     "Franck Giacomoni"
    ],
+   "board": 3,
    "cluster": "c-property-graph-query",
    "id": "paper-posters-unravel-rdf-a-developer-oriented-query-a",
    "links": [],
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -10363,6 +10393,7 @@
     "Pierre Monnin",
     "Catherine Faron"
    ],
+   "board": 4,
    "cluster": "c-link-prediction",
    "id": "paper-posters-what-drives-schema-capture-in-link-predi",
    "links": [
@@ -10376,7 +10407,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "link-prediction"
@@ -10398,6 +10429,7 @@
     "Jui-Chien Lin",
     "Oshani Seneviratne"
    ],
+   "board": 28,
    "cluster": "c-entity-resolution-llm-entity-linking",
    "id": "paper-posters-when-connected-does-not-mean-similar-cha",
    "links": [
@@ -10423,7 +10455,7 @@
    "lists": [
     "posters"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "entity-resolution",
@@ -10444,13 +10476,14 @@
    "authors": [
     "Carlos Vivar Rios"
    ],
+   "board": 34,
    "cluster": "c-sparql",
    "id": "paper-demos-rete-browser-native-sparql-over-static-r",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "rdf",
@@ -10477,13 +10510,14 @@
     "Diego Reforgiato Recupero",
     "Angelo Salatino"
    ],
+   "board": 6,
    "cluster": "c-domain-applications",
    "id": "paper-demos-aida-dashboard-4-0-multi-dimensional-ana",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -10506,13 +10540,14 @@
     "Kathrin Füllenbach",
     "Dani Metilli"
    ],
+   "board": 12,
    "cluster": "c-ontology-engineering-reasoning",
    "id": "paper-demos-ask-wol-a-practical-review-assistant-for",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ontology",
@@ -10539,6 +10574,7 @@
     "Oshani Seneviratne",
     "Horst Samulowitz"
    ],
+   "board": 8,
    "cluster": "c-sparql",
    "id": "paper-demos-aster-agentic-text-to-sparql-with-task-s",
    "links": [
@@ -10552,7 +10588,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ai-agent",
@@ -10576,13 +10612,14 @@
     "Xander Poortvliet",
     "Mel Chekol"
    ],
+   "board": 33,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-demos-autovkg-llm-driven-virtual-knowledge-gra",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -10613,13 +10650,14 @@
     "Daniele Riboni",
     "Diego Reforgiato Recupero"
    ],
+   "board": 21,
    "cluster": "c-rag-authority-italian-parliamentary",
    "id": "paper-demos-biokg-rag-integrating-biomedical-ontolog",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "biomedical",
@@ -10649,13 +10687,14 @@
     "Tarcisio Mendes de Farias",
     "Ana Claudia Sima"
    ],
+   "board": 27,
    "cluster": "c-sparql",
    "id": "paper-demos-bootsparql-a-workbench-for-growing-quest",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "sparql",
@@ -10682,13 +10721,14 @@
     "Dimitris Plexousakis",
     "Haridimos Kondylakis"
    ],
+   "board": 24,
    "cluster": "c-property-graph-query",
    "id": "paper-demos-cappg-constraint-aware-partitioning-for",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "graph-partitioning",
@@ -10711,13 +10751,14 @@
     "Štěpán Stenchlák",
     "Petr Škoda"
    ],
+   "board": 20,
    "cluster": "c-wikidata-decentralised-data-solid",
    "id": "paper-demos-change-propagation-in-application-profil",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "application-profile"
@@ -10745,6 +10786,7 @@
     "Aliaksandr Birukou",
     "Enrico Motta"
    ],
+   "board": 3,
    "cluster": "c-wikidata-decentralised-data-solid",
    "id": "paper-demos-coci-conference-organisers-and-content-i",
    "links": [
@@ -10770,7 +10812,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [],
    "title": "COCI: Conference Organisers and Content Identifier",
@@ -10794,13 +10836,14 @@
     "Hongkuan Zhou",
     "Steffen Staab"
    ],
+   "board": 28,
    "cluster": "c-property-graph-query",
    "id": "paper-demos-demonstrating-probsparql-querying-knowle",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -10845,13 +10888,14 @@
     "Steffen Staab",
     "Blazej Grabowski"
    ],
+   "board": 30,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-demos-demonstrating-the-mlips-ontology-queryin",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "mcp",
@@ -10878,13 +10922,14 @@
     "Oliver Welz",
     "Erhard Rahm"
    ],
+   "board": 29,
    "cluster": "c-posters-visionary-ideas",
    "id": "paper-demos-designing-and-evaluating-knowledge-graph",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph"
@@ -10902,13 +10947,14 @@
     "Fernando Spadea",
     "Oshani Seneviratne"
    ],
+   "board": 22,
    "cluster": "c-kg-completion-kg-embeddings",
    "id": "paper-demos-fedtrek-lm-inspectable-movie-recommendat",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -10938,13 +10984,14 @@
     "Enrique Iglesias",
     "Maria-Esther Vidal"
    ],
+   "board": 31,
    "cluster": "c-neuro-symbolic-ai",
    "id": "paper-demos-from-boxes-to-knowledge-tool4boxology-fo",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "neuro-symbolic"
@@ -10966,13 +11013,14 @@
     "Lukas Plank",
     "Matthias Schlögl"
    ],
+   "board": 4,
    "cluster": "c-domain-applications",
    "id": "paper-demos-integrating-scattered-prosopographical-d",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "digital-humanities",
@@ -10993,13 +11041,14 @@
     "Marieke van Erp",
     "Paul Groth"
    ],
+   "board": 11,
    "cluster": "c-domain-applications",
    "id": "paper-demos-is-it-a-plant-activity-or-medicine-const",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph"
@@ -11023,6 +11072,7 @@
     "Jörg Waitelonis",
     "Harald Sack"
    ],
+   "board": 16,
    "cluster": "c-validation-biomedical-ontologies",
    "id": "paper-demos-ontoink-interactive-ontology-visualizati",
    "links": [
@@ -11048,7 +11098,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ontology"
@@ -11071,13 +11121,14 @@
     "María Poveda-Villalón",
     "Daniel Garijo"
    ],
+   "board": 14,
    "cluster": "c-llm-competency-question",
    "id": "paper-demos-oops-improving-ontology-pitfall-detectio",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "llm",
@@ -11102,13 +11153,14 @@
     "Riccardo Pozzi",
     "Matteo Palmonari"
    ],
+   "board": 1,
    "cluster": "c-rag-authority-italian-parliamentary",
    "id": "paper-demos-parliamentrag-an-authority-aware-multi-v",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "rag"
@@ -11136,13 +11188,14 @@
     "Stijn Vansummeren",
     "Domagoj Vrgoc"
    ],
+   "board": 23,
    "cluster": "c-property-graph-query",
    "id": "paper-demos-pathextractor-extracting-path-informatio",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "graph-database"
@@ -11166,13 +11219,14 @@
     "Ana Claudia Sima",
     "Tarcisio Mendes de Farias"
    ],
+   "board": 9,
    "cluster": "c-sparql",
    "id": "paper-demos-rdflib-endpoint-exposing-idiomatic-pytho",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "sparql",
@@ -11194,13 +11248,14 @@
     "Kouji Kozaki",
     "Mizuki Hayashi"
    ],
+   "board": 32,
    "cluster": "c-domain-applications",
    "id": "paper-demos-refv-kg-explorer-causal-and-stakeholder",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph"
@@ -11222,6 +11277,7 @@
     "Wenbo Wu",
     "George Konstantinidis"
    ],
+   "board": 7,
    "cluster": "c-ai-agents-linked-data-semantic-layer",
    "id": "paper-demos-repulink-a-linked-data-platform-for-acco",
    "links": [
@@ -11247,7 +11303,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "linked-data"
@@ -11270,13 +11326,14 @@
     "Mojtaba Nayyeri",
     "Steffen Staab"
    ],
+   "board": 10,
    "cluster": "c-rag-authority-italian-parliamentary",
    "id": "paper-demos-rigor-app-a-demo-system-for-retrieval-au",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "ontology",
@@ -11302,6 +11359,7 @@
     "Sören Auer",
     "Oliver Karras"
    ],
+   "board": 2,
    "cluster": "c-domain-applications",
    "id": "paper-demos-scikgdash-the-human-in-the-loop-curation",
    "links": [
@@ -11343,7 +11401,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "knowledge-graph",
@@ -11374,13 +11432,14 @@
     "Zenon Zacouris",
     "Maribel Acosta"
    ],
+   "board": 26,
    "cluster": "c-shacl-data-quality-shape-learning",
    "id": "paper-demos-shacl-wizard-guided-creation-of-shacl-sh",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "shacl"
@@ -11404,13 +11463,14 @@
     "Romit Kheni",
     "Maribel Acosta"
    ],
+   "board": 17,
    "cluster": "c-shacl-data-quality-shape-learning",
    "id": "paper-demos-shaclear-a-shacl-to-natural-language-tra",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "shacl"
@@ -11430,13 +11490,14 @@
     "Gian Carlo Milanese",
     "Gabriella Pasi"
    ],
+   "board": 19,
    "cluster": "c-sparql",
    "id": "paper-demos-similarity-based-osf-logic-for-flexible",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "sparql"
@@ -11460,13 +11521,14 @@
     "Christopher Maidens",
     "George Konstantinidis"
    ],
+   "board": 25,
    "cluster": "c-explainable-ai-llm-odrl",
    "id": "paper-demos-the-oval-policy-evaluator-engine-for-odr",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "odrl"
@@ -11488,13 +11550,14 @@
     "Paolo Pareti",
     "George Konstantinidis"
    ],
+   "board": 15,
    "cluster": "c-explainable-ai-llm-odrl",
    "id": "paper-demos-towards-an-accessible-reference-odrl-pol",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "odrl"
@@ -11514,13 +11577,14 @@
     "Sebastian Alberternst",
     "Sebastian Hocke"
    ],
+   "board": 5,
    "cluster": "c-domain-applications",
    "id": "paper-demos-wotbot-a-semantic-web-of-things-agent-fo",
    "links": [],
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "web-of-things"
@@ -11546,6 +11610,7 @@
     "Huseyin Erdoğan",
     "Cristiano Putzolu"
    ],
+   "board": 13,
    "cluster": "c-wikidata-decentralised-data-solid",
    "id": "paper-demos-x-digcheck-co-evolving-application-profi",
    "links": [
@@ -11565,7 +11630,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "application-profile",
@@ -11592,6 +11657,7 @@
     "Marc Jeanmougin",
     "Margherita Necchi"
    ],
+   "board": 18,
    "cluster": "c-wikidata-decentralised-data-solid",
    "id": "paper-demos-yago-a-logically-consistent-subset-of-wi",
    "links": [
@@ -11631,7 +11697,7 @@
    "lists": [
     "demos"
    ],
-   "sessionId": null,
+   "sessionId": "s-2026-10-27-1915-room-plenary-poster-and-demos",
    "spotlight": false,
    "terms": [
     "wikidata",
@@ -61861,7 +61927,7 @@
     {
      "abstract": null,
      "block": "II. Methodological aspects of ontology development for the Digital Humanities",
-     "byline": "N. Vasilogamvrakis, M. Sfakakis · marked ⋆ on programme page",
+     "byline": "N. Vasilogamvrakis, M. Sfakakis",
      "chairs": null,
      "end": "10:15",
      "endISO": "2026-10-26T10:15:00+01:00",
@@ -64982,11 +65048,13 @@
    "topics": []
   },
   {
+   "address": "Bari old town",
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
    "cluster": null,
    "day": "2026-10-26",
+   "description": "The Welcome Reception, with a surprise, in the old town: at the Ex Convento di San Francesco della Scarpa (https://cultura.gov.it/luogo/ex-convento-di-san-francesco-della-scarpa) and the Complesso monumentale di Santa Chiara (https://sabapba.cultura.gov.it/complesso-monumentale-di-santa-chiara).",
    "end": "Late",
    "endISO": null,
    "id": "s-2026-10-26-1830-none-welcome-reception",
@@ -64996,11 +65064,12 @@
    "organizerIds": [],
    "paperIds": [],
    "roomId": null,
-   "start": "18:30",
-   "startISO": "2026-10-26T18:30:00+01:00",
+   "start": "19:15",
+   "startISO": "2026-10-26T19:15:00+01:00",
    "terms": [],
    "title": "Welcome Reception",
-   "topics": []
+   "topics": [],
+   "venue": "Ex Convento di San Francesco della Scarpa and Complesso monumentale di Santa Chiara"
   },
   {
    "allRooms": false,
@@ -65514,7 +65583,74 @@
    "link": null,
    "links": [],
    "organizerIds": [],
-   "paperIds": [],
+   "paperIds": [
+    "paper-posters-ontology-refinement-with-embeddings-and",
+    "paper-posters-grove-reducing-hallucination-in-llms-wit",
+    "paper-posters-unravel-rdf-a-developer-oriented-query-a",
+    "paper-posters-what-drives-schema-capture-in-link-predi",
+    "paper-posters-rossijskijfeatrdb-modeling-russian-imper",
+    "paper-posters-building-a-virtual-knowledge-graph-for-d",
+    "paper-posters-reconstructing-wikidata-statement-lifecy",
+    "paper-posters-apolo-automatic-prompt-optimization-for",
+    "paper-posters-llm-based-knowledge-graph-completion-com",
+    "paper-posters-fedv-kgqa-in-practice-design-lessons-and",
+    "paper-posters-multi-layer-knowledge-graph-construction",
+    "paper-posters-proton-qa-1-0-a-nucleus-for-provenance-a",
+    "paper-posters-reasoning-over-hybrid-graphs-adaptive-ca",
+    "paper-posters-a-multi-agent-framework-for-federated-sp",
+    "paper-posters-agentic-knowledge-graph-entity-linking",
+    "paper-posters-fault-framework-for-failure-analysis-and",
+    "paper-posters-live-queryable-rdf-data-dumps-with-apach",
+    "paper-posters-deltaquads-building-an-rdf-store-on-delt",
+    "paper-posters-formalising-personas-for-large-language",
+    "paper-posters-harnesskg-exploring-an-ontology-for-agen",
+    "paper-posters-do-data-agents-need-semantic-metadata-a",
+    "paper-posters-a-benchmark-for-hierarchical-link-predic",
+    "paper-posters-towards-an-evaluation-framework-for-even",
+    "paper-posters-symbolic-routing-for-executable-shacl-re",
+    "paper-posters-scalable-gnn-based-knowledge-graph-repre",
+    "paper-posters-towards-a-provenance-framework-for-model",
+    "paper-posters-marita-mining-approximate-rules-in-table",
+    "paper-posters-when-connected-does-not-mean-similar-cha",
+    "paper-posters-rdfdl-making-verified-hybrid-system-tran",
+    "paper-posters-adapting-knowledge-graphs-for-behavior-d",
+    "paper-posters-llm-enhanced-beyond-equivalence-ontology",
+    "paper-posters-from-pr2graph-to-formal-policies-modelli",
+    "paper-demos-parliamentrag-an-authority-aware-multi-v",
+    "paper-demos-scikgdash-the-human-in-the-loop-curation",
+    "paper-demos-coci-conference-organisers-and-content-i",
+    "paper-demos-integrating-scattered-prosopographical-d",
+    "paper-demos-wotbot-a-semantic-web-of-things-agent-fo",
+    "paper-demos-aida-dashboard-4-0-multi-dimensional-ana",
+    "paper-demos-repulink-a-linked-data-platform-for-acco",
+    "paper-demos-aster-agentic-text-to-sparql-with-task-s",
+    "paper-demos-rdflib-endpoint-exposing-idiomatic-pytho",
+    "paper-demos-rigor-app-a-demo-system-for-retrieval-au",
+    "paper-demos-is-it-a-plant-activity-or-medicine-const",
+    "paper-demos-ask-wol-a-practical-review-assistant-for",
+    "paper-demos-x-digcheck-co-evolving-application-profi",
+    "paper-demos-oops-improving-ontology-pitfall-detectio",
+    "paper-demos-towards-an-accessible-reference-odrl-pol",
+    "paper-demos-ontoink-interactive-ontology-visualizati",
+    "paper-demos-shaclear-a-shacl-to-natural-language-tra",
+    "paper-demos-yago-a-logically-consistent-subset-of-wi",
+    "paper-demos-similarity-based-osf-logic-for-flexible",
+    "paper-demos-change-propagation-in-application-profil",
+    "paper-demos-biokg-rag-integrating-biomedical-ontolog",
+    "paper-demos-fedtrek-lm-inspectable-movie-recommendat",
+    "paper-demos-pathextractor-extracting-path-informatio",
+    "paper-demos-cappg-constraint-aware-partitioning-for",
+    "paper-demos-the-oval-policy-evaluator-engine-for-odr",
+    "paper-demos-shacl-wizard-guided-creation-of-shacl-sh",
+    "paper-demos-bootsparql-a-workbench-for-growing-quest",
+    "paper-demos-demonstrating-probsparql-querying-knowle",
+    "paper-demos-designing-and-evaluating-knowledge-graph",
+    "paper-demos-demonstrating-the-mlips-ontology-queryin",
+    "paper-demos-from-boxes-to-knowledge-tool4boxology-fo",
+    "paper-demos-refv-kg-explorer-causal-and-stakeholder",
+    "paper-demos-autovkg-llm-driven-virtual-knowledge-gra",
+    "paper-demos-rete-browser-native-sparql-over-static-r"
+   ],
    "roomId": "room-plenary",
    "start": "19:15",
    "startISO": "2026-10-27T19:15:00+01:00",
@@ -66088,6 +66224,7 @@
    "chairs": null,
    "cluster": null,
    "day": "2026-10-28",
+   "description": "The Gala Dinner, and afterwards a disco, at Villa de Grecis (https://www.villadegrecis.com/).",
    "end": "Late",
    "endISO": null,
    "id": "s-2026-10-28-1915-none-gala-dinner-disco-villa-de-grecis",
@@ -66101,7 +66238,9 @@
    "startISO": "2026-10-28T19:15:00+01:00",
    "terms": [],
    "title": "Gala Dinner & Disco (Villa de Grecis)",
-   "topics": []
+   "topics": [],
+   "venue": "Villa de Grecis",
+   "venueUrl": "https://www.villadegrecis.com/"
   },
   {
    "allRooms": false,
@@ -66494,6 +66633,28 @@
    "startISO": "2026-10-29T16:10:00+01:00",
    "terms": [],
    "title": "Closing Ceremony",
+   "topics": []
+  },
+  {
+   "allRooms": false,
+   "chairIds": [],
+   "chairs": null,
+   "cluster": null,
+   "day": "2026-10-27",
+   "description": "Straight after the Posters & Demos session: free time all together, playing two big pianos and singing all together (no mic, just being together). Bring your own instrument if you want.",
+   "end": "Late",
+   "endISO": null,
+   "id": "s-2026-10-27-2100-none-singing-with-piano-all-together",
+   "kind": "other",
+   "link": null,
+   "links": [],
+   "organizerIds": [],
+   "paperIds": [],
+   "roomId": null,
+   "start": "21:00",
+   "startISO": "2026-10-27T21:00:00+01:00",
+   "terms": [],
+   "title": "Singing with Piano all Together!",
    "topics": []
   }
  ],

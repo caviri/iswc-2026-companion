@@ -2,7 +2,7 @@
 // attachSwipe, the one gesture handler every deck card uses (the time-slot card too). Its decisions are the
 // pure ones in js/deck-model.js (direction lock, maybe-at-bottom) and js/model.js (classifyGesture).
 import { h, icon, tagPill } from "../ui.js";
-import { dayLong, dayShort, timeRange, placeOf, itemTag, classifyGesture, TAP_SLOP, whenOf } from "../model.js";
+import { dayLong, dayShort, timeRange, placeOf, itemTag, classifyGesture, TAP_SLOP, whenOf, boardLabel } from "../model.js";
 import { pressIntent, pressBlocked, atBottom } from "../deck-model.js";
 import { termText } from "../terms.js";
 import { thumbSVG } from "../thumbs.js";
@@ -17,9 +17,10 @@ function timeBlock(s) {
     h("span", { class: "t-rest" }, h("span", {}, dayLong(s.day)), end ? h("span", {}, end) : null));
 }
 
-function placeLine(program, s) {
+function placeLine(program, s, board = null) {
   const p = placeOf(program, s);
-  return h("p", { class: "card-place" }, icon("pin", { size: 18 }), h("span", {}, p.name), p.floor ? h("span", { class: "floor" }, p.floor) : null);
+  return h("p", { class: "card-place" }, icon("pin", { size: 18 }), h("span", {}, p.name), p.floor ? h("span", { class: "floor" }, p.floor) : null,
+    board ? h("strong", { class: "board" }, board) : null);
 }
 
 function topicTags(program, ids) {
@@ -87,7 +88,7 @@ function paperCard(program, store, p) {
       h("div", { class: "card-body" },
         authors ? h("p", { class: "card-authors" }, authors) : null,
         s ? h("p", { class: "card-sub in-session" }, icon("layers", { size: 16 }), h("span", {}, s.title)) : null),
-      h("div", { class: "card-foot" }, s ? placeLine(program, s) : null, topicTags(program, p.topics))),
+      h("div", { class: "card-foot" }, s ? placeLine(program, s, boardLabel(p)) : null, topicTags(program, p.topics))),
     stamps());
 }
 

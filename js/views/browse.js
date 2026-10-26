@@ -1,6 +1,6 @@
 // Browse and search: sticky search box, grouping control, grouped rows with quick keep/skip.
 import { h, icon, sparqlEntry, tagPill } from "../ui.js";
-import { dayShort, timeRange, placeOf, itemTag, VERDICT_LABEL, whenOf } from "../model.js";
+import { dayShort, timeRange, placeOf, itemTag, VERDICT_LABEL, whenOf, boardLabel } from "../model.js";
 import { DIMS, DIM_LABEL, runBrowse, normalizeState, hasFromParam, browseRoute, dayFromParam } from "../browse-model.js";
 import { searchPeople, flag } from "../people-model.js";
 import { thumbSVG } from "../thumbs.js";
@@ -36,7 +36,7 @@ function metaLines(program, x) {
     return [line, n ? plural(n, "paper") : ""];
   }
   const s = x.sessionId ? program.byId.get(x.sessionId) : null;
-  const when = s ? [dayShort(s.day), whenOf(program, x).start, placeOf(program, s).name].filter(Boolean).join(" · ") : "Not in the timetable";
+  const when = s ? [dayShort(s.day), whenOf(program, x).start, placeOf(program, s).name, boardLabel(x)].filter(Boolean).join(" · ") : "Not in the timetable";
   return [x.authors.join(", "), when];
 }
 

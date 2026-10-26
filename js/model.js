@@ -39,6 +39,22 @@ export function agendaGroups(session) {
   return out;
 }
 
+/**
+ * A byline as a workshop publishes it, its links pulled out: "A. B · Uni; abstract: https://x" ->
+ * { text: "A. B · Uni", links: [{ label: "Abstract", url: "https://x" }] }. Empty without a byline.
+ */
+export function bylineParts(byline) {
+  const links = [];
+  const text = String(byline ?? "").replace(/[;,·]?\s*([\p{L}][\p{L} ]*):\s*(https?:\/\/\S+)/gu, (_, label, url) => {
+    links.push({ label: label.trim().replace(/^./, (c) => c.toUpperCase()), url: url.replace(/[).,;]+$/, "") });
+    return "";
+  }).trim();
+  return { text, links };
+}
+
+/** Where a poster or demo stands at the Posters & Demos session: "Board 12" / "Table 34"; null without a number. */
+export const boardLabel = (x) => (x?.board == null ? null : `${x.track === "Demos" ? "Table" : "Board"} ${x.board}`);
+
 /** When an item happens, for display: a paper with its own slot (paper.talk) -> that slot's times on its session's day. */
 export function whenOf(program, x) {
   const s = x?.paperIds ? x : x?.sessionId ? program.byId.get(x.sessionId) ?? null : null;
@@ -56,9 +72,10 @@ export function timeRange(s) {
 /** "Floor −1" / "Floor 2" / "" */
 export const floorLabel = (floor) => (floor == null ? "" : `Floor ${floor < 0 ? "−" + Math.abs(floor) : floor}`);
 
-/** { name, floor } for a session's location, with readable fallbacks. */
+/** { name, floor } for a session's location, with readable fallbacks; an event outside the centre: its venue and address. */
 export function placeOf(program, s) {
   if (!s) return { name: "No session scheduled", floor: "" };
+  if (s.venue) return { name: s.venue, floor: s.address ?? "" };
   if (s.allRooms) return { name: "All rooms", floor: "" };
   const r = s.roomId ? program.byId.get(s.roomId) : null;
   if (!r) return { name: "No room listed", floor: "" };

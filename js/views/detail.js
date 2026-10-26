@@ -1,6 +1,6 @@
 // Item page for a session or paper: every field, verdict toggle, autosaving note, map link.
 import { h, icon, noteEditor, tagPill } from "../ui.js";
-import { dayLong, timeRange, placeOf, itemTag, VERDICT_LABEL, agendaGroups, whenOf } from "../model.js";
+import { dayLong, timeRange, placeOf, itemTag, VERDICT_LABEL, agendaGroups, whenOf, bylineParts, boardLabel } from "../model.js";
 import { termText, termChip, termLegend } from "../terms.js";
 import { authorRefs, personOf } from "../people-model.js";
 import { thumbSVG } from "../thumbs.js";
@@ -48,7 +48,12 @@ function field(label, ...content) {
 }
 
 const blocks = (text) => String(text ?? "").split(/\n{2,}/).map((t) => t.trim()).filter(Boolean);
-const paras = (text, program, terms) => blocks(text).map((t) => h("p", {}, termText(t, program, terms)));
+// A URL in the text (an organisers' announcement names its venues' pages) becomes a link; the rest is marked with terms.
+const URL_RE = /(https?:\/\/[^\s)]+[^\s).,;])/;
+const linked = (t, program, terms) => t.split(URL_RE).map((part, i) => (i % 2
+  ? h("a", { href: part, target: "_blank", rel: "noopener noreferrer" }, part.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))
+  : termText(part, program, terms)));
+const paras = (text, program, terms) => blocks(text).map((t) => h("p", {}, linked(t, program, terms)));
 
 /** A linked row for "Presented in" and a session's papers: miniature with the kept / maybe / skipped mark, title, type tag. */
 function itemRow(program, store, x) {
@@ -60,11 +65,11 @@ function itemRow(program, store, x) {
     h("span", { class: "row-text" },
       h("span", { class: "row-title" }, x.title),
       !s && x.authors?.length ? h("span", { class: "row-meta" }, x.authors.join(", ")) : null,
-      tagLine(program, x, s ? `${dayLong(s.day)}, ${timeRange(s)}` : ""))));
+      tagLine(program, x, s ? `${dayLong(s.day)}, ${timeRange(s)}` : boardLabel(x) ?? ""))));
 }
 
 /** One agenda item: its time, then a talk's paper row, a keynote (speaker, talk title, abstract) or a plain entry. */
-function agendaItem(program, store, a, state = "") {
+function agendaItem(program, store, s, a, state = "") {
   const time = h("span", { class: "ag-time" }, a.end ? `${a.start}–${a.end}` : `from ${a.start}`,
     state === "now" || state === "next" ? h("span", { class: `ag-state ag-${state}-tag` }, state === "now" ? "Now" : "Next") : null);
   const cls = state ? ` ag-${state}` : "";
@@ -87,12 +92,41 @@ function agendaItem(program, store, a, state = "") {
         a.note ? `, ${a.note}` : ""),
       a.abstract ? foldable(field("Abstract", paras(a.abstract)), a.abstract.length > LONG_ABSTRACT, "fold-abs") : null));
   }
-  // A talk the event publishes itself (not a programme paper): its title, linked to the paper when there is a link.
+  if (a.kind === "talk" || a.kind === "keynote") return agendaTalk(program, s, a, time, cls);
+  // An entry that isn't a talk (opening, break, discussion): its title, linked when there is a link.
   const title = a.url ? h("a", { class: "ag-link", href: a.url, target: "_blank", rel: "noopener noreferrer" }, a.title, icon("external", { size: 13 })) : a.title;
-  const tag = a.kind === "keynote" ? h("span", { class: "ag-kind" }, "Keynote") : null;
-  return h("li", { class: `ag-item ag-${a.kind}${cls}` }, time, h("span", { class: "ag-text" }, tag,
-    h("span", { class: a.kind === "talk" ? "ag-title" : "" }, title, a.note ? h("span", { class: "row-meta" }, ` (${a.note})`) : null),
+  return h("li", { class: `ag-item ag-${a.kind}${cls}` }, time, h("span", { class: "ag-text" },
+    h("span", {}, title, a.note ? h("span", { class: "row-meta" }, ` (${a.note})`) : null),
     a.byline ? h("span", { class: "row-meta" }, a.byline) : null));
+}
+
+/**
+ * A talk the workshop publishes itself (not a programme paper): a row that opens in place on when and where it
+ * is, its block, authors, abstract and the event's own links (the paper, its abstract, the workshop's programme).
+ */
+function agendaTalk(program, s, a, time, cls) {
+  const by = bylineParts(a.byline);
+  const room = s?.roomId ? program.byId.get(s.roomId) : null;
+  const place = placeOf(program, s);
+  const ext = (url, label) => h("a", { class: "pill-btn", href: url, target: "_blank", rel: "noopener noreferrer" }, label, icon("external", { size: 14 }));
+  const links = [
+    a.url ? ext(a.url, "Read the paper") : null,
+    ...by.links.map((l) => ext(l.url, l.label)),
+    s?.agendaUrl ? ext(s.agendaUrl, "Workshop programme") : null,
+    room?.floor != null ? h("a", { class: "pill-btn", href: `#/map?room=${encodeURIComponent(room.id)}` }, icon("map", { size: 16 }), "Show on map") : null,
+  ].filter(Boolean);
+  const when = [s ? dayLong(s.day) : "", a.end ? `${a.start}–${a.end}` : `from ${a.start}`, place.name].filter(Boolean).join(" · ");
+  return h("li", { class: `ag-item ag-${a.kind}${cls}` }, time, h("details", { class: "ag-more" },
+    h("summary", { class: "ag-text" },
+      a.kind === "keynote" ? h("span", { class: "ag-kind" }, "Keynote") : null,
+      h("span", { class: "ag-title" }, a.title, a.note ? h("span", { class: "row-meta" }, ` (${a.note})`) : null),
+      by.text ? h("span", { class: "row-meta" }, by.text) : null),
+    h("div", { class: "ag-more-body" },
+      h("p", { class: "ag-when" }, when),
+      a.block ? h("p", { class: "row-meta" }, a.block, a.chairs ? ` · chair ${a.chairs}` : "") : null,
+      a.abstract ? paras(a.abstract) : null,
+      h("p", { class: "row-meta" }, "Published by the workshop; not one of the conference's listed papers."),
+      links.length ? h("div", { class: "ag-more-links" }, links) : null)));
 }
 
 /** A workshop's own timed programme, by its blocks (each with its chair). `states[i]`: "past" | "now" | "next" | "" per agenda item. */
@@ -102,7 +136,7 @@ export function agendaField(program, store, s, { states = [] } = {}) {
   const talks = s.agenda.filter((a) => a.paperId || a.kind === "talk").length;
   return withSource(field(`Programme · ${talks} ${talks === 1 ? "talk" : "talks"}`, h("ol", { class: "ag-blocks" }, groups.map((g) => h("li", { class: "ag-block" },
     g.block ? h("p", { class: "ag-head" }, h("strong", {}, g.block), g.chairs ? [" · chair ", peopleLine(program, g.chairs, s.chairIds, "span")] : null) : null,
-    h("ol", { class: "ag-items" }, g.items.map((a) => agendaItem(program, store, a, states[index.get(a)] ?? ""))))))), "Programme", s.agendaSource);
+    h("ol", { class: "ag-items" }, g.items.map((a) => agendaItem(program, store, s, a, states[index.get(a)] ?? ""))))))), "Programme", s.agendaSource);
 }
 
 /** Organiser / chair names: each one with a person page is a link, joined "A, B and C". */
@@ -123,13 +157,15 @@ export function authorList(program, paper) {
   return out;
 }
 
-function placeBlock(program, s, miniMap = null) {
+function placeBlock(program, s, miniMap = null, board = null) {
   const p = placeOf(program, s);
   const room = s?.roomId ? program.byId.get(s.roomId) : null;
   const onMap = room?.floor != null; // e.g. Plenary has no known floor: no map link
   const block = h("div", { class: "detail-place" },
     icon("pin", { size: 20 }),
     h("span", { class: "place-text" }, h("strong", {}, p.name), p.floor ? h("span", {}, p.floor) : null),
+    board ? h("span", { class: "place-board" }, board) : null,
+    s.venueUrl ? h("a", { class: "pill-btn", href: s.venueUrl, target: "_blank", rel: "noopener noreferrer" }, "Venue", icon("external", { size: 14 })) : null,
     onMap ? h("a", { class: "pill-btn", href: `#/map?room=${encodeURIComponent(room.id)}` }, icon("map", { size: 18 }), "Show on map") : null);
   const mini = miniMap && room && !s.allRooms ? miniMap(room) : null;
   return mini ? h("div", { class: "detail-place-wrap" }, block, expander("Floor plan", p.name, mini)) : block;
@@ -221,7 +257,7 @@ export function detailContent(program, store, id, { miniMap = null, onVerdict = 
     isSession && x.description ? null : legend,
     deck ? null : s ? h("p", { class: "detail-when" }, icon("clock", { size: 20 }), h("span", {}, h("strong", {}, dayLong(when.day)), h("span", {}, timeRange(when))))
       : h("p", { class: "detail-when" }, icon("clock", { size: 20 }), h("span", {}, "No timetable slot listed")),
-    s && !deck ? placeBlock(program, s, miniMap) : null);
+    s && !deck ? placeBlock(program, s, miniMap, isSession ? null : boardLabel(x)) : null);
 
   let body;
   if (isSession) {

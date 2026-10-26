@@ -5,13 +5,12 @@
 // reduced motion (css). The message is in the page twice for a seamless loop; the second copy is hidden from
 // screen readers and out of the tab order.
 import { h } from "../ui.js";
-import { demoWhen, LINKS, DEMO_PAPER } from "../rete-model.js";
-import { placeOf } from "../model.js";
+import { demoWhen, demoWhere, LINKS, DEMO_PAPER } from "../rete-model.js";
 
 /** The message's parts: [text | {href, text, ext}] (pure; tests/app/rete.test.mjs). */
 export function tickerParts(program) {
   const s = program?.sessions?.find((x) => /poster and demos/i.test(x.title)) ?? null;
-  const when = s ? demoWhen(s, placeOf(program, s).name) : "27 October (Tuesday)";
+  const when = s ? demoWhen(s, demoWhere(program, s)) : "27 October (Tuesday)";
   const card = program?.byId?.has(DEMO_PAPER) ? `#/item/${encodeURIComponent(DEMO_PAPER)}` : "#/rete";
   return [
     "$ ./iswc26 --status  ▸ this page runs fully static: no server, no database, no API ▸ one RDF graph (iswc26.rete) queried with SPARQL in your browser via WebAssembly ▸ demo: ",

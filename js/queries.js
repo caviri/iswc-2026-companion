@@ -4,7 +4,7 @@ export const Q_SESSIONS = `PREFIX schema: <http://schema.org/>
 PREFIX ic: <https://w3id.org/iswc26-companion/>
 SELECT ?stableId ?day ?start ?end ?startISO ?endISO ?kind ?title ?roomId ?allRooms ?chairs ?link ?paperIds
        ?description ?speaker ?affiliation ?talkTitle ?website ?bio ?organizers ?slot ?cluster ?speakerId
-       ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl
+       ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl ?venue ?venueUrl ?address
        (GROUP_CONCAT(DISTINCT ?t; separator="|") AS ?topics)
        (GROUP_CONCAT(DISTINCT ?g; separator="|") AS ?terms)
 WHERE {
@@ -34,15 +34,18 @@ WHERE {
   OPTIONAL { ?s ic:descriptionUrl ?descriptionUrl }
   OPTIONAL { ?s ic:agendaSource ?agendaSource }
   OPTIONAL { ?s ic:agendaUrl ?agendaUrl }
+  OPTIONAL { ?s ic:venue ?venue }
+  OPTIONAL { ?s ic:venueUrl ?venueUrl }
+  OPTIONAL { ?s ic:address ?address }
 }
 GROUP BY ?stableId ?day ?start ?end ?startISO ?endISO ?kind ?title ?roomId ?allRooms ?chairs ?link ?paperIds
          ?description ?speaker ?affiliation ?talkTitle ?website ?bio ?organizers ?slot ?cluster ?speakerId
-         ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl
+         ?organizerIds ?chairIds ?descriptionSource ?descriptionUrl ?agendaSource ?agendaUrl ?venue ?venueUrl ?address
 ORDER BY ?startISO ?stableId`;
 
 export const Q_PAPERS = `PREFIX schema: <http://schema.org/>
 PREFIX ic: <https://w3id.org/iswc26-companion/>
-SELECT ?stableId ?title ?track ?spotlight ?authors ?authorIds ?sessionId ?cluster ?abstract ?abstractSource
+SELECT ?stableId ?title ?track ?spotlight ?board ?authors ?authorIds ?sessionId ?cluster ?abstract ?abstractSource
        (GROUP_CONCAT(DISTINCT ?t; separator="|") AS ?topics)
        (GROUP_CONCAT(DISTINCT ?l; separator="|") AS ?lists)
        (GROUP_CONCAT(DISTINCT ?g; separator="|") AS ?terms)
@@ -57,8 +60,9 @@ WHERE {
   OPTIONAL { ?p ic:authorIdsOrdered ?authorIds }
   OPTIONAL { ?p schema:abstract ?abstract }
   OPTIONAL { ?p ic:abstractSource ?abstractSource }
+  OPTIONAL { ?p ic:board ?board }
 }
-GROUP BY ?stableId ?title ?track ?spotlight ?authors ?authorIds ?sessionId ?cluster ?abstract ?abstractSource
+GROUP BY ?stableId ?title ?track ?spotlight ?board ?authors ?authorIds ?sessionId ?cluster ?abstract ?abstractSource
 ORDER BY ?stableId`;
 
 export const Q_DAYS = `PREFIX schema: <http://schema.org/>

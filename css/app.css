@@ -1847,6 +1847,16 @@ a.hm-credit:focus-visible { outline: 3px solid #fff; outline-offset: 2px; border
 .ag-link { color: inherit; text-decoration-color: var(--line); text-underline-offset: 2px; }
 .ag-link:hover { color: var(--sea); }
 .ag-link .icon { margin-left: 4px; vertical-align: -1px; color: var(--ink-2); }
+.ag-more { min-width: 0; }
+.ag-more > summary { list-style: none; cursor: pointer; position: relative; padding-right: 40px; }
+.ag-more > summary::-webkit-details-marker { display: none; }
+.ag-more > summary::after { content: ""; position: absolute; right: 18px; top: 18px; width: 8px; height: 8px; border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2); transform: rotate(45deg); transition: transform .15s; }
+.ag-more[open] > summary::after { transform: rotate(225deg); top: 22px; }
+.ag-more > summary:hover .ag-title { color: var(--sea); }
+.ag-more-body { display: grid; gap: 8px; padding: 0 14px 14px 0; font-size: var(--fs-s); }
+.ag-more-body p { margin: 0; }
+.ag-when { font-weight: 650; }
+.ag-more-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
 @media (max-width: 420px) { .ag-item { grid-template-columns: 74px minmax(0, 1fr); } .ag-time { padding-left: 10px; } }
 
 /* ---------- timetable grid (#/grid): rooms across, time down ---------- */
@@ -2373,3 +2383,6 @@ html.dash #app .bari-view .bari-ev-body:has(> .bari-photo) > :not(.bari-photo) {
 .hm-bari-ev strong { font-variant-numeric: tabular-nums; flex: none; }
 .hm-bari-ev span { display: grid; min-width: 0; line-height: 1.3; }
 .hm-bari-ev small { font-size: var(--fs-xs); color: var(--ink-2); }
+/* A poster's board / a demo's table at the Posters & Demos session. */
+.place-board, .card-place .board { padding: 1px 9px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: var(--fs-xs); font-weight: 700; white-space: nowrap; }
+.card-place .board { margin-left: 6px; }

@@ -3,11 +3,11 @@
 // page works, one example as a sequence, the data model; the vocabularies with live counts; what rete is; and the
 // demo at ISWC 2026. Content and queries: js/rete-model.js.
 import { h, icon } from "../ui.js";
-import { dayLong, placeOf } from "../model.js";
+import { dayLong } from "../model.js";
 import { getGraph } from "../data.js";
 import { Q_DATASET } from "../queries.js";
 import { imgUrl } from "../images-model.js";
-import { LINKS, DEMO_PAPER, IMAGES, VOCABULARIES, Q_PROPERTIES, countRows, byVocabulary, bigNumber, demoWhen } from "../rete-model.js";
+import { LINKS, DEMO_PAPER, IMAGES, VOCABULARIES, Q_PROPERTIES, countRows, byVocabulary, bigNumber, demoWhen, demoWhere } from "../rete-model.js";
 import { howItWorks, sequence, dataModel } from "../rete-diagrams.js";
 import { PREFIXES } from "../sparql-model.js";
 import { verdictToggle } from "./detail.js";
@@ -89,7 +89,7 @@ export function renderRete(root, program, store) {
     h("section", { class: "rt-sec rt-demo", "aria-labelledby": "rt-demo" },
       h("h2", { class: "rt-h", id: "rt-demo" }, "Come and talk to us at the demo"),
       h("p", { class: "rt-when" }, icon("clock", { size: 20 }),
-        session ? h("span", {}, h("strong", {}, demoWhen(session, placeOf(program, session).name)), ` · ${session.title}`) : "Posters & Demos"),
+        session ? h("span", {}, h("strong", {}, demoWhen(session, demoWhere(program, session))), ` · ${session.title}`) : "Posters & Demos"),
       demo ? h("a", { class: "rt-paper", href: `#/item/${encodeURIComponent(demo.id)}` }, h("strong", {}, demo.title), h("span", {}, demo.authors.join(", "))) : null,
       h("p", { class: "rt-prose" }, "Three graphs, up to 60 GB (Crossref, 3.78 billion triples), queried from a browser, a notebook and an AI assistant, with no SPARQL endpoint anywhere. Bring your questions, your graph, or this app."),
       keep ? h("div", { class: "rt-keep" }, h("span", { class: "src-note" }, "Add the demo to My ISWC:"), keep) : null,

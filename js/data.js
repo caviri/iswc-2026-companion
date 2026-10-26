@@ -4,14 +4,14 @@ import { affiliationText } from "./people-model.js";
 
 const SESSION_KEYS = ["id", "day", "start", "end", "startISO", "endISO", "kind", "title", "roomId", "allRooms", "chairs",
   "link", "paperIds", "topics", "description", "speaker", "affiliation", "talkTitle", "website", "bio", "organizers", "slot",
-  "terms", "cluster", "speakerId", "organizerIds", "chairIds", "descriptionSource", "descriptionUrl", "agendaSource", "agendaUrl"];
+  "terms", "cluster", "speakerId", "organizerIds", "chairIds", "descriptionSource", "descriptionUrl", "agendaSource", "agendaUrl", "venue", "venueUrl", "address"];
 // abstract / abstractSource: "OpenAlex" | "arXiv" | "Crossref" (null when no open abstract was found)
 const PAPER_KEYS = ["id", "title", "authors", "authorIds", "track", "spotlight", "sessionId", "lists", "topics", "terms", "cluster",
-  "abstract", "abstractSource"];
+  "abstract", "abstractSource", "board"];
 const GLOSSARY_KEYS = ["term", "short", "why", "url", "category", "aliases", "caseSensitive", "generic"];
 const CLUSTER_KEYS = ["id", "label", "terms", "termIds", "size"];
 const BOOLS = new Set(["allRooms", "spotlight", "caseSensitive", "generic", "liveOk", "liveCors"]);
-const INTS = new Set(["slot", "floor", "size", "position", "year", "citedBy", "stars", "width", "height"]);
+const INTS = new Set(["board", "slot", "floor", "size", "position", "year", "citedBy", "stars", "width", "height"]);
 // "|"-joined lists; SORTED ones are unordered sets, the rest keep source order.
 const SPLIT = new Set(["paperIds", "topics", "lists", "authors", "terms", "sub", "topTerms", "termIds", "aliases",
   "authorIds", "itemIds", "organizerIds", "chairIds"]);
