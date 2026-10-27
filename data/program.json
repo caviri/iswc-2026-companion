@@ -1,9 +1,9 @@
 {
  "clusters": [
   {
-   "id": "c-posters-demos",
-   "label": "Posters · Demos",
-   "size": 35,
+   "id": "c-posters-visionary-ideas",
+   "label": "Posters · Visionary Ideas",
+   "size": 34,
    "termIds": [
     "virtual-kg",
     "data-lake",
@@ -20,25 +20,6 @@
    ]
   },
   {
-   "id": "c-domain-applications",
-   "label": "Domain Applications",
-   "size": 41,
-   "termIds": [
-    "legal",
-    "scholarly-kg",
-    "materials-science",
-    "biomedical"
-   ],
-   "terms": [
-    "Legal knowledge",
-    "Scholarly knowledge graph",
-    "Materials science",
-    "Biomedical ontologies",
-    "GraphRAG",
-    "Interoperability"
-   ]
-  },
-  {
    "id": "c-ontology-engineering-reasoning",
    "label": "Ontology engineering · Reasoning",
    "size": 25,
@@ -48,6 +29,40 @@
    "terms": [
     "Ontology engineering",
     "Reasoning"
+   ]
+  },
+  {
+   "id": "c-domain-applications",
+   "label": "Domain Applications",
+   "size": 37,
+   "termIds": [
+    "scholarly-kg",
+    "materials-science",
+    "biomedical",
+    "interoperability"
+   ],
+   "terms": [
+    "Scholarly knowledge graph",
+    "Materials science",
+    "Biomedical ontologies",
+    "Interoperability",
+    "Century",
+    "Dashboard"
+   ]
+  },
+  {
+   "id": "c-llm-ai-agents-entity-linking",
+   "label": "LLM · AI agents · Entity linking",
+   "size": 22,
+   "termIds": [
+    "llm",
+    "ai-agent",
+    "entity-linking"
+   ],
+   "terms": [
+    "LLM",
+    "AI agents",
+    "Entity linking"
    ]
   },
   {
@@ -76,21 +91,6 @@
    "terms": [
     "Knowledge graph completion",
     "Knowledge graph embeddings"
-   ]
-  },
-  {
-   "id": "c-llm-ai-agents-retrieval",
-   "label": "LLM · AI agents · Retrieval",
-   "size": 17,
-   "termIds": [
-    "llm",
-    "ai-agent"
-   ],
-   "terms": [
-    "LLM",
-    "AI agents",
-    "Retrieval",
-    "Reasoning"
    ]
   },
   {
@@ -124,15 +124,18 @@
    ]
   },
   {
-   "id": "c-property-graph-query",
-   "label": "Property graph · Query",
-   "size": 12,
+   "id": "c-temporal-kg-rdf-stream-processing",
+   "label": "Temporal KG · RDF stream processing",
+   "size": 13,
    "termIds": [
-    "property-graph"
+    "temporal-kg",
+    "stream-processing",
+    "entity-resolution"
    ],
    "terms": [
-    "Property graph",
-    "Query"
+    "Temporal knowledge graph",
+    "RDF stream processing",
+    "Entity resolution"
    ]
   },
   {
@@ -150,6 +153,18 @@
     "SPARQL federation",
     "SPARQL endpoint",
     "Text-to-SPARQL"
+   ]
+  },
+  {
+   "id": "c-property-graph-query",
+   "label": "Property graph · Query",
+   "size": 11,
+   "termIds": [
+    "property-graph"
+   ],
+   "terms": [
+    "Property graph",
+    "Query"
    ]
   },
   {
@@ -212,18 +227,6 @@
    ]
   },
   {
-   "id": "c-temporal-kg-learning",
-   "label": "Temporal KG · Learning",
-   "size": 9,
-   "termIds": [
-    "temporal-kg"
-   ],
-   "terms": [
-    "Temporal knowledge graph",
-    "Learning"
-   ]
-  },
-  {
    "id": "c-provenance-rdf-stream-processing",
    "label": "Provenance · RDF stream processing",
    "size": 8,
@@ -253,25 +256,6 @@
    ]
   },
   {
-   "id": "c-entity-resolution-llm-entity-linking",
-   "label": "Entity resolution · LLM · Entity linking",
-   "size": 7,
-   "termIds": [
-    "entity-resolution",
-    "llm",
-    "entity-linking",
-    "stream-processing"
-   ],
-   "terms": [
-    "Entity resolution",
-    "LLM",
-    "Entity linking",
-    "RDF stream processing",
-    "Graph entity",
-    "Snap"
-   ]
-  },
-  {
    "id": "c-rag-authority-italian-parliamentary",
    "label": "RAG · Authority · Italian parliamentary",
    "size": 5,
@@ -296,6 +280,19 @@
    ],
    "terms": [
     "Link prediction"
+   ]
+  },
+  {
+   "id": "c-legal-knowledge-graphrag",
+   "label": "Legal knowledge · GraphRAG",
+   "size": 4,
+   "termIds": [
+    "legal",
+    "graphrag"
+   ],
+   "terms": [
+    "Legal knowledge",
+    "GraphRAG"
    ]
   }
  ],
@@ -3048,7 +3045,7 @@
     "Xuanzhe Zhao",
     "Hui Min"
    ],
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-307",
    "links": [
     {
@@ -3104,7 +3101,7 @@
     "Volodymyr Kadzhaia",
     "Pieter Bonte"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-151",
    "links": [
     {
@@ -3154,7 +3151,7 @@
     "Joost Vennekens",
     "Anastasia Dimou"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-310",
    "links": [
     {
@@ -3212,7 +3209,7 @@
     "Qi Liu",
     "Xiaomei Wei"
    ],
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-28",
    "links": [
     {
@@ -3518,7 +3515,7 @@
     "Klim Zaporojets",
     "Paul Groth"
    ],
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-37",
    "image": {
     "alt": "Figure from the code repository of “Select, Don’t Train: The Benefits of Modular Entity Disambiguation with LLM-Based Selection”",
@@ -3842,7 +3839,7 @@
     "Christian Meilicke",
     "Heiner Stuckenschmidt"
    ],
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-167",
    "links": [
     {
@@ -3973,7 +3970,7 @@
     "Cheng Cheng",
     "Steffen Staab"
    ],
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-293",
    "links": [
     {
@@ -4228,7 +4225,7 @@
     "Er Jin",
     "Stefan Decker"
    ],
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-221",
    "image": {
     "alt": "Figure from the code repository of “THGFM: Dual-Branch Temporal Heterogeneous Graph Fusion Model”",
@@ -4424,7 +4421,7 @@
     "George Papadakis",
     "Dimitrios Skoutas"
    ],
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-56",
    "links": [
     {
@@ -4624,7 +4621,7 @@
     "Sudesna Chakraborty",
     "Takeshi Morita"
    ],
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-401",
    "links": [
     {
@@ -4916,7 +4913,7 @@
     "Natthawut Kertkeidkachorn",
     "Kiyoaki Shirai"
    ],
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-444",
    "image": {
     "alt": "Figure from the code repository of “SEER-KG: Side Effect Exploration and Evaluation with Knowledge Graph-based Retrieval in Knowledge Editing for LLMs”",
@@ -5024,7 +5021,7 @@
     "Hernan Sarmiento",
     "Agustin Urrutia"
    ],
-   "cluster": "c-domain-applications",
+   "cluster": "c-legal-knowledge-graphrag",
    "id": "paper-534",
    "links": [],
    "lists": [
@@ -5184,7 +5181,7 @@
     "Lars Heling",
     "Mulang Onando"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-industry-data-packages-for-enterprise-knowledge-g",
    "links": [],
    "lists": [
@@ -5220,7 +5217,7 @@
     "Mulang Onando",
     "Felix Sasaki"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-industry-semantic-api-discovery-at-scale-a-knowle",
    "links": [],
    "lists": [
@@ -5838,7 +5835,7 @@
     "Dörthe Arndt",
     "Markus Krötzsch"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-331",
    "links": [
     {
@@ -6036,7 +6033,7 @@
     "Karteek Chada",
     "Deepika Khera"
    ],
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-industry-evaluating-entity-resolution-without-gro",
    "links": [],
    "lists": [
@@ -6082,7 +6079,7 @@
    "authors": [
     "Panelist TBA"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-industry-panel-discussion",
    "links": [],
    "lists": [],
@@ -6104,7 +6101,7 @@
     "Emanuel Slany",
     "Stephan Scheele"
    ],
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-190",
    "links": [
     {
@@ -6366,7 +6363,7 @@
     "Fabian Suchanek",
     "Nils Holzenberger"
    ],
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-288",
    "links": [
     {
@@ -6687,7 +6684,7 @@
     "Ilaria Angela Amantea",
     "Meem Arafat Manab"
    ],
-   "cluster": "c-domain-applications",
+   "cluster": "c-legal-knowledge-graphrag",
    "id": "paper-255",
    "links": [
     {
@@ -6868,7 +6865,7 @@
     "Nandana Mihindukulasooriya",
     "Ricardo Usbeck"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-311",
    "links": [
     {
@@ -6969,7 +6966,7 @@
     "Oshani Seneviratne",
     "Mohammad Mohammadi Amiri"
    ],
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-273",
    "links": [
     {
@@ -7837,7 +7834,7 @@
     "Michael Röder",
     "Axel-Cyrille Ngonga Ngomo"
    ],
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-427",
    "links": [
     {
@@ -8034,7 +8031,7 @@
     "Ora Lassila",
     "James A. Hendler"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-visionary-unrethinking-the-semantic-web",
    "links": [
     {
@@ -8072,7 +8069,7 @@
    "authors": [
     "Ruben Taelman"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-visionary-symbiotic-knowledge-graphs-a-vision-for",
    "links": [
     {
@@ -8168,7 +8165,7 @@
     "Himanshu Beniwal",
     "Michael Färber"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-visionary-from-universal-knowledge-graphs-to-conte",
    "links": [
     {
@@ -8246,7 +8243,7 @@
    "authors": [
     "Adrianna Janik"
    ],
-   "cluster": "c-property-graph-query",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-visionary-digital-emancipation-property-banks-and",
    "links": [
     {
@@ -8536,7 +8533,7 @@
     "Nicolas Férey",
     "Patrick Bourdot"
    ],
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-117",
    "links": [
     {
@@ -8922,7 +8919,7 @@
    "authors": [
     "Génesis Montenegro"
    ],
-   "cluster": "c-domain-applications",
+   "cluster": "c-legal-knowledge-graphrag",
    "id": "paper-doctoral-consortium-towards-ontology-guided-and-traceable-gr",
    "links": [
     {
@@ -9064,7 +9061,7 @@
    "authors": [
     "Emin Osmanov"
    ],
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-doctoral-consortium-integrating-knowledge-graphs-with-large",
    "links": [],
    "lists": [
@@ -9115,7 +9112,7 @@
    "authors": [
     "Benjamin Navet"
    ],
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-doctoral-consortium-knowledge-graphs-as-external-memory-for",
    "links": [
     {
@@ -9375,7 +9372,7 @@
     "Hannah Bast"
    ],
    "board": 15,
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-posters-agentic-knowledge-graph-entity-linking",
    "links": [],
    "lists": [
@@ -9467,7 +9464,7 @@
     "Matteo Lissandrini"
    ],
    "board": 6,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-building-a-virtual-knowledge-graph-for-d",
    "links": [],
    "lists": [
@@ -9506,7 +9503,7 @@
     "Wolfgang Kastner"
    ],
    "board": 18,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-deltaquads-building-an-rdf-store-on-delt",
    "links": [],
    "lists": [
@@ -9735,7 +9732,7 @@
     "Udayan Khurana"
    ],
    "board": 2,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-posters-grove-reducing-hallucination-in-llms-wit",
    "links": [],
    "lists": [
@@ -9796,7 +9793,7 @@
     "Wolfgang Kastner"
    ],
    "board": 17,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-live-queryable-rdf-data-dumps-with-apach",
    "links": [],
    "lists": [
@@ -9918,7 +9915,7 @@
     "Fabian M. Suchanek"
    ],
    "board": 27,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-posters-marita-mining-approximate-rules-in-table",
    "links": [],
    "lists": [
@@ -10106,7 +10103,7 @@
     "Takeshi Morita"
    ],
    "board": 13,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "id": "paper-posters-reasoning-over-hybrid-graphs-adaptive-ca",
    "links": [],
    "lists": [
@@ -10330,7 +10327,7 @@
     "C. Maria Keet"
    ],
    "board": 23,
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-posters-towards-an-evaluation-framework-for-even",
    "links": [],
    "lists": [
@@ -10429,7 +10426,7 @@
     "Oshani Seneviratne"
    ],
    "board": 28,
-   "cluster": "c-entity-resolution-llm-entity-linking",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "id": "paper-posters-when-connected-does-not-mean-similar-cha",
    "links": [
     {
@@ -10612,7 +10609,7 @@
     "Mel Chekol"
    ],
    "board": 33,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-demos-autovkg-llm-driven-virtual-knowledge-gra",
    "links": [],
    "lists": [
@@ -10888,7 +10885,7 @@
     "Blazej Grabowski"
    ],
    "board": 30,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-demos-demonstrating-the-mlips-ontology-queryin",
    "links": [],
    "lists": [
@@ -10922,7 +10919,7 @@
     "Erhard Rahm"
    ],
    "board": 29,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "id": "paper-demos-designing-and-evaluating-knowledge-graph",
    "links": [],
    "lists": [
@@ -59150,7 +59147,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-25",
    "description": "How can we build AI systems that do more than retrieve passages and generate plausible answers? In this tutorial, participants will build ARGO, a reproducible, open-source graph-based system for agentic semantic analysis across heterogeneous content. Starting from real documents and web pages, they will learn how to extract content and structure, identify entities and relations, retrieve relevant evidence, construct a semantic knowledge graph, and orchestrate reasoning through graph-based AI agents. ARGO connects core ideas from Semantic Web research with recent advances in information retrieval, Knowledge Graph engineering, GraphRAG, LLM-based tool calling, and MCP-enabled interoperability. Rather than treating retrieval, graph construction, reasoning, and validation as separate steps, the tutorial presents them as parts of a controllable agentic workflow. Agents decide when to search, when to inspect sources, when to traverse the graph, when to call tools, when to validate intermediate results, and when to generate a final answer. The result is not a simple chatbot, but a semantic AI system whose answers are grounded in source evidence, entities, relations, and explicit reasoning paths.",
    "descriptionSource": "ISWC 2026 website",
@@ -60617,7 +60614,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-25",
    "description": "Mainstream Knowledge Graphs (KGs) often assume a monolithic notion of truth, offering limited support for context-dependent validity, conflicting viewpoints, knowledge evolution, and concept drift. This full-day Barstuhl workshop introduces emph{Multi-dimensional Knowledge Graphs (MKGs)} as an umbrella paradigm for contextual, perspectival, and temporal knowledge representation. It will bring together formal and engineering perspectives to examine key modelling formalisms, scalability challenges, and reference use cases through lightning pitches and collaborative breakouts. The main outcome will be a community-driven framework document that will serve as the foundation for an MKG white paper and a potential future Dagstuhl seminar.",
    "descriptionSource": "ISWC 2026 website",
@@ -60644,7 +60641,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-25",
    "description": "Data is the key to understanding and solving challenges such as the loss of biodiversity, predicting recurring weather phenomena, or the fragmentation and loss of context of our cultural heritage. For this, vast amounts of data from many different sources need to be interpreted. Due to advances in computer power and the increasing availability of data spanning longer periods of time, historical data is becoming more important to include. Unfortunately, many AI tools are not well-suited to deal with this type of data and integrating contemporary and historical data streams is a complex problem. In this workshop, we bring together computer scientists, digital humanities researchers, and cultural heritage professionals to create a whitepaper detailing the challenges for AI-assisted integration of heterogeneous and asynchronous data streams from contemporary and historical sources.",
    "descriptionSource": "ISWC 2026 website",
@@ -60750,7 +60747,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-25",
    "end": "18:00",
    "endISO": "2026-10-25T18:00:00+01:00",
@@ -61384,7 +61381,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-26",
    "description": "RAGE-KG explores the state of the art and goes beyond in integrating Retrieval-Augmented Generation (RAG) with Knowledge Graphs as well as the synergies between Large Language Models and the Linked Open Data ecosystem. We aim to foster innovative RAG architectures relying on Semantic Web standards and new approaches to make Linked Open Data usable by LLMs, enhancing their ability to generate reliable, verifiable and context-aware responses based on structured, decentralized and authoritative data sources. This year the workshop welcomes a special track on RAG-systems for Human-AI Value Alignment, seeking contribution on RAG-based approaches for content moderation and harm reduction and to deal with human subjectivity. The workshop will be a full-day event featuring keynotes, paper presentations, and lightning talks on emerging RAG trends (e.g., agentic RAG), along with a dedicated session on the evaluation of RAG technologies aimed at building a community of practice on this theme.",
    "descriptionSource": "ISWC 2026 website",
@@ -62181,7 +62178,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-26",
    "description": "SWODCH 2026 is the sixth edition of the International Workshop on Semantic Web and Ontology Design for Cultural Heritage. The purpose of SWODCH is twofold. First, it aims to gather original research on foundational issues arising from the design of conceptual models, ontologies, and Semantic Web (SW) technologies for Cultural Heritage (CH) and the Digital Humanities (DH). The heterogeneous and multi-format data available in these domains call for principled methodologies and technologies to semantically characterise, integrate, and reason over data, as well as to support its retrieval, management, analysis, and visualisation. The workshop also welcomes studies addressing the philosophical and social analysis of CH and DH data and knowledge representation models, as ontologies in these domains often need to account for the historical and social dimensions of data. Second, SWODCH aims to bring together stakeholders – scholars from Computer Science and the Humanities and GLAM professionals, representatives from CH institutions, etc. – who are involved in the development and deployment of concrete SW solutions for Cultural Heritage. This includes solutions for building, managing, exploring, visualising, or mining concrete or virtual knowledge graphs. In this context, SW solutions should be designed in accordance with the FAIR principles and support the creation of CH datasets and applications that adhere to these standards.",
    "descriptionSource": "ISWC 2026 website",
@@ -62603,7 +62600,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-26",
    "description": "The NLP4KGC workshop series brings together researchers and practitioners working at the intersection of Natural Language Processing and Knowledge Graph Construction.\n\nThis is the fifth edition of our successful workshop series. Building on previous successes, we focus on emerging topics including the use of Large Language Models (LLMs) and agentic AI systems for knowledge graph construction, while emphasizing Responsible AI practices.",
    "descriptionSource": "workshop website",
@@ -62696,7 +62693,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-26",
    "description": "In an era where data shapes public discourse, Data-driven Storytelling: Bridging Semantics, AI, and Narrative (DDS 2026) aims to explore innovative methods for transforming complex datasets into engaging, interpretable narratives. This workshop focuses on the intersection of semantic technologies, artificial intelligence, and narrative design, seeking to make data more relevant, interactive, and shareable. We invite researchers and practitioners from diverse fields—including NLP, knowledge representation, HCI, Information retrieval and creative industries—to discuss frameworks and tools that enhance data engagement through storytelling, games, and art. Key topics include ontological coherence, generative AI, and participatory content creation, with the goal of empowering experts to communicate effectively in domains like education, journalism, and cultural heritage.",
    "descriptionSource": "ISWC 2026 website",
@@ -62981,7 +62978,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-26",
    "description": "The tutorial presents a mature ecosystem of open-source applications that have developed around the knowledge development platform VocBench, to encompass the entire semantic dataset lifecycle, up to publication. Targeting an audience with diverse levels of experience, the tutorial includes hands-on sessions where participants are guided through the core features of the applications. Attendees will receive an overview of VocBench’s manifold editing capabilities, covering OWL, SKOS(-XL), and OntoLex‑Lemon, and will then gain hands‑on experience developing ontologies, thesauri, and lexicons. They will also learn about advanced governance features such as change history and validation workflows. Attendees will further be introduced to the metadata model shared by the two main platforms of the ecosystem: VocBench (for collaborative editing) and ShowVoc (for publication), which combines diverse vocabularies (DCAT, VoID, LIME) to support the management of multiple versions of RDF datasets, both locally hosted and published on the Web. They will apply this knowledge when deploying datasets on ShowVoc as a publication platform. Attendees will then practice managing multiple dataset versions, creating forks and branches to enable development alongside the mainline, and generating distributions. The tutorial will continue with a run‑through of additional features, ranging from validation through ICV and SHACL, bulk ingestion of tabular data with Sheet2RDF, and the use of custom forms and views. Finally, attendees will be given an overview of SELEN, which brings semantic‑elicitation capabilities designed to streamline both editing workflows and the exploitation of semantic datasets.",
    "descriptionSource": "ISWC 2026 website",
@@ -63107,7 +63104,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-domain-applications",
+   "cluster": "c-legal-knowledge-graphrag",
    "day": "2026-10-26",
    "description": "Legal automation requires not only the ability to represent legal texts in structured formats but also to capture their normative meaning in a way that supports automated reasoning. This tutorial focuses on two key standards Akoma Ntoso for the semantic representation of legal documents and LegalRuleML for modelling legal rules and norms—to enable end-to-end legal automation.\n\nParticipants will learn how to transform unstructured legal texts into richly annotated, machine-readable documents using Akoma Ntoso, and how to express obligations, permissions, prohibitions, and exceptions using LegalRuleML. The tutorial will demonstrate how these knowledge based technologies can be combined to build automated compliance systems, support legal reasoning, and deliver explainable outcomes. Real-world use cases from regulatory compliance and policy-driven systems will illustrate how these standards bridge the gap between legal drafting and executable models.",
    "descriptionSource": "tutorial website",
@@ -63339,7 +63336,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-26",
    "description": "Spatial intelligence plays a central role in understanding, modeling, and reasoning about complex real-world phenomena that are inherently geographic and spatiotemporal. With the growing availability of geodata and spatiotemporal data from sensors, Earth observation systems, digital twins, and location-aware services, there is an increasing need for methods that can effectively integrate spatial aspects into knowledge-based systems. This workshop aims to bring together researchers and practitioners working on spatial intelligence, geospatial data management, and spatiotemporal reasoning, with a particular focus on their integration within Semantic Web, Knowledge Graph and Foundation Model ecosystems.",
    "descriptionSource": "ISWC 2026 website",
@@ -64260,7 +64257,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-26",
    "description": "Knowledge Graphs (KGs) are increasingly relied upon as semantic infrastructure for AI systems — grounding generative models, supporting retrieval, and serving as machine-actionable memory for autonomous agents. These roles place new demands on KGs that traditional data quality (DQ) dimensions — accuracy, completeness, consistency, timeliness — only partially capture: what matters is no longer just whether facts are correct, but whether a KG’s semantics are sound enough for an AI system to depend on, including well-formed ontological commitments, correctly disambiguated entities and relations, traceable provenance, and machine-interpretable meaning. A KG can score well on conventional DQ metrics and still fail as AI infrastructure, since classical frameworks were designed for static, human-facing data rather than knowledge that machines interpret, traverse, and reason over. This Dagstuhl-style workshop argues that AI usage surfaces a new DQ landscape specific to KGs as semantic artifacts, distinct from DQ for AI in general, and brings together researchers and practitioners from the Semantic Web, Knowledge Graph, data management, and AI communities to identify the DQ dimensions distinctive to KGs in AI contexts and develop a shared research agenda going forward.",
    "descriptionSource": "ISWC 2026 website",
@@ -64469,7 +64466,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-26",
    "description": "The emergence of LLM-based agentic AI has recreated many of the challenges formally faced by the Semantic Web Services (SWS) community two decades ago: how should agents with differing ontological commitments discover, compose, and invoke capabilities coherently? The original SWS response provided formally grounded capability descriptions and mechanisms for bridging ontological mismatches. Current agentic AI systems largely lack this formal rigour, reintroducing well-understood failure modes, such as a reliance on linguistic descriptions of services/tools/capabilities without enforcing semantic guarantees. Furthermore, the Multi-Agent Systems (MAS) community has developed rich models of agent-environment interaction through affordances, formalising what an agent can do given its current state and the environment it inhabits. This discussion-led workshop will re-examine the role of semantics within the description of agents and services, with a specific focus on the affordance frameworks that cut across the MAS, SWS, and Agentic AI communities. Through discussion, we will critically evaluate how this research, together with the use of the Semantic Web can inform the design of LLM-enabled agentic systems. The result will identify key challenges, open problems, and a shared research agenda for semantically grounded, interoperable agentic AI.",
    "descriptionSource": "ISWC 2026 website",
@@ -64596,7 +64593,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-26",
    "description": "Agentic AI systems—autonomous agents capable of planning, reasoning, and acting on behalf of users—are rapidly transitioning from experimental prototypes to real-world deployments. This shift introduces urgent challenges related to reliability, autonomy, accountability, and governance, particularly as such systems increasingly operate over personal and enterprise data. Personal Knowledge Graphs (PKGs) offer a promising foundation for addressing these issues by enabling explicit, machine-readable representations of context, policies, and provenance. Building on a successful Dagstuhl Seminar and prior TAPAI/TAAPAAI workshop editions at ISWC and ESWC, this workshop aims to consolidate and advance a growing research community focused on PKG-based agentic AI. The workshop will explore emerging architectures, decentralised ecosystems, and governance models for agentic systems grounded in semantic technologies. Adopting a Dagstuhl-style, discussion-led format, the workshop will emphasise collaborative exploration, cross-disciplinary exchange, and the co-creation of shared artefacts. Its primary contribution is to define a research agenda, identify key challenges, and develop a common conceptual foundation for PKG-based agentic AI, positioning the Semantic Web community at the forefront of this rapidly evolving field.",
    "descriptionSource": "ISWC 2026 website",
@@ -65029,7 +65026,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-26",
    "end": "18:00",
    "endISO": "2026-10-26T18:00:00+01:00",
@@ -65224,7 +65221,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "day": "2026-10-27",
    "end": "12:15",
    "endISO": "2026-10-27T12:15:00+01:00",
@@ -65293,7 +65290,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-27",
    "end": "12:15",
    "endISO": "2026-10-27T12:15:00+01:00",
@@ -65350,7 +65347,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-temporal-kg-learning",
+   "cluster": "c-temporal-kg-rdf-stream-processing",
    "day": "2026-10-27",
    "end": "15:15",
    "endISO": "2026-10-27T15:15:00+01:00",
@@ -65719,7 +65716,7 @@
     "person-kerry-taylor"
    ],
    "chairs": "Aidan Hogan, Markus Krötzsch, Kerry Taylor",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-27",
    "description": "Transactions on Graph Data and Knowledge (TGDK), the Diamond Open Access journal published by Dagstuhl, hosts a journal session: an introduction to the journal, then 14 short presentations of published TGDK articles, five minutes each (four to present, one for questions), and a closing discussion. Programme from https://tgdk-iswc2026.dcc.uchile.cl/. The abstracts below come from the articles on Dagstuhl DROPS (https://drops.dagstuhl.de), published under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
    "end": "15:15",
@@ -65741,8 +65738,9 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-27",
+   "description": "A journal session of the Semantic Web journal (SWJ, IOS Press): presentations of papers the journal has accepted. Neither the conference nor the journal has published which papers are presented here; the journal's list of accepted papers is at https://www.semantic-web-journal.net/ReviewedAccepted.",
    "end": "15:15",
    "endISO": "2026-10-27T15:15:00+01:00",
    "id": "s-2026-10-27-1345-room-sezione-5-journal-papers-from-swj",
@@ -65785,7 +65783,7 @@
    "bio": "James Hendler is the Tetherless World Professor of Computer, Web and Cognitive Sciences at RPI. In fifty years as an AI researcher, Hendler has worked in areas including planning, scalable KR, semantic data integration and global technology policy. He is best known for his work in bringing AI to the Web, as well as in government open data, knowledge graphs, and what's now known as neuro-symbolic AI.\n\nHe is a fellow of the AAAI, AAIA, AAAS, ACM, BCS, IEEE and the US National Academy of Public Administration. Among other awards, in 2025, Hendler received the AAAI Feigenbaum Award for “a sustained record of high-impact seminal contributions to experimental AI research” and in 2026 was a co-recipient of the life-time achievement award from the Knowledge Graph Society.",
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-27",
    "description": "In 2001, I joined Tim Berners-Lee and our colleague Ora Lassila in writing an article describing a vision for the Semantic Web – combining work we'd each been doing for a decade or more. The paper, which appeared in Scientific American, has been widely cited and led to much work in both academia and industry aimed at adding machine-readable text to the Web. Now, 25 years later, while even the concept of what the Web is has changed, machine-readable metadata is crucial to search and many other applications, and knowledge graph technology, which also grew from this vision, is now a big business used by major organizations around the world. Further, with the advent of LLMs, a realization is growing that the difference between reality and hallucination requires machine-readable knowledge. However, despite this success, much of the original vision of the Semantic Web remains unrealized. In this talk, I discuss what was in the original vision, what has occurred and, most importantly, a call to action as to what still remains to be done if we are truly to recognize the full potential of the Semantic Web.\n\nThe keynote will be followed by an open challenge to the audience. How do the researchers and academics working in the field today, and in particular the next generation of Semantic Web scientists — actually experience the research landscape they are working in? What has the field delivered, what has it failed to deliver, and what needs to change? Prof. Hendler will open the floor to an unscripted discussion, with young researchers and academics very much invited to lead it.",
    "descriptionSource": "ISWC 2026 website",
@@ -65822,7 +65820,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-27",
    "description": "A conversation with Jim Hendler and Frank van Harmelen that starts with questions from early-career researchers and then opens to the whole audience.",
    "descriptionSource": "ISWC 2026 website",
@@ -65846,7 +65844,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-27",
    "end": "18:45",
    "endISO": "2026-10-27T18:45:00+01:00",
@@ -65867,7 +65865,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-27",
    "end": "21:00",
    "endISO": "2026-10-27T21:00:00+01:00",
@@ -66363,7 +66361,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-28",
    "end": "17:45",
    "endISO": "2026-10-28T17:45:00+01:00",
@@ -66563,7 +66561,7 @@
    "bio": "Francesca Toni is Professor in Computational Logic at the Department of Computing, Imperial College London, UK. She is also the founder and leader of the CLArg (Computational Logic and Argumentation) research group and of the XAI research Centre at Imperial. Her research interests lie within the broad area of Knowledge Representation and Reasoning in AI and Explainable AI, and in particular include Argumentation, Argument Mining, Logic-Based Multi-Agent Systems, Non-monotonic/Default/Defeasible Reasoning, and Machine Learning.\n\nShe graduated, summa cum laude, in Computing at the University of Pisa, Italy and received her PhD in Computing from Imperial College London. She has coordinated two EU projects, received funding from EPSRC and the EU, was awarded a Senior Research Fellowship from The Royal Academy of Engineering and the Leverhulme Trust, was Technical Director of the ROAD2H EPSRC-funded project and co-Director for the Centres of Doctoral Training in Safe and Trusted AI and in AI for Healthcare, and held the Royal Academy of Engineering/JP Morgan Research Chair on Argumentation-based Interactive Explainable AI (2020-25).\n\nShe is a EurAI fellow, AAAI fellow, AAIS fellow and fellow of the BCS, and was awarded in 2021 an ERC Advanced grant on “Argumentation-based Deep Interactive Explanations”. She has published over 200 papers, co-chaired ICLP 2015 (the 31st International Conference on Logic Programming), KR 2018 (the 16th Conference on Principles of Knowledge Representation and Reasoning), and COMMA 2022 (9th International Conference on Computational Models of Argument), was the conference chair for ICLP 2023 and is currently the conference chair for IJCAI-ECAI 2026. She is on the editorial board of the Argument and Computation journal and associate editor for Theory and Practice of Logic Programming. She is also on the Board of Directors for KR Inc. and an IJCAI trustee.",
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-29",
    "description": "The need for explainability in AI is widely agreed upon as crucial towards safe and trustworthy deployment of AI systems, especially given the very many opportunities for undesired behaviour, including misinformation, hallucination and bias. What is less clear is the type of explanations AI systems should be able to produce, and the properties these explanations should satisfy. In this talk I will advocate (X)AI approaches based on computational argumentation that can (1) interact to progressively explain outputs and/or reasoning as well as assess grounds for contestation provided by humans and/or other machines, and (2) revise decision-making processes to redress any issues successfully raised during contestation. These approaches lead to explanations that faithfully reflect the \"reasoning\" behind the outputs they are explaining and can inform formal contestability of these outputs and of the models. I will ground the talk in LLM-based claim verification.",
    "descriptionSource": "ISWC 2026 website",
@@ -66624,7 +66622,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-llm-ai-agents-retrieval",
+   "cluster": "c-llm-ai-agents-entity-linking",
    "day": "2026-10-29",
    "end": "12:00",
    "endISO": "2026-10-29T12:00:00+01:00",
@@ -66729,7 +66727,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-29",
    "end": "12:00",
    "endISO": "2026-10-29T12:00:00+01:00",
@@ -66849,7 +66847,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-29",
    "end": "14:40",
    "endISO": "2026-10-29T14:40:00+01:00",
@@ -66891,7 +66889,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-demos",
+   "cluster": "c-posters-visionary-ideas",
    "day": "2026-10-29",
    "end": "16:10",
    "endISO": "2026-10-29T16:10:00+01:00",
