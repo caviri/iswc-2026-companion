@@ -1,8 +1,8 @@
 {
  "clusters": [
   {
-   "id": "c-posters-visionary-ideas",
-   "label": "Posters · Visionary Ideas",
+   "id": "c-posters-demos",
+   "label": "Posters · Demos",
    "size": 35,
    "termIds": [
     "virtual-kg",
@@ -124,6 +124,18 @@
    ]
   },
   {
+   "id": "c-property-graph-query",
+   "label": "Property graph · Query",
+   "size": 12,
+   "termIds": [
+    "property-graph"
+   ],
+   "terms": [
+    "Property graph",
+    "Query"
+   ]
+  },
+  {
    "id": "c-sparql",
    "label": "SPARQL",
    "size": 12,
@@ -138,18 +150,6 @@
     "SPARQL federation",
     "SPARQL endpoint",
     "Text-to-SPARQL"
-   ]
-  },
-  {
-   "id": "c-property-graph-query",
-   "label": "Property graph · Query",
-   "size": 11,
-   "termIds": [
-    "property-graph"
-   ],
-   "terms": [
-    "Property graph",
-    "Query"
    ]
   },
   {
@@ -176,19 +176,6 @@
     "Cross",
     "Enterprise",
     "Management"
-   ]
-  },
-  {
-   "id": "c-temporal-kg-evolution-learning",
-   "label": "Temporal KG · Evolution · Learning",
-   "size": 10,
-   "termIds": [
-    "temporal-kg"
-   ],
-   "terms": [
-    "Temporal knowledge graph",
-    "Evolution",
-    "Learning"
    ]
   },
   {
@@ -222,6 +209,18 @@
     "AI agents",
     "Linked Data",
     "Semantic layer"
+   ]
+  },
+  {
+   "id": "c-temporal-kg-learning",
+   "label": "Temporal KG · Learning",
+   "size": 9,
+   "termIds": [
+    "temporal-kg"
+   ],
+   "terms": [
+    "Temporal knowledge graph",
+    "Learning"
    ]
   },
   {
@@ -3049,7 +3048,7 @@
     "Xuanzhe Zhao",
     "Hui Min"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-307",
    "links": [
     {
@@ -3105,7 +3104,7 @@
     "Volodymyr Kadzhaia",
     "Pieter Bonte"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-151",
    "links": [
     {
@@ -3155,7 +3154,7 @@
     "Joost Vennekens",
     "Anastasia Dimou"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-310",
    "links": [
     {
@@ -3213,7 +3212,7 @@
     "Qi Liu",
     "Xiaomei Wei"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-28",
    "links": [
     {
@@ -3843,7 +3842,7 @@
     "Christian Meilicke",
     "Heiner Stuckenschmidt"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-167",
    "links": [
     {
@@ -3974,7 +3973,7 @@
     "Cheng Cheng",
     "Steffen Staab"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-293",
    "links": [
     {
@@ -4229,7 +4228,7 @@
     "Er Jin",
     "Stefan Decker"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-221",
    "image": {
     "alt": "Figure from the code repository of “THGFM: Dual-Branch Temporal Heterogeneous Graph Fusion Model”",
@@ -5185,7 +5184,7 @@
     "Lars Heling",
     "Mulang Onando"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-posters-demos",
    "id": "paper-industry-data-packages-for-enterprise-knowledge-g",
    "links": [],
    "lists": [
@@ -5221,7 +5220,7 @@
     "Mulang Onando",
     "Felix Sasaki"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-industry-semantic-api-discovery-at-scale-a-knowle",
    "links": [],
    "lists": [
@@ -5839,7 +5838,7 @@
     "Dörthe Arndt",
     "Markus Krötzsch"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-331",
    "links": [
     {
@@ -6083,7 +6082,7 @@
    "authors": [
     "Panelist TBA"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-industry-panel-discussion",
    "links": [],
    "lists": [],
@@ -6869,7 +6868,7 @@
     "Nandana Mihindukulasooriya",
     "Ricardo Usbeck"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-311",
    "links": [
     {
@@ -7838,7 +7837,7 @@
     "Michael Röder",
     "Axel-Cyrille Ngonga Ngomo"
    ],
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-427",
    "links": [
     {
@@ -8035,7 +8034,7 @@
     "Ora Lassila",
     "James A. Hendler"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-visionary-unrethinking-the-semantic-web",
    "links": [
     {
@@ -8073,7 +8072,7 @@
    "authors": [
     "Ruben Taelman"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-visionary-symbiotic-knowledge-graphs-a-vision-for",
    "links": [
     {
@@ -8169,7 +8168,7 @@
     "Himanshu Beniwal",
     "Michael Färber"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-visionary-from-universal-knowledge-graphs-to-conte",
    "links": [
     {
@@ -8247,7 +8246,7 @@
    "authors": [
     "Adrianna Janik"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-property-graph-query",
    "id": "paper-visionary-digital-emancipation-property-banks-and",
    "links": [
     {
@@ -8537,7 +8536,7 @@
     "Nicolas Férey",
     "Patrick Bourdot"
    ],
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-117",
    "links": [
     {
@@ -9468,7 +9467,7 @@
     "Matteo Lissandrini"
    ],
    "board": 6,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-posters-building-a-virtual-knowledge-graph-for-d",
    "links": [],
    "lists": [
@@ -9507,7 +9506,7 @@
     "Wolfgang Kastner"
    ],
    "board": 18,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-posters-deltaquads-building-an-rdf-store-on-delt",
    "links": [],
    "lists": [
@@ -9797,7 +9796,7 @@
     "Wolfgang Kastner"
    ],
    "board": 17,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-posters-live-queryable-rdf-data-dumps-with-apach",
    "links": [],
    "lists": [
@@ -9919,7 +9918,7 @@
     "Fabian M. Suchanek"
    ],
    "board": 27,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-posters-marita-mining-approximate-rules-in-table",
    "links": [],
    "lists": [
@@ -10331,7 +10330,7 @@
     "C. Maria Keet"
    ],
    "board": 23,
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "id": "paper-posters-towards-an-evaluation-framework-for-even",
    "links": [],
    "lists": [
@@ -10613,7 +10612,7 @@
     "Mel Chekol"
    ],
    "board": 33,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-demos-autovkg-llm-driven-virtual-knowledge-gra",
    "links": [],
    "lists": [
@@ -10889,7 +10888,7 @@
     "Blazej Grabowski"
    ],
    "board": 30,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-demos-demonstrating-the-mlips-ontology-queryin",
    "links": [],
    "lists": [
@@ -10923,7 +10922,7 @@
     "Erhard Rahm"
    ],
    "board": 29,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "id": "paper-demos-designing-and-evaluating-knowledge-graph",
    "links": [],
    "lists": [
@@ -60618,7 +60617,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-25",
    "description": "Mainstream Knowledge Graphs (KGs) often assume a monolithic notion of truth, offering limited support for context-dependent validity, conflicting viewpoints, knowledge evolution, and concept drift. This full-day Barstuhl workshop introduces emph{Multi-dimensional Knowledge Graphs (MKGs)} as an umbrella paradigm for contextual, perspectival, and temporal knowledge representation. It will bring together formal and engineering perspectives to examine key modelling formalisms, scalability challenges, and reference use cases through lightning pitches and collaborative breakouts. The main outcome will be a community-driven framework document that will serve as the foundation for an MKG white paper and a potential future Dagstuhl seminar.",
    "descriptionSource": "ISWC 2026 website",
@@ -60645,7 +60644,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-25",
    "description": "Data is the key to understanding and solving challenges such as the loss of biodiversity, predicting recurring weather phenomena, or the fragmentation and loss of context of our cultural heritage. For this, vast amounts of data from many different sources need to be interpreted. Due to advances in computer power and the increasing availability of data spanning longer periods of time, historical data is becoming more important to include. Unfortunately, many AI tools are not well-suited to deal with this type of data and integrating contemporary and historical data streams is a complex problem. In this workshop, we bring together computer scientists, digital humanities researchers, and cultural heritage professionals to create a whitepaper detailing the challenges for AI-assisted integration of heterogeneous and asynchronous data streams from contemporary and historical sources.",
    "descriptionSource": "ISWC 2026 website",
@@ -60751,7 +60750,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-25",
    "end": "18:00",
    "endISO": "2026-10-25T18:00:00+01:00",
@@ -62182,7 +62181,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-26",
    "description": "SWODCH 2026 is the sixth edition of the International Workshop on Semantic Web and Ontology Design for Cultural Heritage. The purpose of SWODCH is twofold. First, it aims to gather original research on foundational issues arising from the design of conceptual models, ontologies, and Semantic Web (SW) technologies for Cultural Heritage (CH) and the Digital Humanities (DH). The heterogeneous and multi-format data available in these domains call for principled methodologies and technologies to semantically characterise, integrate, and reason over data, as well as to support its retrieval, management, analysis, and visualisation. The workshop also welcomes studies addressing the philosophical and social analysis of CH and DH data and knowledge representation models, as ontologies in these domains often need to account for the historical and social dimensions of data. Second, SWODCH aims to bring together stakeholders – scholars from Computer Science and the Humanities and GLAM professionals, representatives from CH institutions, etc. – who are involved in the development and deployment of concrete SW solutions for Cultural Heritage. This includes solutions for building, managing, exploring, visualising, or mining concrete or virtual knowledge graphs. In this context, SW solutions should be designed in accordance with the FAIR principles and support the creation of CH datasets and applications that adhere to these standards.",
    "descriptionSource": "ISWC 2026 website",
@@ -62604,7 +62603,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-26",
    "description": "The NLP4KGC workshop series brings together researchers and practitioners working at the intersection of Natural Language Processing and Knowledge Graph Construction.\n\nThis is the fifth edition of our successful workshop series. Building on previous successes, we focus on emerging topics including the use of Large Language Models (LLMs) and agentic AI systems for knowledge graph construction, while emphasizing Responsible AI practices.",
    "descriptionSource": "workshop website",
@@ -62982,7 +62981,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-26",
    "description": "The tutorial presents a mature ecosystem of open-source applications that have developed around the knowledge development platform VocBench, to encompass the entire semantic dataset lifecycle, up to publication. Targeting an audience with diverse levels of experience, the tutorial includes hands-on sessions where participants are guided through the core features of the applications. Attendees will receive an overview of VocBench’s manifold editing capabilities, covering OWL, SKOS(-XL), and OntoLex‑Lemon, and will then gain hands‑on experience developing ontologies, thesauri, and lexicons. They will also learn about advanced governance features such as change history and validation workflows. Attendees will further be introduced to the metadata model shared by the two main platforms of the ecosystem: VocBench (for collaborative editing) and ShowVoc (for publication), which combines diverse vocabularies (DCAT, VoID, LIME) to support the management of multiple versions of RDF datasets, both locally hosted and published on the Web. They will apply this knowledge when deploying datasets on ShowVoc as a publication platform. Attendees will then practice managing multiple dataset versions, creating forks and branches to enable development alongside the mainline, and generating distributions. The tutorial will continue with a run‑through of additional features, ranging from validation through ICV and SHACL, bulk ingestion of tabular data with Sheet2RDF, and the use of custom forms and views. Finally, attendees will be given an overview of SELEN, which brings semantic‑elicitation capabilities designed to streamline both editing workflows and the exploitation of semantic datasets.",
    "descriptionSource": "ISWC 2026 website",
@@ -65030,7 +65029,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-26",
    "end": "18:00",
    "endISO": "2026-10-26T18:00:00+01:00",
@@ -65225,7 +65224,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "day": "2026-10-27",
    "end": "12:15",
    "endISO": "2026-10-27T12:15:00+01:00",
@@ -65351,7 +65350,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-temporal-kg-evolution-learning",
+   "cluster": "c-temporal-kg-learning",
    "day": "2026-10-27",
    "end": "15:15",
    "endISO": "2026-10-27T15:15:00+01:00",
@@ -65421,6 +65420,298 @@
    ]
   },
   {
+   "agenda": [
+    {
+     "abstract": null,
+     "block": null,
+     "byline": null,
+     "chairs": null,
+     "end": "13:55",
+     "endISO": "2026-10-27T13:55:00+01:00",
+     "kind": "opening",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "13:45",
+     "startISO": "2026-10-27T13:45:00+01:00",
+     "talkTitle": null,
+     "title": "Welcome and introduction to TGDK",
+     "url": null
+    },
+    {
+     "abstract": "This paper addresses the dichotomy between the formalization of structural and the formalization of executable behavioral knowledge by means of semantically lifted programs, which explore an intuitive connection between imperative programs and knowledge graphs. While knowledge graphs and ontologies are eminently useful to represent formal knowledge about a system’s individuals and universals, programming languages are designed to describe the system’s evolution. To address this dichotomy, we introduce a semantic lifting of the program states of an executing progam into a knowledge graph, for an object-oriented programming language. The resulting graph is exposed as a semantic reflection layer within the programming language, allowing programmers to leverage knowledge of the application domain in their programs during execution. In this paper, we formalize semantic lifting and semantic reflection for a small imperative programming language, SMOL, explain the operational aspects of the language, and consider type correctness and virtualization for runtime program queries through the semantic reflection layer. We illustrate semantic lifting and semantic reflection through a case study of geological modeling and discuss different applications of the technique. The language implementation is open source and available online.",
+     "block": null,
+     "byline": "Eduard Kamburjan, Vidar Norstein Klungre, Yuanwei Qu, Rudolf Schlatte, Egor V. Kostylev, Martin Giese, Einar Broch Johnsen · TGDK 4(1): article 3",
+     "chairs": null,
+     "end": "14:00",
+     "endISO": "2026-10-27T14:00:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "13:55",
+     "startISO": "2026-10-27T13:55:00+01:00",
+     "talkTitle": null,
+     "title": "Semantically Reflected Programs",
+     "url": "https://doi.org/10.4230/TGDK.4.1.3"
+    },
+    {
+     "abstract": "Horned-OWL is a library implementing the OWL2 specification in the Rust language. As a library, it is aimed at processes and manipulation of ontologies, rather than supporting GUI development; this is reflected heavily in its design, which is for performance and pluggability; it builds on the Rust idiom, treating an ontology as a standard Rust collection, meaning it can take direct advantage of the data manipulation capabilities of the Rust standard library. The core library consists of a data model implementation as well as an IO framework supporting many common formats for OWL: RDF, XML and the OWL functional syntax; there is an extensive test library to ensure compliance to the specification. In addition to the core library, Horned-OWL now supports a growing ecosystem: the py-horned-owl library provides a Python front-end for Horned-OWL, ideal for scripting ontology manipulation; whelk-rs provides reasoning services; and horned-bin provides a number of command line tools. The library itself is now mature, supporting the entire OWL2 specification, in addition to SWRL rules, and the ecosystem is emerging into one of the most extensive for manipulation of OWL ontologies.",
+     "block": null,
+     "byline": "Phillip Lord, Björn Gehrke, Martin Larralde, Janna Hastings, Filippo De Bortoli, James A. Overton, James P. Balhoff, Jennifer Warrender · TGDK 2(2): article 9",
+     "chairs": null,
+     "end": "14:05",
+     "endISO": "2026-10-27T14:05:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:00",
+     "startISO": "2026-10-27T14:00:00+01:00",
+     "talkTitle": null,
+     "title": "Horned-OWL: Flying Further and Faster with Ontologies",
+     "url": "https://doi.org/10.4230/TGDK.2.2.9"
+    },
+    {
+     "abstract": "Due to the dynamics of the Semantic Web, version control is necessary to manage changes in widely used ontologies. Despite the long-standing recognition of ontology versioning (OV) as a crucial component of efficient ontology management, many approaches treat OV as similar to ontology matching (OM) and directly reuse OM systems for OV tasks. In this study, we systematically analyse similarities and differences between OM and OV and formalise an OM4OV framework to offer more advanced OV support. The framework is implemented and evaluated in the state-of-the-art OM system Agent-OM. The experimental results indicate that OM systems can be effectively reused for OV tasks, but without the necessary extensions, can produce skewed measurements, poor performance in detecting update entities, and limited explanations of false mappings. To tackle these issues, we propose an optimisation method called the cross-reference (CR) mechanism, which builds on existing OM alignments to reduce the number of matching candidates and to improve overall OV performance.",
+     "block": null,
+     "byline": "Zhangcheng Qiang, Kerry Taylor, Weiqing Wang · TGDK 4(2): article 6",
+     "chairs": null,
+     "end": "14:10",
+     "endISO": "2026-10-27T14:10:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:05",
+     "startISO": "2026-10-27T14:05:00+01:00",
+     "talkTitle": null,
+     "title": "OM4OV: Leveraging Ontology Matching for Ontology Versioning",
+     "url": "https://doi.org/10.4230/TGDK.4.2.6"
+    },
+    {
+     "abstract": "Property graphs may be constrained by schemas that inform both query engines and human users about the shape of valid data, enforcing a contract between data provider and consumer. Composable property-graph queries transform input graphs into output graphs. Then, the question arises of which schema can be expected after one (or several) transformation steps. We investigate how schema constraints can be inferred given an input schema and a transforming query. Specifically, we propose a reasoning procedure that, given an input schema in ProGS and a query in G-CORE infers an output schema. Since graph updates will happen frequently, our inference procedure does not rely on graph instances, such that the computed output schema applies to all graphs originating from any input graph complying with the input schema. Related work has addressed this problem for SPARQL CONSTRUCT queries, encoding it in Description Logics (DLs) so that the output schema is entailed by axioms inferred from input schema and queries. Property graphs and their queries, however, complicate the matter, as property graphs feature label and property annotations as well as first-class edges. Thus, reification has to be used in one way or another, though available DLs lack the means to encode such features directly. We approach this novel challenge via a family of mappings for i) property graphs reified in RDF, aligned with ii) a mapping from ProGS to SHACL and iii) a mapping from G-CORE to SPARQL CONSTRUCT queries. In this manner, schema inference for property graphs becomes manageable, as we break apart the problem through the extra mapping layer and utilize efficient DL reasoners. We develop the metatheory regarding the soundness of inferred schema constraints and the semantic equivalence of mapped schemas and queries.",
+     "block": null,
+     "byline": "Philipp Seifer, Daniel Hernández, Ralf Lämmel, Steffen Staab · TGDK 4(2): article 3",
+     "chairs": null,
+     "end": "14:15",
+     "endISO": "2026-10-27T14:15:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:10",
+     "startISO": "2026-10-27T14:10:00+01:00",
+     "talkTitle": null,
+     "title": "Transforming Shape Schemas with Composable Property-Graph Queries",
+     "url": "https://doi.org/10.4230/TGDK.4.2.3"
+    },
+    {
+     "abstract": "The Shapes Constraint Language (SHACL) is a recent standard, a W3C recommendation, for validating RDF graphs against shape constraints to be checked on target nodes of a data graph. The standard also describes the notion of validation reports, which detail the results of the validation process. In case of violation of constraints, the validation report should explain the reasons for non-validation, offering guidance on how to identify or fix violations in the data graph. Since the specification left it open to SHACL processors to define such explanations, a recent work proposed the use of explanations in the style of database repairs, where a repair is a set of additions to or deletions from the data graph so that the resulting graph validates against the constraints. In this paper, we study such repairs for non-recursive SHACL, the largest fragment of SHACL that is fully defined in the specification. We propose an algorithm to compute repairs by encoding the explanation problem - using Answer Set Programming (ASP) - into a logic program, where the answer sets contain (minimal) repairs. We then study a scenario where it is not possible to simultaneously repair all the targets, which may be the case due to overall unsatisfiability or conflicting constraints. We introduce a relaxed notion of validation, which allows to validate a (maximal) subset of the targets and adapt the ASP translation to take into account this relaxation. Finally, we add support for repairing constraints which use property paths and equality of paths. Our implementation in clingo is - to the best of our knowledge - the first implementation of a repair program for SHACL.",
+     "block": null,
+     "byline": "Shqiponja Ahmetaj, Robert David, Axel Polleres, Mantas Šimkus · TGDK 3(3): article 1",
+     "chairs": null,
+     "end": "14:20",
+     "endISO": "2026-10-27T14:20:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:15",
+     "startISO": "2026-10-27T14:15:00+01:00",
+     "talkTitle": null,
+     "title": "A Logic Programming Approach to Repairing SHACL Constraint Violations",
+     "url": "https://doi.org/10.4230/TGDK.3.3.1"
+    },
+    {
+     "abstract": "Data integration is the primary use case for knowledge graphs. However, integrated data are not typically graphs but come in different formats, for example, CSV, XML, or a relational database. Façade-X is a recently proposed method for providing direct access to an open-ended set of data formats. The method includes a meta-model that specialises RDF to fit general data structures. This model allows to express SPARQL queries targeting data sources with those structures. Previous work formalised Façade-X and demonstrated how it can theoretically represent any format expressible with a context-free grammar, as well as the relational model. A reference implementation, SPARQL Anything, demonstrates the feasibility of the approach in practice. It is noteworthy that Façade-X utilises a fraction of RDF, and, consequently, not all SPARQL queries yield a solution (i.e. are satisfiable) when evaluated over a Façade-X graph. In this article, we consolidate Façade-X and we study the satisfiability of basic graph patterns. The theory is accompanied by an algorithm for deciding the satisfiability of basic graph patterns on Façade-X data sources. Furthermore, we provide extensive experiments with a proof-of-concept implementation, demonstrating practical feasibility, including with real-world queries. Our results pave the way for studying query execution strategies for Façade-X data access with SPARQL and supporting developers to build more efficient data integration systems for knowledge graphs.",
+     "block": null,
+     "byline": "Luigi Asprino, Enrico Daga · TGDK 4(2): article 5",
+     "chairs": null,
+     "end": "14:25",
+     "endISO": "2026-10-27T14:25:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:20",
+     "startISO": "2026-10-27T14:20:00+01:00",
+     "talkTitle": null,
+     "title": "Towards a Theory of Façade-X Data Access: Satisfiability of SPARQL Basic Graph Patterns",
+     "url": "https://doi.org/10.4230/TGDK.4.2.5"
+    },
+    {
+     "abstract": "The popularity of knowledge graphs (KGs) owes credit to their flexible data model, which is suitable for data integration from multiple sources. Several KG-based applications, such as trust assessment, view maintenance, or data valuation on dynamic data, rely on the ability to compute provenance explanations for query results. This need becomes more urgent in federated query processing systems, which allow the online consumption of heterogeneous and decentralized Web data. However, the problem of computing and interacting with provenance has received little attention, especially in the federated setting. On those grounds, this paper introduces the NPCS (Native Provenance Computation for SPARQL) approach, and its federated variant Fed-NPCS, that compute provenance for SPARQL query results. Both approaches build upon spm-semirings to annotate the results of monotonic and non-monotonic SPARQL queries with their provenance. Due to their reliance on query rewriting techniques, the approaches are directly applicable to already deployed SPARQL engines and federations using different reification schemes, including RDF-star. Our experimental evaluation shows that our novel query rewriting approach brings significant run-time improvements w.r.t. the state-of-the-art across both centralized and federated settings. In centralized settings, our tests on two popular SPARQL engines (GraphDB and Stardog) reveal substantial runtime gains over existing query rewriting solutions, enabling scalability to RDF graphs with billions of triples. In federated settings, our experiments on the FedShop benchmark with GraphDB show the viability of Fed-NPCS for federations with up to 200 sources.",
+     "block": null,
+     "byline": "Zubaria Asma, Daniel Hernández, Luis Galárraga, Giorgos Flouris, Irini Fundulaki, Katja Hose · TGDK 4(1): article 4",
+     "chairs": null,
+     "end": "14:30",
+     "endISO": "2026-10-27T14:30:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:25",
+     "startISO": "2026-10-27T14:25:00+01:00",
+     "talkTitle": null,
+     "title": "Native Provenance Computation for Federated and Non-Federated SPARQL Queries",
+     "url": "https://doi.org/10.4230/TGDK.4.1.4"
+    },
+    {
+     "abstract": "We present the GeoRDFBench framework, whose purpose is to assist and streamline the benchmarking of geospatial semantic stores. We identify and formally define all benchmark components, extend them to represent their geospatial aspects, allow for the automatic mapping of datasets to graphs, provide a specialization hierarchy of queryset types for micro or macro experimental scenarios, even for modeling dynamically generated queries. Queries may define their expected resultset to enable automatic accuracy verification. Experiment behavior and execution logic is controlled by the execution specification, which dictates the action (run experiment or print ground queries) to take, the number of repetitions per execution type (cold, warm, continuous cold), the query repetition and experiment timeouts, the delay period before clearing caches, the aggregating function for reporting execution times, and the policy to follow upon cold execution time out. We decouple these declarative benchmark specifications from the framework’s execution engine and serialize them as JSON files; this way, we increase their reuse (instantiation through deserialization), experiment reproducibility and dissemination. Furthermore, these JSON specification libraries can be served remotely by a configurable REST API endpoint. We also model the Geospatial RDF store optional application and database server modules and manage their life-cycle (start, stop, restart) during experiment execution to achieve ideal cold cache query executions. In addition, we unify by generalization the repository and connection functionalities of the three most common RDF framework Java APIs offered by RDF stores: OpenRDF Sesame, Eclipse RDF4J and Apache Jena. At the same time GeoRDFBench allows queryset filtering, automatic system-dependent query namespace prefix generation and query rewriting when non GeoSPARQL spatial vocabularies are used. We provide for a quick learning start by implementing several geospatial RDF stores as separate runtime-dependent modules with repository generation and experiment execution scripts. RDF modules include: RDF4J with and without Lucene, GraphDB, Stardog, Strabon, OpenLink Virtuoso and Jena GeoSPARQL.",
+     "block": null,
+     "byline": "Theofilos Ioannidis, Nikos Mamoulis, Manolis Koubarakis · TGDK 4(2): article 8",
+     "chairs": null,
+     "end": "14:35",
+     "endISO": "2026-10-27T14:35:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:30",
+     "startISO": "2026-10-27T14:30:00+01:00",
+     "talkTitle": null,
+     "title": "GeoSPARQL and SPARQL Benchmarking with GeoRDFBench Framework",
+     "url": "https://doi.org/10.4230/TGDK.4.2.8"
+    },
+    {
+     "abstract": "Graph data abstractions are often assumed to be intuitive, but experience shows that they are not equally understandable or usable in practice. In this vision and challenges paper, we examine the human-centricity of contemporary graph data abstractions through four lenses: researchability, usability, teachability, and societal impact. Drawing on diverse real-world use cases, ranging from clinical data and collaborative knowledge bases to biological and pangenomic graphs, we distill insights from database research, human-computer interaction, and education. Based on this analysis, we identify open research challenges that must be addressed to make graph abstractions easier to study, use, learn, and reason about.",
+     "block": null,
+     "byline": "Angela Bonifati, Anastasia Dimou, Stefania Dumbrava, George Fletcher, Katja Hose, George Konstantinidis, Jose Emilio Labra Gayo, Wim Martens, Nina Pardal, Liat Peterfreund, Katherine Thornton, Maria-Esther Vidal, Hannes Voigt · TGDK 4(2): article 2",
+     "chairs": null,
+     "end": "14:40",
+     "endISO": "2026-10-27T14:40:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:35",
+     "startISO": "2026-10-27T14:35:00+01:00",
+     "talkTitle": null,
+     "title": "How Human-Centric Are Our Graph Data Abstractions?",
+     "url": "https://doi.org/10.4230/TGDK.4.2.2"
+    },
+    {
+     "abstract": "Generating Knowledge Graphs (KGs) remains one of the most time-consuming and labor-intensive tasks for knowledge engineers, as they need to identify semantic equivalences between input data sources and ontology terms. While declarative solutions (e.g., RML, SPARQL-Anything) have helped to generalize this process, aligning input schema elements with ontology terms still involves intricate transformations and requires considerable manual effort. With the advent of Large Language Models (LLMs), there is growing interest in leveraging their capabilities to assist KG engineers. Although some studies have explored using LLMs to automate KG construction, there is still no standardized framework for assessing how effectively they establish correspondences between data schemes and ontology concepts. Therefore, in this paper, we propose BLINKG, a benchmark designed to evaluate the mapping capabilities of LLMs in constructing KGs from heterogeneous data sources. The benchmark includes a set of scenarios with increasing complexity, based on real-world use cases. We conduct an extensive experimental evaluation of several state-of-the-art LLMs using BLINK and observe that they already offer promising solutions. However, their performance remains limited in complex scenarios. Thanks to this benchmark we can already asses the current capabilities of LLMs for KG construction. Additionally, we define a set of requirements for achieving (semi)automated (LLM-driven) KG construction, opening new research lines in this area.",
+     "block": null,
+     "byline": "Carla Castedo, Enrique Iglesias, Manuel Lama, Alberto Bugarín-Diz, Maria-Esther Vidal, David Chaves-Fraga · TGDK 4(2): article 9",
+     "chairs": null,
+     "end": "14:45",
+     "endISO": "2026-10-27T14:45:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:40",
+     "startISO": "2026-10-27T14:40:00+01:00",
+     "talkTitle": null,
+     "title": "BLINKG: A Benchmark for LLM-Integrated Knowledge Graph Generation",
+     "url": "https://doi.org/10.4230/TGDK.4.2.9"
+    },
+    {
+     "abstract": "In large manufacturing companies, such as Bosch, that operate thousands of production lines with each comprising up to dozens of production machines and other equipment, even simple inventory questions such as of location and quantities of a particular equipment type require non-trivial solutions. Addressing these questions requires to integrate multiple heterogeneous data sets which is time consuming and error prone and demands domain as well as knowledge experts. Knowledge graphs (KGs) are practical for consolidating inventory data by bringing it into the same format and linking inventory items. However, the KG creation and maintenance itself pose challenges as mappings are needed to connect data sets and ontologies. In this work, we address these challenges by exploring LLM-supported and context-enhanced generation of both YARRRML and RML mappings. Facing large ontologies in the manufacturing domain and token limitations in LLM prompts, we further evaluate ontology reduction methods in our approach. We evaluate our approach both quantitatively against reference mappings created manually by experts and, for YARRRML, also qualitatively with expert feedback. This work extends the exploration of the challenges with LLM-supported and context-enhanced mapping generation YARRRML [Schmidt et al., 2025] by comprehensive analyses on RML mappings and an ontology reduction evaluation. We further publish the source code of this work. Our work provides a valuable support when creating manufacturing mappings and supports data and schema updates.",
+     "block": null,
+     "byline": "Wilma Johanna Schmidt, Irlan Grangel-González, Adrian Paschke, Evgeny Kharlamov · TGDK 3(3): article 5",
+     "chairs": null,
+     "end": "14:50",
+     "endISO": "2026-10-27T14:50:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:45",
+     "startISO": "2026-10-27T14:45:00+01:00",
+     "talkTitle": null,
+     "title": "LLM-Supported Manufacturing Mapping Generation",
+     "url": "https://doi.org/10.4230/TGDK.3.3.5"
+    },
+    {
+     "abstract": "To increase the efficiency of creating, distributing, and processing of invoices, invoicing is handled in the form of Electronic Data Interchange (EDI). With EDI, invoices are handled in a standardized electronic or digital format rather than on paper. While EDIFACT is widely used for electronic invoicing, there is no standardized approach for validating its content. In this work, we tackle the problem of automatically validating electronic invoices in the EDIFACT format by leveraging KG technologies. We build on a previously developed pipeline that transforms EDIFACT invoices into RDF knowledge graphs (KGs). The resulting graphs are validated using SHACL constraints defined in collaboration with domain experts. In this work, we improve the pipeline by enhancing the correctness of the invoice representation, reducing validation time, and introducing error prioritization through the use of the severity predicate in SHACL. These improvements make validation results easier to interpret and significantly reduce the manual effort required. Our evaluation confirms that the approach is correct, efficient, and practical for real-world use.",
+     "block": null,
+     "byline": "Johannes Mäkelburg, Maribel Acosta · TGDK 3(3): article 2",
+     "chairs": null,
+     "end": "14:55",
+     "endISO": "2026-10-27T14:55:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:50",
+     "startISO": "2026-10-27T14:50:00+01:00",
+     "talkTitle": null,
+     "title": "Automating Invoice Validation with Knowledge Graphs: Optimizations and Practical Lessons",
+     "url": "https://doi.org/10.4230/TGDK.3.3.2"
+    },
+    {
+     "abstract": "Psychometrics is the field relating to the measurement of concepts within psychology, particularly the assessment of various social and psychological dimensions in humans. The relationship between psychometric entities is critical to finding an appropriate assessment instrument, especially in the context of clinical psychology and mental healthcare in which providing the best care based on empirical evidence is crucial. We aim to model these entities, which include psychometric questionnaires and their component elements, the subject and respondent, and the latent variables being assessed. The current standard for questionnaire-based assessment relies on text-based distributions of instruments; so, a structured representation is necessary to capture these relationships to enhance accessibility and use of existing measures, encourage reuse of questionnaires and their component elements, and enable sophisticated reasoning over assessment instruments and results by increasing interoperability. We present the design process and architecture of such a domain ontology, the Psychometric Ontology of Experiences and Measures, situating it within the context of related ontologies, and demonstrating its practical utility through evaluation against a series of competency questions concerning the creation, use, and reuse of psychometric questionnaires in clinical, research, and development settings.",
+     "block": null,
+     "byline": "Kelsey Rook, Henrique Santos, Deborah L. McGuinness, Manuel S. Sprung, Paulo Pinheiro, Bruce F. Chorpita · TGDK 3(3): article 3",
+     "chairs": null,
+     "end": "15:00",
+     "endISO": "2026-10-27T15:00:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "14:55",
+     "startISO": "2026-10-27T14:55:00+01:00",
+     "talkTitle": null,
+     "title": "Supporting Psychometric Instrument Usage Through the POEM Ontology",
+     "url": "https://doi.org/10.4230/TGDK.3.3.3"
+    },
+    {
+     "abstract": "In decision-making scenarios, an information need arises due to a knowledge gap when a decision-maker needs more knowledge to make a decision. Users may take the initiative to acquire knowledge to fill this gap through exploratory search approaches using Knowledge Graphs (KGs) as information sources, but their queries can be incomplete, inaccurate, and ambiguous. Although KGs have great potential for exploratory search, they are incomplete by nature. Besides, for both Crowd-sourced KGs and KGs constructed by integrating several different information sources of varying quality to be effectively consumed, there is a need for a Trust Layer. Our research aims to enrich and allow querying KGs to support context-aware exploration in decision-making scenarios. We propose a layered architecture for Context Augmented Knowledge Graphs-based Decision Support Systems with a Knowledge Layer that operates under a Dual Open World Assumption (DOWA). Under DOWA, the evaluation of the truthfulness of the information obtained from KGs depends on the context of its claims and the tasks carried out or intended (purpose). The Knowledge Layer comprises a Context Augmented KG (CoaKG) and a CoaKG Query Engine. The CoaKG contains contextual mappings to identify explicit context and rules to infer implicit context. The CoaKG Query Engine is designed as a query-answering approach that retrieves all contextualized answers from the CoaKG. A Proof of Concept (PoC) based on Wikidata was developed to evaluate the effectiveness of the Knowledge Layer.",
+     "block": null,
+     "byline": "Veronica dos Santos, Daniel Schwabe, Altigran Soares da Silva, Sérgio Lifschitz · TGDK 3(1): article 4",
+     "chairs": null,
+     "end": "15:05",
+     "endISO": "2026-10-27T15:05:00+01:00",
+     "kind": "talk",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "15:00",
+     "startISO": "2026-10-27T15:00:00+01:00",
+     "talkTitle": null,
+     "title": "CoaKG: A Contextualized Knowledge Graph Approach for Exploratory Search and Decision Making",
+     "url": "https://doi.org/10.4230/TGDK.3.1.4"
+    },
+    {
+     "abstract": null,
+     "block": null,
+     "byline": null,
+     "chairs": null,
+     "end": "15:15",
+     "endISO": "2026-10-27T15:15:00+01:00",
+     "kind": "discussion",
+     "note": null,
+     "paperId": null,
+     "speaker": null,
+     "speakerId": null,
+     "start": "15:05",
+     "startISO": "2026-10-27T15:05:00+01:00",
+     "talkTitle": null,
+     "title": "Discussion and wrap-up",
+     "url": null
+    }
+   ],
+   "agendaSource": "the event's website",
+   "agendaUrl": "https://tgdk-iswc2026.dcc.uchile.cl/",
    "allRooms": false,
    "chairIds": [
     "person-aidan-hogan",
@@ -65428,8 +65719,9 @@
     "person-kerry-taylor"
    ],
    "chairs": "Aidan Hogan, Markus Krötzsch, Kerry Taylor",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-27",
+   "description": "Transactions on Graph Data and Knowledge (TGDK), the Diamond Open Access journal published by Dagstuhl, hosts a journal session: an introduction to the journal, then 14 short presentations of published TGDK articles, five minutes each (four to present, one for questions), and a closing discussion. Programme from https://tgdk-iswc2026.dcc.uchile.cl/. The abstracts below come from the articles on Dagstuhl DROPS (https://drops.dagstuhl.de), published under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
    "end": "15:15",
    "endISO": "2026-10-27T15:15:00+01:00",
    "id": "s-2026-10-27-1345-room-sezione-3-4-journal-papers-from-tgdk",
@@ -65449,7 +65741,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-27",
    "end": "15:15",
    "endISO": "2026-10-27T15:15:00+01:00",
@@ -65493,7 +65785,7 @@
    "bio": "James Hendler is the Tetherless World Professor of Computer, Web and Cognitive Sciences at RPI. In fifty years as an AI researcher, Hendler has worked in areas including planning, scalable KR, semantic data integration and global technology policy. He is best known for his work in bringing AI to the Web, as well as in government open data, knowledge graphs, and what's now known as neuro-symbolic AI.\n\nHe is a fellow of the AAAI, AAIA, AAAS, ACM, BCS, IEEE and the US National Academy of Public Administration. Among other awards, in 2025, Hendler received the AAAI Feigenbaum Award for “a sustained record of high-impact seminal contributions to experimental AI research” and in 2026 was a co-recipient of the life-time achievement award from the Knowledge Graph Society.",
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-27",
    "description": "In 2001, I joined Tim Berners-Lee and our colleague Ora Lassila in writing an article describing a vision for the Semantic Web – combining work we'd each been doing for a decade or more. The paper, which appeared in Scientific American, has been widely cited and led to much work in both academia and industry aimed at adding machine-readable text to the Web. Now, 25 years later, while even the concept of what the Web is has changed, machine-readable metadata is crucial to search and many other applications, and knowledge graph technology, which also grew from this vision, is now a big business used by major organizations around the world. Further, with the advent of LLMs, a realization is growing that the difference between reality and hallucination requires machine-readable knowledge. However, despite this success, much of the original vision of the Semantic Web remains unrealized. In this talk, I discuss what was in the original vision, what has occurred and, most importantly, a call to action as to what still remains to be done if we are truly to recognize the full potential of the Semantic Web.\n\nThe keynote will be followed by an open challenge to the audience. How do the researchers and academics working in the field today, and in particular the next generation of Semantic Web scientists — actually experience the research landscape they are working in? What has the field delivered, what has it failed to deliver, and what needs to change? Prof. Hendler will open the floor to an unscripted discussion, with young researchers and academics very much invited to lead it.",
    "descriptionSource": "ISWC 2026 website",
@@ -65530,7 +65822,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-27",
    "description": "A conversation with Jim Hendler and Frank van Harmelen that starts with questions from early-career researchers and then opens to the whole audience.",
    "descriptionSource": "ISWC 2026 website",
@@ -65554,7 +65846,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-27",
    "end": "18:45",
    "endISO": "2026-10-27T18:45:00+01:00",
@@ -65575,7 +65867,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-27",
    "end": "21:00",
    "endISO": "2026-10-27T21:00:00+01:00",
@@ -66271,7 +66563,7 @@
    "bio": "Francesca Toni is Professor in Computational Logic at the Department of Computing, Imperial College London, UK. She is also the founder and leader of the CLArg (Computational Logic and Argumentation) research group and of the XAI research Centre at Imperial. Her research interests lie within the broad area of Knowledge Representation and Reasoning in AI and Explainable AI, and in particular include Argumentation, Argument Mining, Logic-Based Multi-Agent Systems, Non-monotonic/Default/Defeasible Reasoning, and Machine Learning.\n\nShe graduated, summa cum laude, in Computing at the University of Pisa, Italy and received her PhD in Computing from Imperial College London. She has coordinated two EU projects, received funding from EPSRC and the EU, was awarded a Senior Research Fellowship from The Royal Academy of Engineering and the Leverhulme Trust, was Technical Director of the ROAD2H EPSRC-funded project and co-Director for the Centres of Doctoral Training in Safe and Trusted AI and in AI for Healthcare, and held the Royal Academy of Engineering/JP Morgan Research Chair on Argumentation-based Interactive Explainable AI (2020-25).\n\nShe is a EurAI fellow, AAAI fellow, AAIS fellow and fellow of the BCS, and was awarded in 2021 an ERC Advanced grant on “Argumentation-based Deep Interactive Explanations”. She has published over 200 papers, co-chaired ICLP 2015 (the 31st International Conference on Logic Programming), KR 2018 (the 16th Conference on Principles of Knowledge Representation and Reasoning), and COMMA 2022 (9th International Conference on Computational Models of Argument), was the conference chair for ICLP 2023 and is currently the conference chair for IJCAI-ECAI 2026. She is on the editorial board of the Argument and Computation journal and associate editor for Theory and Practice of Logic Programming. She is also on the Board of Directors for KR Inc. and an IJCAI trustee.",
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-29",
    "description": "The need for explainability in AI is widely agreed upon as crucial towards safe and trustworthy deployment of AI systems, especially given the very many opportunities for undesired behaviour, including misinformation, hallucination and bias. What is less clear is the type of explanations AI systems should be able to produce, and the properties these explanations should satisfy. In this talk I will advocate (X)AI approaches based on computational argumentation that can (1) interact to progressively explain outputs and/or reasoning as well as assess grounds for contestation provided by humans and/or other machines, and (2) revise decision-making processes to redress any issues successfully raised during contestation. These approaches lead to explanations that faithfully reflect the \"reasoning\" behind the outputs they are explaining and can inform formal contestability of these outputs and of the models. I will ground the talk in LLM-based claim verification.",
    "descriptionSource": "ISWC 2026 website",
@@ -66437,7 +66729,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-29",
    "end": "12:00",
    "endISO": "2026-10-29T12:00:00+01:00",
@@ -66557,7 +66849,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-29",
    "end": "14:40",
    "endISO": "2026-10-29T14:40:00+01:00",
@@ -66599,7 +66891,7 @@
    "allRooms": false,
    "chairIds": [],
    "chairs": "TBD",
-   "cluster": "c-posters-visionary-ideas",
+   "cluster": "c-posters-demos",
    "day": "2026-10-29",
    "end": "16:10",
    "endISO": "2026-10-29T16:10:00+01:00",

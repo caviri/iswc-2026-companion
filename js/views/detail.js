@@ -101,8 +101,9 @@ function agendaItem(program, store, s, a, state = "") {
 }
 
 /**
- * A talk the workshop publishes itself (not a programme paper): a row that opens in place on when and where it
- * is, its block, authors, abstract and the event's own links (the paper, its abstract, the workshop's programme).
+ * A talk the event publishes itself (a workshop's or a journal session's, not a programme paper): a row that opens in
+ * place on when and where it is, its block, authors, abstract and the event's own links (the paper, its abstract, the
+ * session's programme).
  */
 function agendaTalk(program, s, a, time, cls) {
   const by = bylineParts(a.byline);
@@ -112,7 +113,7 @@ function agendaTalk(program, s, a, time, cls) {
   const links = [
     a.url ? ext(a.url, "Read the paper") : null,
     ...by.links.map((l) => ext(l.url, l.label)),
-    s?.agendaUrl ? ext(s.agendaUrl, "Workshop programme") : null,
+    s?.agendaUrl ? ext(s.agendaUrl, "Session programme") : null,
     room?.floor != null ? h("a", { class: "pill-btn", href: `#/map?room=${encodeURIComponent(room.id)}` }, icon("map", { size: 16 }), "Show on map") : null,
   ].filter(Boolean);
   const when = [s ? dayLong(s.day) : "", a.end ? `${a.start}–${a.end}` : `from ${a.start}`, place.name].filter(Boolean).join(" · ");
@@ -125,7 +126,7 @@ function agendaTalk(program, s, a, time, cls) {
       h("p", { class: "ag-when" }, when),
       a.block ? h("p", { class: "row-meta" }, a.block, a.chairs ? ` · chair ${a.chairs}` : "") : null,
       a.abstract ? paras(a.abstract) : null,
-      h("p", { class: "row-meta" }, "Published by the workshop; not one of the conference's listed papers."),
+      h("p", { class: "row-meta" }, "From the session's own programme; not one of the conference's listed papers."),
       links.length ? h("div", { class: "ag-more-links" }, links) : null)));
 }
 
