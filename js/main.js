@@ -236,6 +236,15 @@ function registerServiceWorker() {
   });
 }
 
+// The installed app (phone or desktop) always opens on Home, whatever page it was left on or the OS restores; a
+// reload inside it (pull to refresh, a new build) stays where it is. In a browser tab a link opens what it names.
+function launchedAsApp() {
+  const standalone = matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: window-controls-overlay)").matches
+    || navigator.standalone === true;
+  const nav = performance.getEntriesByType?.("navigation")?.[0];
+  return standalone && nav?.type !== "reload";
+}
+
 // Desktop dashboard on/off with the window width; switching redraws the shell, keeping route and panels. Its
 // code (and the panels' views) loads only on a wide window.
 async function setupLayout() {
@@ -282,7 +291,7 @@ async function start() {
     renderCentre(parseHash(currentCentre() ?? location.hash));
     window.scrollTo(x, y); // the desktop row may be scrolled sideways: stay where the user is
   });
-  if (!location.hash || location.hash === "#/") history.replaceState(null, "", "#/home");
+  if (!location.hash || location.hash === "#/" || launchedAsApp()) history.replaceState(null, "", "#/home");
   window.addEventListener("hashchange", route);
   window.addEventListener("storage", (e) => { if (e.key === null || e.key === "iswc26:v1") syncFromOtherCopies(); });
   window.addEventListener("storage", (e) => { if (logistics && (e.key === null || e.key === "iswc26:logistics")) { logistics.refresh(); route({ force: true }); } });
