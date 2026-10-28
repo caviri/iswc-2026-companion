@@ -202,6 +202,16 @@ function withSource(f, what, source) {
   return f;
 }
 
+/**
+ * A paper without an open abstract: say so, and point to where it can be read (its DOI, the publisher's page). Only
+ * abstracts under an open licence are copied into the app; the publisher's own text stays on the publisher's site.
+ */
+function noAbstract(x) {
+  const doi = (x.links ?? []).find((l) => l.kind === "doi")?.url;
+  return field("Abstract", h("p", { class: "src-note" }, "No openly licensed abstract yet.",
+    doi ? [" ", h("a", { href: doi, target: "_blank", rel: "noopener noreferrer" }, "Read it on the publisher's page"), "."] : null));
+}
+
 /** Fold a field to a few lines behind a "Show more" toggle (when `on`). */
 function foldable(f, on, cls = "") {
   if (!f || !on) return f;
@@ -288,7 +298,7 @@ export function detailContent(program, store, id, { miniMap = null, onVerdict = 
     ];
   } else {
     body = [
-      x.abstract ? withSource(foldable(field("Abstract", paras(x.abstract)), String(x.abstract).length > LONG_ABSTRACT, "fold-abs"), "Abstract", x.abstractSource) : null,
+      x.abstract ? withSource(foldable(field("Abstract", paras(x.abstract)), String(x.abstract).length > LONG_ABSTRACT, "fold-abs"), "Abstract", x.abstractSource) : noAbstract(x),
       s ? field("Presented in", h("ul", { class: "row-list" }, itemRow(program, store, s))) : null,
       field("Track", h("p", {}, [x.track, ...x.lists.map(listLabel).filter((l) => l.toLowerCase() !== String(x.track).toLowerCase())].filter(Boolean).join(", "))),
       researchFields(program, x.links),

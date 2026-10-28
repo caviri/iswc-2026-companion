@@ -6353,6 +6353,8 @@
    "track": "Research"
   },
   {
+   "abstract": "Entity linking (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question-answering, and information extraction. Our method, LELA, is a modular coarse-to-fine approach that leverages the capabilities of large language models (LLMs), and works with different target domains, knowledge bases and LLMs, without any fine-tuning phase. Our experiments across various entity linking settings show that LELA is highly competitive with fine-tuned approaches, and substantially outperforms the non-fine-tuned ones.",
+   "abstractSource": "arXiv",
    "authorIds": [
     "person-samy-haffoudhi",
     "person-fabian-suchanek",
@@ -6570,6 +6572,8 @@
    "track": "Research"
   },
   {
+   "abstract": "AI planning involves finding a sequence of actions that achieve a predefined goal when executed from a given initial state of the environment. Task planning is used to execute tasks specified in formal planning description languages. Ontologies to support the planning process have mainly been used in robotics; however, existing ontologies rarely provide direct mappings between planning constructs and semantic representations, and they typically do not decompose planning terms into their constituent elements. This limits expressive querying, task analysis across environments, and the integration of external knowledge. In this paper, we present TP-ONT, a novel ontology for task planning designed to address these shortcomings. TP-ONT decomposes states and predicates into their atomic components and incorporates object type hierarchies, enabling richer reasoning over relations between specified environments, actions, states, and plans. Our framework for knowledge graph and ontology construction allows automatic extension from new planning descriptions, as well as new plan solutions. Evaluation using 18 competency questions shows that the baseline ontologies can answer at most 7 questions partially or fully, whereas TP-ONT is able to answer all questions.",
+   "abstractSource": "King's College London repository (CC BY 4.0)",
    "authorIds": [
     "person-ma-ayan-armony",
     "person-albert-merono-penuela",
@@ -7266,6 +7270,8 @@
    "track": "Resource"
   },
   {
+   "abstract": "Parliamentary proceedings are a primary record of democratic deliberation, yet their volume and fragmentation make multi-perspective access difficult for citizens, journalists, and researchers. Applying Retrieval-Augmented Generation (RAG) to parliamentary transcripts introduces three specific risks: dominance of the most frequent speakers, inability to weight speakers according to topical expertise, and citation misattribution in politically sensitive text. We present ParliamentRAG, a RAG system for the Italian Chamber of Deputies that addresses these risks jointly. Its core contribution is a topic-dependent authority model that estimates each speaker's authority as a function of the current query, combining interpretable components such as profession, education, and previous interventions. Given a user query, the system retrieves relevant speech chunks, identifies topic-relevant experts across parliamentary groups, and generates a summary synthesizing their perspectives, accompanied by supporting quotations. ParliamentRAG is evaluated against Google NotebookLM on 15 policy topics via a two-level protocol combining automated metrics and blind A/B human evaluation by six domain experts. The system achieves higher coverage across political groups (0.97 vs. 0.95), perfect quotation faithfulness (1.00 vs. 0.95), and stronger expert preferences on source-related dimensions, while NotebookLM remains stronger on prose-oriented dimensions.",
+   "abstractSource": "arXiv",
    "authorIds": [
     "person-mirko-tritella",
     "person-riccardo-pozzi",
@@ -7551,6 +7557,8 @@
    "track": "Research"
   },
   {
+   "abstract": "Cities publish open data on mobility, services, infrastructure, environmental assets, and administrative areas, but these datasets are often heterogeneous and difficult to reuse jointly. Wikidata contains culturally meaningful places, but requires curation for city-scale applications. This paper presents Eventour, a reusable urban knowledge graph (KG) that integrates official municipal open data with a curated Wikidata-derived semantic place layer. Eventour models Milan as a layered GeoSPARQL KG where administrative areas, mobility infrastructure, public services, urban assets, and semantic places can be queried together with provenance and source identity. The Milan KG integrates 21 Comune di Milano datasets with 3,288 curated Wikidata places. It contains 9,181,086 triples, 906,970 distinct subjects, 293,165 spatial features, and 137 distinct predicates. Its ontology defines 37 classes and 137 properties, reusing GeoSPARQL, PROV-O, DC Terms, DCAT, SKOS, Schema.org, and OWL. The release includes the KG, ontology, VoID/DCAT metadata, SHACL shapes, statistics, competency queries, construction artifacts, and code for the Eventour application, including itinerary generation and UI components. Eventour is validated through structural checks, human evaluation of semantic-place curation, representative queries, and a Milan-based itinerary-generation application. It supports cultural itinerary generation, event-aware recommendation, context-aware exploration, and urban service-gap analysis.",
+   "abstractSource": "OpenAlex",
    "authorIds": [
     "person-blerina-spahiu",
     "person-marco-cremaschi",

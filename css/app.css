@@ -289,6 +289,8 @@ html.dash .ticker { grid-column: 1 / -1; justify-self: start; position: sticky; 
 .card-who strong { color: var(--ink); font-size: var(--fs-m); }
 .card-sub { display: flex; align-items: flex-start; gap: 6px; font-size: var(--fs-s); font-weight: 600; color: var(--ink-2); }
 .card-sub .icon { margin-top: 1px; }
+.card-abs { margin: 0; font-size: var(--fs-s); line-height: 1.4; color: var(--ink-2);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden; }
 .card-papers { margin: 0; padding: 0 0 0 1.3em; display: grid; gap: 5px; font-size: var(--fs-s); line-height: 1.3; }
 .card-papers li { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
 .card-papers li::marker { color: var(--ink-2); font-variant-numeric: tabular-nums; }

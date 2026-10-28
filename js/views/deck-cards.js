@@ -87,7 +87,9 @@ function paperCard(program, store, p) {
       h("h2", { class: "card-title" }, termText(p.title, program, p.terms)),
       h("div", { class: "card-body" },
         authors ? h("p", { class: "card-authors" }, authors) : null,
-        s ? h("p", { class: "card-sub in-session" }, icon("layers", { size: 16 }), h("span", {}, s.title)) : null),
+        s ? h("p", { class: "card-sub in-session" }, icon("layers", { size: 16 }), h("span", {}, s.title)) : null,
+        // The open abstract's opening lines, to decide from the card (the whole text is one tap away).
+        p.abstract ? h("p", { class: "card-abs" }, String(p.abstract).split(/\n{2,}/)[0]) : null),
       h("div", { class: "card-foot" }, s ? placeLine(program, s, boardLabel(p)) : null, topicTags(program, p.topics))),
     stamps());
 }
