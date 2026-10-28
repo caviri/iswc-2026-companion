@@ -1868,6 +1868,8 @@ a.hm-credit:focus-visible { outline: 3px solid #fff; outline-offset: 2px; border
 .tt-scroll { overflow: auto; max-height: calc(100dvh - 210px); border: 1px solid var(--line); border-radius: 18px; background: var(--surface);
   overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
 html.dash .tt-scroll { max-height: calc(100dvh - 180px); }
+/* A clear gap between the grid and the phone tab bar under it. */
+.grid-view .tt-scroll { margin-bottom: 28px; }
 .tt { --gut: 52px; --colw: 176px; display: grid; position: relative;
   grid-template-columns: var(--gut) repeat(var(--cols), minmax(var(--colw), 1fr)); grid-template-rows: auto var(--h); min-width: max-content; }
 @media (min-width: 1100px) { .tt { --colw: 190px; } }

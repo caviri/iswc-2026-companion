@@ -16,6 +16,7 @@ import { bootScreen, viewSpinner } from "./boot.js";
 import { DESKTOP_QUERY, routeIntent, centreOf, withPanels, decodePanelEntries, panelEntries, closePanel, isPinned } from "./panels.js";
 import { currentCentre, setCurrentCentre } from "./route-state.js";
 import { watchStore, onVerdict } from "./verdict-bus.js";
+import { scrollMemory } from "./scroll-memory.js";
 
 const root = document.getElementById("app");
 const store = createStore();
@@ -49,9 +50,13 @@ function prefetchViews(routes) {
   idle(() => routes.forEach((r) => loadView(r).catch(() => {})));
 }
 
+let shownRoute = null; // the route on screen, for scroll memory (Home and the Timetable keep their place)
 function renderCentre(parsed) {
   const { route: r } = parsed;
   const token = ++navToken;
+  if (shownRoute) scrollMemory.leave(shownRoute, window.scrollY);
+  scrollMemory.arrive(shownRoute, r);
+  shownRoute = r;
   try { cleanup?.(); } catch { /* a view's cleanup must never block navigation */ }
   cleanup = null;
   closeTermPopover({ restoreFocus: false });
@@ -102,7 +107,9 @@ function drawCentre({ route: r, id, params }) {
   else if (r === "sparql") out = V(r).renderSparql(root, program, store, clock, params);
   else out = renderHome(root, program, store, clock, params);
   cleanup = typeof out === "function" ? out : null;
-  window.scrollTo(0, 0);
+  const y = scrollMemory.returning() ? scrollMemory.get(r)?.y ?? 0 : 0;
+  window.scrollTo(0, y);
+  if (y) requestAnimationFrame(() => window.scrollTo(0, y)); // once the view has laid out (images, sliders)
 }
 
 /**

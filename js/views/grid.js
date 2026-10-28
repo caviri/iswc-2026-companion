@@ -7,6 +7,7 @@ import { dayShort, timeRange, VERDICT_LABEL } from "../model.js";
 import { replaceRoute } from "../route-state.js";
 import { dayGrid, nowOffset } from "../grid-model.js";
 import { onVerdictWhile } from "../verdict-bus.js";
+import { scrollMemory } from "../scroll-memory.js";
 
 const PX = 1.6; // pixels per minute
 const KEY = "iswc26:grid"; // localStorage: { mine }, a per-viewer convenience
@@ -61,7 +62,7 @@ export function renderGrid(root, program, store, clock, params = {}) {
 
   const draw = () => {
     seg.replaceChildren(...days.map((d) => h("button", { type: "button", class: "seg-btn", "aria-pressed": String(d === day),
-      onclick: () => { day = d; replaceRoute(`#/grid?day=${d}`); draw(); scroller.scrollTo({ top: 0, left: 0 }); } }, dayShort(d))));
+      onclick: () => { day = d; replaceRoute(`#/grid?day=${d}`); draw(); scroller.scrollTo({ top: 0, left: 0 }); remember(); } }, dayShort(d))));
     mineBtn.setAttribute("aria-pressed", String(st.mine));
     const g = dayGrid(program, day);
     scroller.__grid = g;
@@ -76,8 +77,24 @@ export function renderGrid(root, program, store, clock, params = {}) {
 
   mineBtn.addEventListener("click", () => { st.mine = !st.mine; save(st); draw(); });
   draw();
-  // Scroll to now (or the first session) once.
+  // Where the grid is scrolled (down and across) on which day: coming back from a block you opened puts it back.
+  let pending = false;
+  const remember = () => scrollMemory.put("grid", { day, top: Math.round(scroller.scrollTop), left: Math.round(scroller.scrollLeft) });
+  scroller.addEventListener("scroll", () => {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(() => { pending = false; remember(); });
+  }, { passive: true });
+  const back = scrollMemory.returning() ? scrollMemory.get("grid") : null;
   requestAnimationFrame(() => {
+    // The selected day's chip in view (the row scrolls sideways on phones).
+    const on = seg.querySelector('[aria-pressed="true"]');
+    if (on) seg.scrollLeft = Math.max(0, on.offsetLeft - (seg.clientWidth - on.offsetWidth) / 2);
+    if (back && back.day === day && back.top != null) {
+      scroller.scrollTo({ top: back.top, left: back.left ?? 0 });
+      return;
+    }
+    // Otherwise scroll to now (or the first session) once.
     const off = nowOffset(scroller.__grid, clock.now());
     if (off != null) scroller.scrollTop = Math.max(0, off * PX - 120);
   });

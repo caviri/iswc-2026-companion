@@ -170,21 +170,31 @@ function seeded(str) {
 }
 
 /**
- * Up to n sessions and papers not sorted yet, shuffled with the date as seed (the same pick all day,
- * a new one tomorrow). Items whose session was on an earlier day are left out.
+ * Up to n sessions and papers not sorted yet, next events first: what is still to come today, soonest first
+ * (a paper by its own talk slot, else its session), then the rest shuffled with the date as seed (the same
+ * pick all day, a new one tomorrow). Anything already over is left out (earlier days, and today's ended ones).
  */
 export function discover(program, store, iso, n = 12) {
   const today = dateOf(iso);
+  const t = Date.parse(iso);
+  // When it happens: [startMs, endMs] (a paper's own talk slot, else its session's), or null when unscheduled.
+  const span = (x) => {
+    if (isSession(x)) return Number.isNaN(startMs(x)) ? null : [startMs(x), endMs(program, x)];
+    const s = x.sessionId ? program.byId.get(x.sessionId) : null;
+    if (!s || Number.isNaN(startMs(s))) return null;
+    return x.talk?.startISO ? [Date.parse(x.talk.startISO), x.talk.endISO ? Date.parse(x.talk.endISO) : endMs(program, s)] : [startMs(s), endMs(program, s)];
+  };
   const dayOf = (x) => (isSession(x) ? x.day : x.sessionId ? program.byId.get(x.sessionId)?.day : null);
   const pool = [...program.sessions.filter((s) => s.kind !== "break"), ...program.papers]
-    .filter((x) => !store.verdict(x.id) && !(dayOf(x) && dayOf(x) < today))
+    .filter((x) => !store.verdict(x.id) && !(dayOf(x) && dayOf(x) < today) && !(span(x) && span(x)[1] <= t))
     .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const rnd = seeded(`discover|${today}`);
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(rnd() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
-  return pool.slice(0, n);
+  const soon = pool.filter((x) => dayOf(x) === today).sort((a, b) => span(a)[0] - span(b)[0]);
+  return [...soon, ...pool.filter((x) => dayOf(x) !== today)].slice(0, n);
 }
 
 /**
