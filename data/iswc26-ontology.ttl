@@ -162,7 +162,7 @@ ic:board a owl:DatatypeProperty ; rdfs:label "board number"@en ; schema:domainIn
 ic:authorsOrdered a owl:DatatypeProperty ; rdfs:label "authors, in order"@en ; rdfs:range xsd:string .
 ic:authorIdsOrdered a owl:DatatypeProperty ; rdfs:label "author ids, in order"@en ; rdfs:range xsd:string .
 ic:abstractSource a owl:DatatypeProperty ; rdfs:label "abstract source"@en ; rdfs:range xsd:string ;
-    rdfs:comment "Where the open abstract (schema:abstract) came from: OpenAlex, arXiv, Crossref or a workshop's CC BY paper."@en .
+    rdfs:comment "Where the open abstract (schema:abstract of a paper, ic:abstract of a programme talk) came from, with its licence: OpenAlex, arXiv, Crossref, CEUR-WS or another CC BY source."@en .
 ic:paper a owl:ObjectProperty ; rdfs:label "paper"@en ; schema:domainIncludes ic:Authorship ; schema:rangeIncludes schema:ScholarlyArticle .
 ic:person a owl:ObjectProperty ; rdfs:label "person"@en ; schema:domainIncludes ic:Authorship ; schema:rangeIncludes schema:Person .
 ic:position a owl:DatatypeProperty ; rdfs:label "position"@en ; rdfs:range xsd:integer ;

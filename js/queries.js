@@ -171,7 +171,7 @@ ORDER BY ?owner ?position`;
 export const Q_AGENDA = `PREFIX schema: <http://schema.org/>
 PREFIX ic: <https://w3id.org/iswc26-companion/>
 SELECT ?session ?position ?start ?end ?startISO ?endISO ?title ?kind ?block ?chairs ?note ?paperId ?speaker ?speakerId
-       ?talkTitle ?abstract ?byline ?url
+       ?talkTitle ?abstract ?abstractSource ?byline ?url
 WHERE {
   ?s ic:agendaItem ?a ; ic:stableId ?session .
   ?a ic:position ?position ; ic:start ?start ; ic:title ?title ; ic:agendaKind ?kind ; ic:startISO ?startISO .
@@ -185,6 +185,7 @@ WHERE {
   OPTIONAL { ?a ic:speakerPerson ?sp . ?sp ic:stableId ?speakerId }
   OPTIONAL { ?a ic:talkTitle ?talkTitle }
   OPTIONAL { ?a ic:abstract ?abstract }
+  OPTIONAL { ?a ic:abstractSource ?abstractSource }
   OPTIONAL { ?a ic:byline ?byline }
   OPTIONAL { ?a ic:url ?url }
 }

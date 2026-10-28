@@ -71,7 +71,7 @@ const photoOfRow = (r) => (r ? shapePhoto({ ...r, license: r.licenseName }) : nu
 // kind: talk|keynote|break|opening|discussion|social, block, chairs, note, paperId, speaker, speakerId, talkTitle, abstract,
 // byline / url: a talk that isn't a programme paper, as the event publishes it (its authors as text, a link to the paper) }
 const AGENDA_KEYS = ["start", "end", "startISO", "endISO", "title", "kind", "block", "chairs", "note", "paperId", "speaker",
-  "speakerId", "talkTitle", "abstract", "byline", "url"];
+  "speakerId", "talkTitle", "abstract", "abstractSource", "byline", "url"];
 const shapeAgenda = (a) => Object.fromEntries(AGENDA_KEYS.map((k) => [k, a[k] ?? null]));
 /** Sessions' agendas in place ([] without one) and each presented paper's own slot: paper.talk = {start,end,startISO,endISO} | null. */
 function attachAgendas(sessions, papers) {

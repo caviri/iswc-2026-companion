@@ -126,6 +126,7 @@ function agendaTalk(program, s, a, time, cls) {
       h("p", { class: "ag-when" }, when),
       a.block ? h("p", { class: "row-meta" }, a.block, a.chairs ? ` · chair ${a.chairs}` : "") : null,
       a.abstract ? paras(a.abstract) : null,
+      a.abstract && a.abstractSource ? h("p", { class: "src-note" }, `Abstract via ${sourceName(a.abstractSource)}`) : null,
       h("p", { class: "row-meta" }, "From the session's own programme; not one of the conference's listed papers."),
       links.length ? h("div", { class: "ag-more-links" }, links) : null)));
 }
