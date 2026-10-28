@@ -66871,12 +66871,13 @@
    ]
   },
   {
+   "address": "Viale delle Murge, Bari",
    "allRooms": false,
    "chairIds": [],
    "chairs": null,
    "cluster": null,
    "day": "2026-10-28",
-   "description": "The Gala Dinner, and afterwards a disco, at Villa de Grecis (https://www.villadegrecis.com/).",
+   "description": "The Gala Dinner, and afterwards a disco, at Villa de Grecis (https://www.villadegrecis.com/), from 19:15 until late. The dinner is included in the main conference registration; an extra ticket for an accompanying person is €100 (VAT included).",
    "end": "Late",
    "endISO": null,
    "id": "s-2026-10-28-1915-none-gala-dinner-disco-villa-de-grecis",
